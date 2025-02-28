@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex: 1;
+}
+
+.web-app-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navigation-link-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-weight: 600;
+}
+
+/* General button styling */
+button {
+  padding: 10px 16px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Login Button (Blue) */
+#login-btn {
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+#login-btn:hover {
+  background-color: #0056b3; /* Darker Blue */
+  transform: translateY(-2px);
+}
+
+/* Logout Button (Coral Red) */
+#logout-btn {
+  background-color: #FF4C4C; /* Soft Coral Red */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 76, 76, 0.3);
+}
+
+#logout-btn:hover {
+  background-color: #D43F3F; /* Darker Red */
+  transform: translateY(-2px);
+}
+
+/* User Info Container */
+#user-info-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Username Styling */
+.username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #user-info-container {
+    flex-direction: column;
+    gap: 5px;
+    right: 10px;
+    top: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

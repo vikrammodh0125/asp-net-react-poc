@@ -1,0 +1,197 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/AspNetReactPOC.bundle.scp.css",
+      "PackagePath": "staticwebassets/AspNetReactPOC.mjsk6xfqxk.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/.postcssrc",
+      "PackagePath": "staticwebassets/react-app/.postcssrc"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/README.md",
+      "PackagePath": "staticwebassets/react-app/README.md"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/craco.config.js",
+      "PackagePath": "staticwebassets/react-app/craco.config.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/dist/index.css",
+      "PackagePath": "staticwebassets/react-app/dist/index.css"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/dist/index.js",
+      "PackagePath": "staticwebassets/react-app/dist/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/package.json",
+      "PackagePath": "staticwebassets/react-app/package.json"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/postcss.config.js",
+      "PackagePath": "staticwebassets/react-app/postcss.config.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.js",
+      "PackagePath": "staticwebassets/react-app/src/constants/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.js",
+      "PackagePath": "staticwebassets/react-app/src/containers/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.jsx",
+      "PackagePath": "staticwebassets/react-app/src/containers/notes-list.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.jsx",
+      "PackagePath": "staticwebassets/react-app/src/containers/user-create.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-search.jsx",
+      "PackagePath": "staticwebassets/react-app/src/containers/user-search.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useCreateNote.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useCreateUser.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useDeleteNote.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useEditNote.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/queries/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/queries/useGetNotes.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/queries/useGetUsers.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.js",
+      "PackagePath": "staticwebassets/react-app/src/hooks/useMe.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.css",
+      "PackagePath": "staticwebassets/react-app/src/index.css"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.js",
+      "PackagePath": "staticwebassets/react-app/src/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.jsx",
+      "PackagePath": "staticwebassets/react-app/src/pages/home/index.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.js",
+      "PackagePath": "staticwebassets/react-app/src/pages/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/notes/index.jsx",
+      "PackagePath": "staticwebassets/react-app/src/pages/notes/index.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.js",
+      "PackagePath": "staticwebassets/react-app/src/providers/common/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.js",
+      "PackagePath": "staticwebassets/react-app/src/providers/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.js",
+      "PackagePath": "staticwebassets/react-app/src/services/api.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.js",
+      "PackagePath": "staticwebassets/react-app/src/services/auth.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.js",
+      "PackagePath": "staticwebassets/react-app/src/services/cookie.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.js",
+      "PackagePath": "staticwebassets/react-app/src/services/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.jsx",
+      "PackagePath": "staticwebassets/react-app/src/ui/button.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.js",
+      "PackagePath": "staticwebassets/react-app/src/ui/index.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.jsx",
+      "PackagePath": "staticwebassets/react-app/src/ui/input.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.jsx",
+      "PackagePath": "staticwebassets/react-app/src/ui/select.jsx"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/tailwind.config.js",
+      "PackagePath": "staticwebassets/react-app/tailwind.config.js"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/yarn.lock",
+      "PackagePath": "staticwebassets/react-app/yarn.lock"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AspNetReactPOC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AspNetReactPOC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.AspNetReactPOC.props",
+      "PackagePath": "build\\AspNetReactPOC.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.AspNetReactPOC.props",
+      "PackagePath": "buildMultiTargeting\\AspNetReactPOC.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.AspNetReactPOC.props",
+      "PackagePath": "buildTransitive\\AspNetReactPOC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

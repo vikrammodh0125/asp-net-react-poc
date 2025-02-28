@@ -1,0 +1,18 @@
+﻿header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  background: #1e90ff;
+  justify-content: space-between;
+}
+
+header p {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+header .hero {
+  flex: 1;
+}

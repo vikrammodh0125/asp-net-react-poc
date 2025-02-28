@@ -1,0 +1,19 @@
+/* _content/AspNetReactPOC/Pages/Shared/_Layout.cshtml.rz.scp.css */
+header[b-7xo1idxxmw] {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  background: #1e90ff;
+  justify-content: space-between;
+}
+
+header p[b-7xo1idxxmw] {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+header .hero[b-7xo1idxxmw] {
+  flex: 1;
+}

@@ -1,0 +1,520 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/AspNetReactPOC.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AspNetReactPOC.mjsk6xfqxk.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"357"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/AspNetReactPOC.mjsk6xfqxk.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AspNetReactPOC.mjsk6xfqxk.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mjsk6xfqxk"},{"Name":"integrity","Value":"sha256-ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI="},{"Name":"label","Value":"_content/AspNetReactPOC/AspNetReactPOC.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"357"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/css/site.c4czj0rw8z.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c4czj0rw8z"},{"Name":"integrity","Value":"sha256-HMvS836ZT\u002BQdMa5/vtslvtN89eRBfEX0eCe0YM40iU4="},{"Name":"label","Value":"_content/AspNetReactPOC/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1626"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HMvS836ZT\u002BQdMa5/vtslvtN89eRBfEX0eCe0YM40iU4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HMvS836ZT\u002BQdMa5/vtslvtN89eRBfEX0eCe0YM40iU4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1626"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HMvS836ZT\u002BQdMa5/vtslvtN89eRBfEX0eCe0YM40iU4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/favicon.61n19gt1b8.ico">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"61n19gt1b8"},{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="},{"Name":"label","Value":"_content/AspNetReactPOC/favicon.ico"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/favicon.ico">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/js/site.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/js/site.xtxxf3hu2r.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xtxxf3hu2r"},{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="},{"Name":"label","Value":"_content/AspNetReactPOC/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/.postcssrc">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\.postcssrc'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"44"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/.xt0e55cu5i.postcssrc">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\.postcssrc'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xt0e55cu5i"},{"Name":"integrity","Value":"sha256-tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/.postcssrc"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"44"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/craco.config.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\craco.config.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-afQw\u002B1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"40"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022afQw\u002B1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/craco.config.r3d1z0x8yi.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\craco.config.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r3d1z0x8yi"},{"Name":"integrity","Value":"sha256-afQw\u002B1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/craco.config.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"40"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022afQw\u002B1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/dist/index.9plpmiga0z.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\dist\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9plpmiga0z"},{"Name":"integrity","Value":"sha256-4\u002BeeS0AHcPTOzHPW9tGooAX4hB\u002BPI5SBDY5NKKvMyUc="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/dist/index.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6650"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224\u002BeeS0AHcPTOzHPW9tGooAX4hB\u002BPI5SBDY5NKKvMyUc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/dist/index.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\dist\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4\u002BeeS0AHcPTOzHPW9tGooAX4hB\u002BPI5SBDY5NKKvMyUc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6650"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224\u002BeeS0AHcPTOzHPW9tGooAX4hB\u002BPI5SBDY5NKKvMyUc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/dist/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\dist\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1883362"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/dist/index.zwuuemro9a.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\dist\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zwuuemro9a"},{"Name":"integrity","Value":"sha256-A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/dist/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1883362"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/package.8tyzkrtxc1.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\package.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8tyzkrtxc1"},{"Name":"integrity","Value":"sha256-/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/package.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1187"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/package.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\package.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1187"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/postcss.config.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\postcss.config.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-n3k73\u002Bj8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"203"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022n3k73\u002Bj8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/postcss.config.naqaa7h44j.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\postcss.config.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"naqaa7h44j"},{"Name":"integrity","Value":"sha256-n3k73\u002Bj8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/postcss.config.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"203"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022n3k73\u002Bj8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/README.md">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\README.md'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15"},{"Name":"Content-Type","Value":"text/markdown"},{"Name":"ETag","Value":"\u0022gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/README.p6ltjm41s3.md">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\README.md'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p6ltjm41s3"},{"Name":"integrity","Value":"sha256-gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/README.md"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15"},{"Name":"Content-Type","Value":"text/markdown"},{"Name":"ETag","Value":"\u0022gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/constants/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\constants\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"402"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00221Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/constants/index.whxpid3zy8.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\constants\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"whxpid3zy8"},{"Name":"integrity","Value":"sha256-1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/constants/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"402"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00221Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/index.j0zuienaxb.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j0zuienaxb"},{"Name":"integrity","Value":"sha256-PbkBWGnTML\u002BOk7phHKUxP7Yx1OsdlVdqu/SryVgBGo0="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/containers/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"92"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022PbkBWGnTML\u002BOk7phHKUxP7Yx1OsdlVdqu/SryVgBGo0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PbkBWGnTML\u002BOk7phHKUxP7Yx1OsdlVdqu/SryVgBGo0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"92"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022PbkBWGnTML\u002BOk7phHKUxP7Yx1OsdlVdqu/SryVgBGo0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/notes-list.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\notes-list.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1838"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/notes-list.nkz3yfwwe0.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\notes-list.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nkz3yfwwe0"},{"Name":"integrity","Value":"sha256-KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/containers/notes-list.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1838"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/user-create.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\user-create.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b\u002BPOxuCw9A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4826"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u00226EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b\u002BPOxuCw9A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/user-create.kd3khnwony.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\user-create.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kd3khnwony"},{"Name":"integrity","Value":"sha256-6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b\u002BPOxuCw9A="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/containers/user-create.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4826"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u00226EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b\u002BPOxuCw9A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/user-search.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\user-search.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1649"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/containers/user-search.x5t2ow0enw.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\containers\user-search.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x5t2ow0enw"},{"Name":"integrity","Value":"sha256-JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/containers/user-search.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1649"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"80"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/index.rthdvo0dzn.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rthdvo0dzn"},{"Name":"integrity","Value":"sha256-gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"80"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wIMetjigqfimyhVjxorntX\u002BhQp78w66Dr4PS6HRY2Xk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"129"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wIMetjigqfimyhVjxorntX\u002BhQp78w66Dr4PS6HRY2Xk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/index.wklwn44kha.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wklwn44kha"},{"Name":"integrity","Value":"sha256-wIMetjigqfimyhVjxorntX\u002BhQp78w66Dr4PS6HRY2Xk="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/mutations/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"129"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wIMetjigqfimyhVjxorntX\u002BhQp78w66Dr4PS6HRY2Xk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useCreateNote.gfotoholfx.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useCreateNote.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gfotoholfx"},{"Name":"integrity","Value":"sha256-7NwYILl/MEp4\u002ByeotKWKRdFAzx63tfpB1NsBGKwSCVI="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/mutations/useCreateNote.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"520"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227NwYILl/MEp4\u002ByeotKWKRdFAzx63tfpB1NsBGKwSCVI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useCreateNote.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useCreateNote.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7NwYILl/MEp4\u002ByeotKWKRdFAzx63tfpB1NsBGKwSCVI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"520"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227NwYILl/MEp4\u002ByeotKWKRdFAzx63tfpB1NsBGKwSCVI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useCreateUser.fn6yhbczzq.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useCreateUser.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fn6yhbczzq"},{"Name":"integrity","Value":"sha256-1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/mutations/useCreateUser.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"520"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00221WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useCreateUser.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useCreateUser.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"520"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00221WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useDeleteNote.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useDeleteNote.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"514"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002228qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useDeleteNote.r822nrpwqn.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useDeleteNote.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r822nrpwqn"},{"Name":"integrity","Value":"sha256-28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/mutations/useDeleteNote.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"514"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002228qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useEditNote.7fz2fii4xu.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useEditNote.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7fz2fii4xu"},{"Name":"integrity","Value":"sha256-Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/mutations/useEditNote.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"527"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/mutations/useEditNote.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\mutations\useEditNote.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"527"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/queries/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\queries\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ\u002BEjzkjY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"61"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ\u002BEjzkjY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/queries/index.rbew6hpkg1.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\queries\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rbew6hpkg1"},{"Name":"integrity","Value":"sha256-h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ\u002BEjzkjY="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/queries/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"61"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ\u002BEjzkjY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/queries/useGetNotes.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\queries\useGetNotes.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"315"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/queries/useGetNotes.xgcthy0whg.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\queries\useGetNotes.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xgcthy0whg"},{"Name":"integrity","Value":"sha256-YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/queries/useGetNotes.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"315"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/queries/useGetUsers.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\queries\useGetUsers.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"315"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/queries/useGetUsers.tre5inkm9p.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\queries\useGetUsers.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tre5inkm9p"},{"Name":"integrity","Value":"sha256-CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/queries/useGetUsers.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"315"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/useMe.5jx4m5rv26.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\useMe.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5jx4m5rv26"},{"Name":"integrity","Value":"sha256-wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/hooks/useMe.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"304"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/hooks/useMe.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\hooks\useMe.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"304"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/index.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"59"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-a\u002B37rifK1wypEmx0YnkZkyVWJDgVz1hO\u002BzjyjGaz9rs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"622"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022a\u002B37rifK1wypEmx0YnkZkyVWJDgVz1hO\u002BzjyjGaz9rs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/index.ofkv4yell3.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ofkv4yell3"},{"Name":"integrity","Value":"sha256-zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/index.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"59"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/index.tm64owktbs.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tm64owktbs"},{"Name":"integrity","Value":"sha256-a\u002B37rifK1wypEmx0YnkZkyVWJDgVz1hO\u002BzjyjGaz9rs="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"622"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022a\u002B37rifK1wypEmx0YnkZkyVWJDgVz1hO\u002BzjyjGaz9rs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/pages/home/index.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\pages\home\index.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"706"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/pages/home/index.vnmsbf5twq.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\pages\home\index.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vnmsbf5twq"},{"Name":"integrity","Value":"sha256-u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/pages/home/index.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"706"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/pages/index.4frxq6t00o.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\pages\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4frxq6t00o"},{"Name":"integrity","Value":"sha256-EAsHmXLLeR0Zv/eH1CO8hwn8J\u002BnJSk/lfBX\u002BnCOVcQk="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/pages/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"49"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022EAsHmXLLeR0Zv/eH1CO8hwn8J\u002BnJSk/lfBX\u002BnCOVcQk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/pages/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\pages\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EAsHmXLLeR0Zv/eH1CO8hwn8J\u002BnJSk/lfBX\u002BnCOVcQk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"49"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022EAsHmXLLeR0Zv/eH1CO8hwn8J\u002BnJSk/lfBX\u002BnCOVcQk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/pages/notes/index.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\pages\notes\index.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4\u002BFu0mwBk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1408"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4\u002BFu0mwBk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/pages/notes/index.pi20fu7r9k.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\pages\notes\index.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pi20fu7r9k"},{"Name":"integrity","Value":"sha256-PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4\u002BFu0mwBk="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/pages/notes/index.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1408"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4\u002BFu0mwBk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/providers/common/index.c5bgmvwgwd.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\providers\common\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c5bgmvwgwd"},{"Name":"integrity","Value":"sha256-cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/providers/common/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"322"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/providers/common/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\providers\common\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"322"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/providers/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\providers\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BhDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"24"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BhDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/providers/index.mpy1bouqvv.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\providers\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mpy1bouqvv"},{"Name":"integrity","Value":"sha256-\u002BhDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/providers/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BhDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/api.bf4ec2dvm8.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\api.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bf4ec2dvm8"},{"Name":"integrity","Value":"sha256-GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/services/api.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"800"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/api.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\api.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"800"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/auth.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\auth.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qJ35\u002BYyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"257"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qJ35\u002BYyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/auth.ogg4yd4xfw.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\auth.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ogg4yd4xfw"},{"Name":"integrity","Value":"sha256-qJ35\u002BYyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/services/auth.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"257"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qJ35\u002BYyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/cookie.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\cookie.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-okSu2pAZ17pT4u0tAfA\u002Bvgu3awuPZ\u002BdOpeteZ6\u002BjUGE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"354"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022okSu2pAZ17pT4u0tAfA\u002Bvgu3awuPZ\u002BdOpeteZ6\u002BjUGE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/cookie.up47d5xzzo.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\cookie.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"up47d5xzzo"},{"Name":"integrity","Value":"sha256-okSu2pAZ17pT4u0tAfA\u002Bvgu3awuPZ\u002BdOpeteZ6\u002BjUGE="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/services/cookie.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"354"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022okSu2pAZ17pT4u0tAfA\u002Bvgu3awuPZ\u002BdOpeteZ6\u002BjUGE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NrOrTEcTod\u002BKkIK\u002B/rj/xrKlzCazzZQh103MINhzeBU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"47"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NrOrTEcTod\u002BKkIK\u002B/rj/xrKlzCazzZQh103MINhzeBU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/services/index.mdal5s5nok.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\services\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mdal5s5nok"},{"Name":"integrity","Value":"sha256-NrOrTEcTod\u002BKkIK\u002B/rj/xrKlzCazzZQh103MINhzeBU="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/services/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NrOrTEcTod\u002BKkIK\u002B/rj/xrKlzCazzZQh103MINhzeBU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/button.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\button.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G7\u002BouyIQ3t\u002BG15V\u002BjUleQmF3Lk8etN41Qar6Jiq2/w0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"178"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022G7\u002BouyIQ3t\u002BG15V\u002BjUleQmF3Lk8etN41Qar6Jiq2/w0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/button.t288uykqrf.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\button.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t288uykqrf"},{"Name":"integrity","Value":"sha256-G7\u002BouyIQ3t\u002BG15V\u002BjUleQmF3Lk8etN41Qar6Jiq2/w0="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/ui/button.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"178"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022G7\u002BouyIQ3t\u002BG15V\u002BjUleQmF3Lk8etN41Qar6Jiq2/w0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/index.behoeyeqpn.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"behoeyeqpn"},{"Name":"integrity","Value":"sha256-E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/ui/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"77"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"77"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/input.ai5pas1g1w.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\input.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ai5pas1g1w"},{"Name":"integrity","Value":"sha256-3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/ui/input.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"185"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u00223s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/input.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\input.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"185"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u00223s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/select.j2fqq8rk7d.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\select.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j2fqq8rk7d"},{"Name":"integrity","Value":"sha256-NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/src/ui/select.jsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"322"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/src/ui/select.jsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\src\ui\select.jsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"322"},{"Name":"Content-Type","Value":"text/jscript"},{"Name":"ETag","Value":"\u0022NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/tailwind.config.huh5wfa74h.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\tailwind.config.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"huh5wfa74h"},{"Name":"integrity","Value":"sha256-mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/tailwind.config.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"186"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/tailwind.config.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\tailwind.config.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"186"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/yarn.lock">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\yarn.lock'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"627809"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AspNetReactPOC/react-app/yarn.xoggddq3ba.lock">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\react-app\yarn.lock'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoggddq3ba"},{"Name":"integrity","Value":"sha256-f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII="},{"Name":"label","Value":"_content/AspNetReactPOC/react-app/yarn.lock"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"627809"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 23:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

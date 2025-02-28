@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AspNetReactPOC</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AspNetReactPOC.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="hero-container">
+            <div class="navigation-link-container">
+                <a href="/">User</a>
+                <a href="/notes">Notes</a>
+            </div>
+        </div>
+        <div id="user-info-container">
+            <p id="user-info" class="username">Loading...</p>
+            <button id="login-btn" style="display:none;" onclick="openLogin()">Login</button>
+            <button id="logout-btn" style="display:none;" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <script>
+        async function checkLogin() {
+            const res = await fetch('/api/users/me');
+            const data = await res.json();
+
+            if (res.ok) {
+                document.getElementById('user-info').innerText = `Welcome, ${data.email}`;
+                document.getElementById('logout-btn').style.display = 'block';
+            } else {
+                document.getElementById('user-info').style.display = 'none';
+                document.getElementById('login-btn').style.display = 'block';
+            }
+        }
+
+        function openLogin() {
+            const email = prompt("Enter Email:");
+            const password = prompt("Enter Password:");
+
+            fetch('/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.message === "Login successful") {
+                    location.reload();
+                } else if (data.message) {
+                    alert(data.message);
+                }
+            });
+        }
+         function logout() {
+            fetch('/api/auth/logout', {
+                method: 'POST',
+            })
+            .then(() => location.reload());
+        }
+
+        checkLogin();
+    </script>
+    @RenderBody()
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
