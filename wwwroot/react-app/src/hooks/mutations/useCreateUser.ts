@@ -6,11 +6,11 @@ export const useCreateUser = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationKey: MUTATION_CREATE_USER,
-    mutationFn: async (payload) => {
-      return await apiRequest('/users', "POST", payload);
+    mutationFn: async (payload: { name: string; email: string }) => {
+      return await apiRequest("/users", "POST", payload);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries(QUERY_GET_USERS);
-    }
+      queryClient.invalidateQueries({ queryKey: QUERY_GET_USERS });
+    },
   });
 };

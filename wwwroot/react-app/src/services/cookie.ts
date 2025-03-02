@@ -4,7 +4,7 @@ export class CookieService {
     return cookies;
   }
 
-  getValue(name) {
+  getValue(name: string) {
     for (let cookie of this.cookies()) {
       const [cookieName, cookieValue] = cookie.split("=");
       if (cookieName === name) {

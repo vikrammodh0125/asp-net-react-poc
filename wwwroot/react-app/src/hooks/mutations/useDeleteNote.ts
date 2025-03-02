@@ -6,11 +6,11 @@ export const useDeleteNote = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationKey: MUTATION_DELETE_NOTE,
-    mutationFn: async (id) => {
+    mutationFn: async (id: string) => {
       return await apiRequest(`/notes/${id}`, "DELETE");
     },
     onSuccess: () => {
-      queryClient.invalidateQueries(QUERY_GET_NOTES);
-    }
+      queryClient.invalidateQueries({ queryKey: QUERY_GET_NOTES });
+    },
   });
 };

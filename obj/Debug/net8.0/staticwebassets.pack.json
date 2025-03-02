@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/AspNetReactPOC.bundle.scp.css",
-      "PackagePath": "staticwebassets/AspNetReactPOC.mjsk6xfqxk.bundle.scp.css"
+      "PackagePath": "staticwebassets/AspNetReactPOC.bundle.scp.css"
     },
     {
       "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/css/site.css",
@@ -171,10 +171,6 @@
     {
       "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/yarn.lock",
       "PackagePath": "staticwebassets/react-app/yarn.lock"
-    },
-    {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AspNetReactPOC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AspNetReactPOC.Microsoft.AspNetCore.StaticWebAssets.props",

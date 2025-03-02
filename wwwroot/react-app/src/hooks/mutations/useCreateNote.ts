@@ -6,11 +6,11 @@ export const useCreateNote = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationKey: MUTATION_CREATE_NOTE,
-    mutationFn: async (payload) => {
-      return await apiRequest('/notes', "POST", payload);
+    mutationFn: async (payload: { content: string }) => {
+      return await apiRequest("/notes", "POST", payload);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries(QUERY_GET_NOTES);
-    }
+      queryClient.invalidateQueries({ queryKey: QUERY_GET_NOTES });
+    },
   });
 };

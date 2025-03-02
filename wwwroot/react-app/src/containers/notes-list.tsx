@@ -1,7 +1,15 @@
+import React from "react";
 import { Button } from "../ui";
 import { useDeleteNote, useEditNote, useMe } from "../hooks";
 
-const NoteRow = ({ note }) => {
+interface NoteRowProps {
+  note: {
+    id: string;
+    description: string;
+  };
+}
+
+const NoteRow: React.FC<NoteRowProps> = ({ note }) => {
   const { isAdmin } = useMe();
   const { mutateAsync: deleteNote } = useDeleteNote();
   const { mutateAsync: editNote } = useEditNote();
@@ -18,9 +26,17 @@ const NoteRow = ({ note }) => {
   };
 
   return (
-    <div className={`web-grid web-gap-2 ${isAdmin ? 'web-grid-cols-3' : 'web-grid-cols-2'}`}>
-      <p className="web-text-center web-items-center web-flex web-justify-center web-py-2">{note.id}</p>
-      <p className="web-text-center web-items-center web-flex web-justify-center web-py-2">{note.description}</p>
+    <div
+      className={`web-grid web-gap-2 ${
+        isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"
+      }`}
+    >
+      <p className="web-text-center web-items-center web-flex web-justify-center web-py-2">
+        {note.id}
+      </p>
+      <p className="web-text-center web-items-center web-flex web-justify-center web-py-2">
+        {note.description}
+      </p>
       {isAdmin && (
         <p className="web-text-center web-items-center web-flex web-justify-center web-py-2 web-space-x-2">
           <Button onClick={handleEdit}>Edit</Button>
@@ -31,18 +47,25 @@ const NoteRow = ({ note }) => {
   );
 };
 
-export const NotesList = ({ notes = [] }) => {
+interface NotesListProps {
+  notes: {
+    id: string;
+    description: string;
+  }[];
+}
+
+export const NotesList: React.FC<NotesListProps> = ({ notes = [] }) => {
   const { isAdmin } = useMe();
 
   return (
     <div className="web-bg-gray-200 web-p-4 web-rounded-md">
-      <div className={`web-grid web-gap-2 ${isAdmin ? 'web-grid-cols-3' : 'web-grid-cols-2'}`}>
-        <p className="web-text-center web-font-bold web-py-2">
-          Id
-        </p>
-        <p className="web-text-center web-font-bold web-py-2">
-          Description
-        </p>
+      <div
+        className={`web-grid web-gap-2 ${
+          isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"
+        }`}
+      >
+        <p className="web-text-center web-font-bold web-py-2">Id</p>
+        <p className="web-text-center web-font-bold web-py-2">Description</p>
         {isAdmin && (
           <p className="web-text-center web-font-bold web-py-2">Actions</p>
         )}

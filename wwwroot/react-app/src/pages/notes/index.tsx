@@ -35,10 +35,12 @@ export const NotesPage = () => {
       {isLoading && <p>Loading...</p>}
       <div className="web-flex-1">
         <NotesList
-          notes={data?.map((note) => ({
-            ...note,
-            description: note.content,
-          }))}
+          notes={
+            data?.map((note) => ({
+              ...note,
+              description: note.content,
+            })) ?? []
+          }
         />
       </div>
     </div>

@@ -1,8 +1,8 @@
 const BASE_URL = "/api"; // Adjust based on your backend API
 
-export const apiRequest = async (endpoint, method = "GET", body = null) => {
+export const apiRequest = async <T, R>(endpoint: string, method = "GET", body?: T) => {
   try {
-    const options = {
+    const options: RequestInit = {
       method,
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export const apiRequest = async (endpoint, method = "GET", body = null) => {
       throw new Error(data.message || "Something went wrong");
     }
 
-    return data;
+    return data as R;
   } catch (error) {
     console.error(`API Error (${method} ${endpoint}):`, error);
     throw error;

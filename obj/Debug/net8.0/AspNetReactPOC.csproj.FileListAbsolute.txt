@@ -85,7 +85,6 @@
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/appsettings.Development.json
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/appsettings.json
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/AspNetReactPOC.staticwebassets.runtime.json
-/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/AspNetReactPOC.staticwebassets.endpoints.json
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/AspNetReactPOC
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/AspNetReactPOC.deps.json
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/bin/Debug/net8.0/AspNetReactPOC.runtimeconfig.json
@@ -112,9 +111,7 @@
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/AspNetReactPOC.bundle.scp.css
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets.build.json
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets.development.json
-/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets/msbuild.AspNetReactPOC.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets/msbuild.AspNetReactPOC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets/msbuild.build.AspNetReactPOC.props
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.AspNetReactPOC.props
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.AspNetReactPOC.props
@@ -125,3 +122,4 @@
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/AspNetReactPOC.pdb
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/AspNetReactPOC.genruntimeconfig.cache
 /Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/ref/AspNetReactPOC.dll
+/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/AspNetReactPOC.sourcelink.json

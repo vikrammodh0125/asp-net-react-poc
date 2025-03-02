@@ -2485,14 +2485,14 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"gdX9w":[function(require,module,exports,__globalThis) {
+},{}],"hfrIi":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "04a4e647b48dc800";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "8d33562bc6aacf38";
+module.bundle.HMR_BUNDLE_ID = "e863f61503ab8451";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2938,11 +2938,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"8XoxR":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$78a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"bdy5I":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$41e3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$78a6.prelude(module);
+$parcel$ReactRefreshHelpers$41e3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2959,12 +2959,12 @@ const pages = [
         container: "#home-page",
         component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _providers.BaseProvider), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pages.HomePage), {}, void 0, false, {
-                fileName: "src/index.js",
+                fileName: "src/index.tsx",
                 lineNumber: 12,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
-            fileName: "src/index.js",
+            fileName: "src/index.tsx",
             lineNumber: 11,
             columnNumber: 7
         }, undefined)
@@ -2973,12 +2973,12 @@ const pages = [
         container: "#notes-page",
         component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _providers.BaseProvider), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pages.NotesPage), {}, void 0, false, {
-                fileName: "src/index.js",
+                fileName: "src/index.tsx",
                 lineNumber: 20,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
-            fileName: "src/index.js",
+            fileName: "src/index.tsx",
             lineNumber: 19,
             columnNumber: 7
         }, undefined)
@@ -2989,12 +2989,12 @@ pages.forEach((page)=>{
     if (element) (0, _clientDefault.default).createRoot(element).render(page.component);
 });
 
-  $parcel$ReactRefreshHelpers$78a6.postlude(module);
+  $parcel$ReactRefreshHelpers$41e3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","react-dom/client":"1jvyu","./pages":"8bGd1","./index.css":"idoe5","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","./providers":"bX8ye"}],"227mq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","react-dom/client":"1jvyu","./pages":"eNRav","./index.css":"idoe5","./providers":"4WvB3","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"227mq":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -18589,7 +18589,7 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"8sXGL"}],"8bGd1":[function(require,module,exports,__globalThis) {
+},{"6f0162e9ab224cd4":"8sXGL"}],"eNRav":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _home = require("./home");
@@ -18597,11 +18597,11 @@ parcelHelpers.exportAll(_home, exports);
 var _notes = require("./notes");
 parcelHelpers.exportAll(_notes, exports);
 
-},{"./home":"k3T1K","./notes":"e6d4z","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"k3T1K":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$6ae8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./home":"fVu9H","./notes":"jpm3u","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"fVu9H":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$f43e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6ae8.prelude(module);
+$parcel$ReactRefreshHelpers$f43e.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -18622,12 +18622,12 @@ const HomePage = ()=>{
             className: "web-text-2xl",
             children: "Please login to access this page"
         }, void 0, false, {
-            fileName: "src/pages/home/index.jsx",
+            fileName: "src/pages/home/index.tsx",
             lineNumber: 11,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
-        fileName: "src/pages/home/index.jsx",
+        fileName: "src/pages/home/index.tsx",
         lineNumber: 10,
         columnNumber: 7
     }, undefined);
@@ -18637,23 +18637,23 @@ const HomePage = ()=>{
             isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "web-col-span-3 web-flex-1 web-flex",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.UserCreate), {}, void 0, false, {
-                    fileName: "src/pages/home/index.jsx",
+                    fileName: "src/pages/home/index.tsx",
                     lineNumber: 20,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/pages/home/index.jsx",
+                fileName: "src/pages/home/index.tsx",
                 lineNumber: 19,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.UserSearch), {}, void 0, false, {
-                fileName: "src/pages/home/index.jsx",
+                fileName: "src/pages/home/index.tsx",
                 lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/pages/home/index.jsx",
+        fileName: "src/pages/home/index.tsx",
         lineNumber: 17,
         columnNumber: 5
     }, undefined);
@@ -18667,12 +18667,12 @@ _c = HomePage;
 var _c;
 $RefreshReg$(_c, "HomePage");
 
-  $parcel$ReactRefreshHelpers$6ae8.postlude(module);
+  $parcel$ReactRefreshHelpers$f43e.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../containers":"4fQWp","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","../../hooks/useMe":"hKjXV"}],"4fQWp":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../containers":"cEPKa","../../hooks/useMe":"ewF7W","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"cEPKa":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _userCreate = require("./user-create");
@@ -18682,17 +18682,19 @@ parcelHelpers.exportAll(_userSearch, exports);
 var _notesList = require("./notes-list");
 parcelHelpers.exportAll(_notesList, exports);
 
-},{"./user-create":"e8vA6","./user-search":"j8gDh","./notes-list":"6jG0Q","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"e8vA6":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$d17f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./user-create":"cFNfi","./user-search":"3TU19","./notes-list":"7DnZ4","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"cFNfi":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e0f4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d17f.prelude(module);
+$parcel$ReactRefreshHelpers$e0f4.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "UserCreate", ()=>UserCreate);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _formik = require("formik");
 var _ui = require("../ui");
 var _hooks = require("../hooks");
@@ -18705,22 +18707,22 @@ const FormField = ({ label, children })=>{
                 className: "web-font-medium",
                 children: label
             }, void 0, false, {
-                fileName: "src/containers/user-create.jsx",
-                lineNumber: 8,
+                fileName: "src/containers/user-create.tsx",
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "web-col-span-2",
                 children: children
             }, void 0, false, {
-                fileName: "src/containers/user-create.jsx",
-                lineNumber: 9,
+                fileName: "src/containers/user-create.tsx",
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/containers/user-create.jsx",
-        lineNumber: 7,
+        fileName: "src/containers/user-create.tsx",
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
@@ -18765,8 +18767,8 @@ const UserCreate = ()=>{
                 className: "web-font-semibold web-text-2xl",
                 children: "Create User"
             }, void 0, false, {
-                fileName: "src/containers/user-create.jsx",
-                lineNumber: 53,
+                fileName: "src/containers/user-create.tsx",
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18783,13 +18785,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "name"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 57,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 56,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18801,13 +18803,13 @@ const UserCreate = ()=>{
                                     name: "email",
                                     type: "email"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 65,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 64,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18819,13 +18821,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "dob"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 74,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 73,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18836,13 +18838,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "code"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 83,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 82,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18853,13 +18855,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "ssn"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 91,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 92,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 90,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18884,19 +18886,19 @@ const UserCreate = ()=>{
                                         }
                                     ]
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 99,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 100,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 98,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/containers/user-create.jsx",
-                        lineNumber: 55,
+                        fileName: "src/containers/user-create.tsx",
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18910,13 +18912,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "streetAddress"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 123,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 122,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18927,13 +18929,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "unit"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 131,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 130,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 131,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18944,13 +18946,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "city"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 139,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 140,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 138,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 139,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18961,13 +18963,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "state"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 147,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 146,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 147,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18978,13 +18980,13 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "zipcode"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 155,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 156,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 154,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 155,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18995,38 +18997,38 @@ const UserCreate = ()=>{
                                     onChange: handleChange,
                                     name: "country"
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-create.jsx",
-                                    lineNumber: 163,
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 164,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/containers/user-create.jsx",
-                                lineNumber: 162,
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/containers/user-create.jsx",
-                        lineNumber: 121,
+                        fileName: "src/containers/user-create.tsx",
+                        lineNumber: 122,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/containers/user-create.jsx",
-                lineNumber: 54,
+                fileName: "src/containers/user-create.tsx",
+                lineNumber: 55,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
                 children: "Save"
             }, void 0, false, {
-                fileName: "src/containers/user-create.jsx",
-                lineNumber: 173,
+                fileName: "src/containers/user-create.tsx",
+                lineNumber: 174,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/containers/user-create.jsx",
-        lineNumber: 49,
+        fileName: "src/containers/user-create.tsx",
+        lineNumber: 50,
         columnNumber: 5
     }, undefined);
 };
@@ -19041,12 +19043,12 @@ var _c, _c1;
 $RefreshReg$(_c, "FormField");
 $RefreshReg$(_c1, "UserCreate");
 
-  $parcel$ReactRefreshHelpers$d17f.postlude(module);
+  $parcel$ReactRefreshHelpers$e0f4.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","formik":"6qx63","../ui":"emHSK","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","../hooks":"i5orw"}],"6qx63":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","formik":"6qx63","../ui":"gkHWQ","../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL"}],"6qx63":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ErrorMessage", ()=>ErrorMessage);
@@ -23986,7 +23988,7 @@ module.exports = require("2255125a8e8b1051");
     exports.typeOf = typeOf;
 })();
 
-},{}],"emHSK":[function(require,module,exports,__globalThis) {
+},{}],"gkHWQ":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _input = require("./input");
@@ -23996,24 +23998,26 @@ parcelHelpers.exportAll(_select, exports);
 var _button = require("./button");
 parcelHelpers.exportAll(_button, exports);
 
-},{"./input":"lYkN6","./select":"9yQyZ","./button":"nIpMJ","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"lYkN6":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$ecff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./input":"dVZKe","./select":"52Im3","./button":"4mazE","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"dVZKe":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$cbe1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ecff.prelude(module);
+$parcel$ReactRefreshHelpers$cbe1.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Input", ()=>Input);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const Input = ({ ...rest })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
         ...rest,
         className: "web-outline-none web-px-2 web-py-1 web-border-2 web-rounded-md web-w-full"
     }, void 0, false, {
-        fileName: "src/ui/input.jsx",
-        lineNumber: 3,
+        fileName: "src/ui/input.tsx",
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
@@ -24021,12 +24025,12 @@ _c = Input;
 var _c;
 $RefreshReg$(_c, "Input");
 
-  $parcel$ReactRefreshHelpers$ecff.postlude(module);
+  $parcel$ReactRefreshHelpers$cbe1.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"ip5jZ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL"}],"ip5jZ":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 var { version } = require("630b62916b1ae0e7");
@@ -24616,17 +24620,19 @@ module.exports = require("9e039173d01172ab");
 },{}],"kB3OO":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"9yQyZ":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$bf70 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"52Im3":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$be18 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bf70.prelude(module);
+$parcel$ReactRefreshHelpers$be18.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Select", ()=>Select);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const Select = ({ data })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
         className: "web-outline-none web-px-2 web-py-1 web-border-2 web-rounded-md web-w-full",
@@ -24635,13 +24641,13 @@ const Select = ({ data })=>{
                 disabled: element.disabled,
                 children: element.label
             }, void 0, false, {
-                fileName: "src/ui/select.jsx",
-                lineNumber: 5,
+                fileName: "src/ui/select.tsx",
+                lineNumber: 14,
                 columnNumber: 9
             }, undefined))
     }, void 0, false, {
-        fileName: "src/ui/select.jsx",
-        lineNumber: 3,
+        fileName: "src/ui/select.tsx",
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -24649,43 +24655,45 @@ _c = Select;
 var _c;
 $RefreshReg$(_c, "Select");
 
-  $parcel$ReactRefreshHelpers$bf70.postlude(module);
+  $parcel$ReactRefreshHelpers$be18.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"nIpMJ":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$8044 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"227mq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL"}],"4mazE":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8d5a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8044.prelude(module);
+$parcel$ReactRefreshHelpers$8d5a.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Button", ()=>Button);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const Button = ({ children, ...rest })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
         className: "web-bg-blue-600 web-py-2 web-text-white web-rounded-md web-px-4",
         ...rest,
         children: children
     }, void 0, false, {
-        fileName: "src/ui/button.jsx",
-        lineNumber: 2,
-        columnNumber: 10
+        fileName: "src/ui/button.tsx",
+        lineNumber: 13,
+        columnNumber: 5
     }, undefined);
 };
 _c = Button;
 var _c;
 $RefreshReg$(_c, "Button");
 
-  $parcel$ReactRefreshHelpers$8044.postlude(module);
+  $parcel$ReactRefreshHelpers$8d5a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"i5orw":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"hpGpu":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useMe = require("./useMe");
@@ -24695,11 +24703,11 @@ parcelHelpers.exportAll(_queries, exports);
 var _mutations = require("./mutations");
 parcelHelpers.exportAll(_mutations, exports);
 
-},{"./useMe":"hKjXV","./queries":"grAyS","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","./mutations":"12eD2"}],"hKjXV":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$8d95 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./useMe":"ewF7W","./queries":"agENq","./mutations":"2EoGS","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"ewF7W":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$6c79 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8d95.prelude(module);
+$parcel$ReactRefreshHelpers$6c79.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -24707,9 +24715,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useMe", ()=>useMe);
 var _react = require("react");
 var _services = require("../services");
-var _s = $RefreshSig$();
 const useMe = ()=>{
-    _s();
     const authService = (0, _react.useMemo)(()=>new (0, _services.AuthService)(), []);
     const user = authService.getUser();
     return {
@@ -24718,14 +24724,13 @@ const useMe = ()=>{
         isAdmin: user.role === 'admin'
     };
 };
-_s(useMe, "fcbURBbcoPeimjzfZu16fdfZ8kc=");
 
-  $parcel$ReactRefreshHelpers$8d95.postlude(module);
+  $parcel$ReactRefreshHelpers$6c79.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"8sXGL","../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"icqz2":[function(require,module,exports,__globalThis) {
+},{"react":"8sXGL","../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"kSaNT":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _auth = require("./auth");
@@ -24733,7 +24738,7 @@ parcelHelpers.exportAll(_auth, exports);
 var _api = require("./api");
 parcelHelpers.exportAll(_api, exports);
 
-},{"./auth":"dDbOj","./api":"3wZdP","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"dDbOj":[function(require,module,exports,__globalThis) {
+},{"./auth":"5PAYy","./api":"aAVER","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"5PAYy":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AuthService", ()=>AuthService);
@@ -24749,7 +24754,7 @@ class AuthService {
     }
 }
 
-},{"./cookie":"5y0V7","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"5y0V7":[function(require,module,exports,__globalThis) {
+},{"./cookie":"jwTMo","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"jwTMo":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CookieService", ()=>CookieService);
@@ -24767,12 +24772,12 @@ class CookieService {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"3wZdP":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"aAVER":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "apiRequest", ()=>apiRequest);
 const BASE_URL = "/api"; // Adjust based on your backend API
-const apiRequest = async (endpoint, method = "GET", body = null)=>{
+const apiRequest = async (endpoint, method = "GET", body)=>{
     try {
         const options = {
             method,
@@ -24793,7 +24798,7 @@ const apiRequest = async (endpoint, method = "GET", body = null)=>{
     }
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"grAyS":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"agENq":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useGetUsers = require("./useGetUsers");
@@ -24801,16 +24806,14 @@ parcelHelpers.exportAll(_useGetUsers, exports);
 var _useGetNotes = require("./useGetNotes");
 parcelHelpers.exportAll(_useGetNotes, exports);
 
-},{"./useGetUsers":"jE5Hi","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","./useGetNotes":"iZXtX"}],"jE5Hi":[function(require,module,exports,__globalThis) {
+},{"./useGetUsers":"ldv7L","./useGetNotes":"050OR","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"ldv7L":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useGetUsers", ()=>useGetUsers);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-var _s = $RefreshSig$();
 const useGetUsers = ()=>{
-    _s();
     return (0, _reactQuery.useQuery)({
         queryKey: (0, _constants.QUERY_GET_USERS),
         queryFn: async ()=>{
@@ -24818,13 +24821,8 @@ const useGetUsers = ()=>{
         }
     });
 };
-_s(useGetUsers, "4ZpngI1uv+Uo3WQHEZmTQ5FNM+k=", false, function() {
-    return [
-        (0, _reactQuery.useQuery)
-    ];
-});
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"4iESK","../../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"f0Z0I":[function(require,module,exports,__globalThis) {
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"f0Z0I":[function(require,module,exports,__globalThis) {
 // src/index.ts
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -27981,7 +27979,7 @@ function useMutation(options, queryClient) {
     };
 }
 
-},{"react":"8sXGL","@tanstack/query-core":"5XmIt","./QueryClientProvider.js":"bA1on","./utils.js":"cYdTs","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"4iESK":[function(require,module,exports,__globalThis) {
+},{"react":"8sXGL","@tanstack/query-core":"5XmIt","./QueryClientProvider.js":"bA1on","./utils.js":"cYdTs","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"CZE1P":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "QUERY_GET_USERS", ()=>QUERY_GET_USERS);
@@ -28015,16 +28013,14 @@ const MUTATION_EDIT_NOTE = [
     'MUTATION_EDIT_NOTE'
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"iZXtX":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"050OR":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useGetNotes", ()=>useGetNotes);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-var _s = $RefreshSig$();
 const useGetNotes = ()=>{
-    _s();
     return (0, _reactQuery.useQuery)({
         queryKey: (0, _constants.QUERY_GET_NOTES),
         queryFn: async ()=>{
@@ -28032,13 +28028,8 @@ const useGetNotes = ()=>{
         }
     });
 };
-_s(useGetNotes, "4ZpngI1uv+Uo3WQHEZmTQ5FNM+k=", false, function() {
-    return [
-        (0, _reactQuery.useQuery)
-    ];
-});
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"4iESK","../../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"12eD2":[function(require,module,exports,__globalThis) {
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"2EoGS":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useDeleteNote = require("./useDeleteNote");
@@ -28050,16 +28041,14 @@ parcelHelpers.exportAll(_useEditNote, exports);
 var _useCreateUser = require("./useCreateUser");
 parcelHelpers.exportAll(_useCreateUser, exports);
 
-},{"./useDeleteNote":"fsrQj","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","./useCreateNote":"jRJPs","./useEditNote":"dQBAt","./useCreateUser":"u6ITw"}],"fsrQj":[function(require,module,exports,__globalThis) {
+},{"./useDeleteNote":"fjzJL","./useCreateNote":"1iT8O","./useEditNote":"2ALhB","./useCreateUser":"lEn8X","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"fjzJL":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useDeleteNote", ()=>useDeleteNote);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-var _s = $RefreshSig$();
 const useDeleteNote = ()=>{
-    _s();
     const queryClient = (0, _reactQuery.useQueryClient)();
     return (0, _reactQuery.useMutation)({
         mutationKey: (0, _constants.MUTATION_DELETE_NOTE),
@@ -28067,55 +28056,43 @@ const useDeleteNote = ()=>{
             return await (0, _services.apiRequest)(`/notes/${id}`, "DELETE");
         },
         onSuccess: ()=>{
-            queryClient.invalidateQueries((0, _constants.QUERY_GET_NOTES));
+            queryClient.invalidateQueries({
+                queryKey: (0, _constants.QUERY_GET_NOTES)
+            });
         }
     });
 };
-_s(useDeleteNote, "YK0wzM21ECnncaq5SECwU+/SVdQ=", false, function() {
-    return [
-        (0, _reactQuery.useQueryClient),
-        (0, _reactQuery.useMutation)
-    ];
-});
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"4iESK","../../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"jRJPs":[function(require,module,exports,__globalThis) {
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"1iT8O":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useCreateNote", ()=>useCreateNote);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-var _s = $RefreshSig$();
 const useCreateNote = ()=>{
-    _s();
     const queryClient = (0, _reactQuery.useQueryClient)();
     return (0, _reactQuery.useMutation)({
         mutationKey: (0, _constants.MUTATION_CREATE_NOTE),
         mutationFn: async (payload)=>{
-            return await (0, _services.apiRequest)('/notes', "POST", payload);
+            return await (0, _services.apiRequest)("/notes", "POST", payload);
         },
         onSuccess: ()=>{
-            queryClient.invalidateQueries((0, _constants.QUERY_GET_NOTES));
+            queryClient.invalidateQueries({
+                queryKey: (0, _constants.QUERY_GET_NOTES)
+            });
         }
     });
 };
-_s(useCreateNote, "YK0wzM21ECnncaq5SECwU+/SVdQ=", false, function() {
-    return [
-        (0, _reactQuery.useQueryClient),
-        (0, _reactQuery.useMutation)
-    ];
-});
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"4iESK","../../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"dQBAt":[function(require,module,exports,__globalThis) {
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"2ALhB":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useEditNote", ()=>useEditNote);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-var _s = $RefreshSig$();
 const useEditNote = ()=>{
-    _s();
     const queryClient = (0, _reactQuery.useQueryClient)();
     return (0, _reactQuery.useMutation)({
         mutationKey: (0, _constants.MUTATION_EDIT_NOTE),
@@ -28123,50 +28100,40 @@ const useEditNote = ()=>{
             return await (0, _services.apiRequest)(`/notes/${payload.id}`, "PUT", payload);
         },
         onSuccess: ()=>{
-            queryClient.invalidateQueries((0, _constants.QUERY_GET_NOTES));
+            queryClient.invalidateQueries({
+                queryKey: (0, _constants.QUERY_GET_NOTES)
+            });
         }
     });
 };
-_s(useEditNote, "YK0wzM21ECnncaq5SECwU+/SVdQ=", false, function() {
-    return [
-        (0, _reactQuery.useQueryClient),
-        (0, _reactQuery.useMutation)
-    ];
-});
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"4iESK","../../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"u6ITw":[function(require,module,exports,__globalThis) {
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"lEn8X":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useCreateUser", ()=>useCreateUser);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-var _s = $RefreshSig$();
 const useCreateUser = ()=>{
-    _s();
     const queryClient = (0, _reactQuery.useQueryClient)();
     return (0, _reactQuery.useMutation)({
         mutationKey: (0, _constants.MUTATION_CREATE_USER),
         mutationFn: async (payload)=>{
-            return await (0, _services.apiRequest)('/users', "POST", payload);
+            return await (0, _services.apiRequest)("/users", "POST", payload);
         },
         onSuccess: ()=>{
-            queryClient.invalidateQueries((0, _constants.QUERY_GET_USERS));
+            queryClient.invalidateQueries({
+                queryKey: (0, _constants.QUERY_GET_USERS)
+            });
         }
     });
 };
-_s(useCreateUser, "YK0wzM21ECnncaq5SECwU+/SVdQ=", false, function() {
-    return [
-        (0, _reactQuery.useQueryClient),
-        (0, _reactQuery.useMutation)
-    ];
-});
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"4iESK","../../services":"icqz2","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"j8gDh":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$0603 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"3TU19":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4bfc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0603.prelude(module);
+$parcel$ReactRefreshHelpers$4bfc.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28174,6 +28141,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "UserSearch", ()=>UserSearch);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _ui = require("../ui");
 var _queries = require("../hooks/queries");
 var _s = $RefreshSig$();
@@ -28199,8 +28167,8 @@ const UserSearch = ()=>{
                 className: "web-font-semibold web-text-2xl",
                 children: "Search User"
             }, void 0, false, {
-                fileName: "src/containers/user-search.jsx",
-                lineNumber: 23,
+                fileName: "src/containers/user-search.tsx",
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
@@ -28208,15 +28176,15 @@ const UserSearch = ()=>{
                 value: search,
                 onChange: (e)=>setSearch(e.target.value)
             }, void 0, false, {
-                fileName: "src/containers/user-search.jsx",
-                lineNumber: 24,
+                fileName: "src/containers/user-search.tsx",
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Loading..."
             }, void 0, false, {
-                fileName: "src/containers/user-search.jsx",
-                lineNumber: 26,
+                fileName: "src/containers/user-search.tsx",
+                lineNumber: 35,
                 columnNumber: 21
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28230,13 +28198,13 @@ const UserSearch = ()=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "ID"
                                     }, void 0, false, {
-                                        fileName: "src/containers/user-search.jsx",
-                                        lineNumber: 32,
+                                        fileName: "src/containers/user-search.tsx",
+                                        lineNumber: 41,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-search.jsx",
-                                    lineNumber: 31,
+                                    fileName: "src/containers/user-search.tsx",
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -28244,19 +28212,19 @@ const UserSearch = ()=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Name"
                                     }, void 0, false, {
-                                        fileName: "src/containers/user-search.jsx",
-                                        lineNumber: 35,
+                                        fileName: "src/containers/user-search.tsx",
+                                        lineNumber: 44,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
-                                    fileName: "src/containers/user-search.jsx",
-                                    lineNumber: 34,
+                                    fileName: "src/containers/user-search.tsx",
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/containers/user-search.jsx",
-                            lineNumber: 30,
+                            fileName: "src/containers/user-search.tsx",
+                            lineNumber: 39,
                             columnNumber: 11
                         }, undefined),
                         (searchResults.length > 0 ? searchResults : results)?.map((el, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
@@ -28266,50 +28234,50 @@ const UserSearch = ()=>{
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: el.id
                                         }, void 0, false, {
-                                            fileName: "src/containers/user-search.jsx",
-                                            lineNumber: 41,
-                                            columnNumber: 17
+                                            fileName: "src/containers/user-search.tsx",
+                                            lineNumber: 51,
+                                            columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/containers/user-search.jsx",
-                                        lineNumber: 40,
-                                        columnNumber: 15
+                                        fileName: "src/containers/user-search.tsx",
+                                        lineNumber: 50,
+                                        columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         className: "web-w-1/2 web-px-4 web-py-3",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: el.name
                                         }, void 0, false, {
-                                            fileName: "src/containers/user-search.jsx",
-                                            lineNumber: 44,
-                                            columnNumber: 17
+                                            fileName: "src/containers/user-search.tsx",
+                                            lineNumber: 54,
+                                            columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/containers/user-search.jsx",
-                                        lineNumber: 43,
-                                        columnNumber: 15
+                                        fileName: "src/containers/user-search.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 17
                                     }, undefined)
                                 ]
                             }, index, true, {
-                                fileName: "src/containers/user-search.jsx",
-                                lineNumber: 39,
-                                columnNumber: 13
+                                fileName: "src/containers/user-search.tsx",
+                                lineNumber: 49,
+                                columnNumber: 15
                             }, undefined))
                     ]
                 }, void 0, true, {
-                    fileName: "src/containers/user-search.jsx",
-                    lineNumber: 29,
+                    fileName: "src/containers/user-search.tsx",
+                    lineNumber: 38,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/containers/user-search.jsx",
-                lineNumber: 28,
+                fileName: "src/containers/user-search.tsx",
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/containers/user-search.jsx",
-        lineNumber: 22,
+        fileName: "src/containers/user-search.tsx",
+        lineNumber: 27,
         columnNumber: 5
     }, undefined);
 };
@@ -28322,22 +28290,24 @@ _c = UserSearch;
 var _c;
 $RefreshReg$(_c, "UserSearch");
 
-  $parcel$ReactRefreshHelpers$0603.postlude(module);
+  $parcel$ReactRefreshHelpers$4bfc.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../ui":"emHSK","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","../hooks/queries":"grAyS"}],"6jG0Q":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$84c4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../ui":"gkHWQ","../hooks/queries":"agENq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"7DnZ4":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$03c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$84c4.prelude(module);
+$parcel$ReactRefreshHelpers$03c3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "NotesList", ()=>NotesList);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _ui = require("../ui");
 var _hooks = require("../hooks");
 var _s = $RefreshSig$(), _s1 = $RefreshSig$();
@@ -28357,22 +28327,22 @@ const NoteRow = ({ note })=>{
         });
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: `web-grid web-gap-2 ${isAdmin ? 'web-grid-cols-3' : 'web-grid-cols-2'}`,
+        className: `web-grid web-gap-2 ${isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"}`,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "web-text-center web-items-center web-flex web-justify-center web-py-2",
                 children: note.id
             }, void 0, false, {
-                fileName: "src/containers/notes-list.jsx",
-                lineNumber: 22,
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "web-text-center web-items-center web-flex web-justify-center web-py-2",
                 children: note.description
             }, void 0, false, {
-                fileName: "src/containers/notes-list.jsx",
-                lineNumber: 23,
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28382,28 +28352,28 @@ const NoteRow = ({ note })=>{
                         onClick: handleEdit,
                         children: "Edit"
                     }, void 0, false, {
-                        fileName: "src/containers/notes-list.jsx",
-                        lineNumber: 26,
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 42,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
                         onClick: handleDelete,
                         children: "Remove"
                     }, void 0, false, {
-                        fileName: "src/containers/notes-list.jsx",
-                        lineNumber: 27,
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 43,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/containers/notes-list.jsx",
-                lineNumber: 25,
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 41,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/containers/notes-list.jsx",
-        lineNumber: 21,
+        fileName: "src/containers/notes-list.tsx",
+        lineNumber: 29,
         columnNumber: 5
     }, undefined);
 };
@@ -28422,55 +28392,55 @@ const NotesList = ({ notes = [] })=>{
         className: "web-bg-gray-200 web-p-4 web-rounded-md",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `web-grid web-gap-2 ${isAdmin ? 'web-grid-cols-3' : 'web-grid-cols-2'}`,
+                className: `web-grid web-gap-2 ${isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"}`,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "web-text-center web-font-bold web-py-2",
                         children: "Id"
                     }, void 0, false, {
-                        fileName: "src/containers/notes-list.jsx",
-                        lineNumber: 40,
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 67,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "web-text-center web-font-bold web-py-2",
                         children: "Description"
                     }, void 0, false, {
-                        fileName: "src/containers/notes-list.jsx",
-                        lineNumber: 43,
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 68,
                         columnNumber: 9
                     }, undefined),
                     isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "web-text-center web-font-bold web-py-2",
                         children: "Actions"
                     }, void 0, false, {
-                        fileName: "src/containers/notes-list.jsx",
-                        lineNumber: 47,
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 70,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/containers/notes-list.jsx",
-                lineNumber: 39,
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: notes.map((note)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NoteRow, {
                         note: note
                     }, note.id, false, {
-                        fileName: "src/containers/notes-list.jsx",
-                        lineNumber: 52,
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 75,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
-                fileName: "src/containers/notes-list.jsx",
-                lineNumber: 50,
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/containers/notes-list.jsx",
-        lineNumber: 38,
+        fileName: "src/containers/notes-list.tsx",
+        lineNumber: 61,
         columnNumber: 5
     }, undefined);
 };
@@ -28484,16 +28454,16 @@ var _c, _c1;
 $RefreshReg$(_c, "NoteRow");
 $RefreshReg$(_c1, "NotesList");
 
-  $parcel$ReactRefreshHelpers$84c4.postlude(module);
+  $parcel$ReactRefreshHelpers$03c3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","../ui":"emHSK","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","../hooks":"i5orw"}],"e6d4z":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$24af = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"227mq","../ui":"gkHWQ","../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL"}],"jpm3u":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$5a68 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$24af.prelude(module);
+$parcel$ReactRefreshHelpers$5a68.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28525,12 +28495,12 @@ const NotesPage = ()=>{
             className: "web-text-2xl",
             children: "Please login to access this page"
         }, void 0, false, {
-            fileName: "src/pages/notes/index.jsx",
+            fileName: "src/pages/notes/index.tsx",
             lineNumber: 23,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
-        fileName: "src/pages/notes/index.jsx",
+        fileName: "src/pages/notes/index.tsx",
         lineNumber: 22,
         columnNumber: 7
     }, undefined);
@@ -28544,7 +28514,7 @@ const NotesPage = ()=>{
                         className: "web-text-xl web-font-bold",
                         children: "Notes"
                     }, void 0, false, {
-                        fileName: "src/pages/notes/index.jsx",
+                        fileName: "src/pages/notes/index.tsx",
                         lineNumber: 31,
                         columnNumber: 9
                     }, undefined),
@@ -28552,20 +28522,20 @@ const NotesPage = ()=>{
                         onClick: handleCreateNote,
                         children: "Add New"
                     }, void 0, false, {
-                        fileName: "src/pages/notes/index.jsx",
+                        fileName: "src/pages/notes/index.tsx",
                         lineNumber: 32,
                         columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/pages/notes/index.jsx",
+                fileName: "src/pages/notes/index.tsx",
                 lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Loading..."
             }, void 0, false, {
-                fileName: "src/pages/notes/index.jsx",
+                fileName: "src/pages/notes/index.tsx",
                 lineNumber: 35,
                 columnNumber: 21
             }, undefined),
@@ -28575,20 +28545,20 @@ const NotesPage = ()=>{
                     notes: data?.map((note)=>({
                             ...note,
                             description: note.content
-                        }))
+                        })) ?? []
                 }, void 0, false, {
-                    fileName: "src/pages/notes/index.jsx",
+                    fileName: "src/pages/notes/index.tsx",
                     lineNumber: 37,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/pages/notes/index.jsx",
+                fileName: "src/pages/notes/index.tsx",
                 lineNumber: 36,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/pages/notes/index.jsx",
+        fileName: "src/pages/notes/index.tsx",
         lineNumber: 29,
         columnNumber: 5
     }, undefined);
@@ -28604,22 +28574,22 @@ _c = NotesPage;
 var _c;
 $RefreshReg$(_c, "NotesPage");
 
-  $parcel$ReactRefreshHelpers$24af.postlude(module);
+  $parcel$ReactRefreshHelpers$5a68.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../ui":"emHSK","../../containers":"4fQWp","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","../../hooks/useMe":"hKjXV","../../hooks/queries":"grAyS","../../hooks":"i5orw"}],"idoe5":[function() {},{}],"bX8ye":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../ui":"gkHWQ","../../containers":"cEPKa","../../hooks/useMe":"ewF7W","../../hooks/queries":"agENq","../../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"idoe5":[function() {},{}],"4WvB3":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _common = require("./common");
 parcelHelpers.exportAll(_common, exports);
 
-},{"./common":"asONt","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"asONt":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$e258 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./common":"9yxR7","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"9yxR7":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$49fa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e258.prelude(module);
+$parcel$ReactRefreshHelpers$49fa.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28631,25 +28601,23 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactQuery = require("@tanstack/react-query");
 const queryClient = new (0, _reactQuery.QueryClient)();
 const BaseProvider = ({ children })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactQuery.QueryClientProvider), {
-            client: queryClient,
-            children: children
-        }, void 0, false, {
-            fileName: "src/providers/common/index.js",
-            lineNumber: 9,
-            columnNumber: 8
-        }, undefined)
-    }, void 0, false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactQuery.QueryClientProvider), {
+        client: queryClient,
+        children: children
+    }, void 0, false, {
+        fileName: "src/providers/common/index.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
 };
 _c = BaseProvider;
 var _c;
 $RefreshReg$(_c, "BaseProvider");
 
-  $parcel$ReactRefreshHelpers$e258.postlude(module);
+  $parcel$ReactRefreshHelpers$49fa.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@tanstack/react-query":"f0Z0I","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}]},["kFUzY","gdX9w","8XoxR"], "8XoxR", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@tanstack/react-query":"f0Z0I","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}]},["kFUzY","hfrIi","bdy5I"], "bdy5I", "parcelRequire94c2")
 
