@@ -22,10 +22,18 @@ export const HomePage = () => {
     const notes = notesRef.current?.transactions ?? [];
 
     if (users.length || notes.length) {
-      mutate({
-        notes,
-        users,
-      });
+      mutate(
+        {
+          notes,
+          users,
+        },
+        {
+          onSuccess: () => {
+            userListRef.current?.clear();
+            notesRef.current?.clear()
+          },
+        }
+      );
     }
   };
 

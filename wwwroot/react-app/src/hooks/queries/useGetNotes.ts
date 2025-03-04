@@ -6,7 +6,7 @@ export const useGetNotes = () => {
   return useQuery({
     queryKey: QUERY_GET_NOTES,
     queryFn: async () => {
-      return await apiRequest<void,{id: string; content: string}[]>("/user-management/notes");
+      return await apiRequest<void,{id?: string; content: string}[]>("/user-management/notes");
     },
   })
 };

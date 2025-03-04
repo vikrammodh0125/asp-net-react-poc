@@ -71,6 +71,7 @@ interface UserListProps {
 
 export interface UserListRef {
   transactions: BulkUpsertItem<User>[];
+  clear: () => void;
 }
 
 export const UserList = React.forwardRef<UserListRef, UserListProps>(
@@ -86,6 +87,7 @@ export const UserList = React.forwardRef<UserListRef, UserListProps>(
       ref,
       () => ({
         transactions: transactionsRef.current,
+        clear: () => (transactionsRef.current = []),
       }),
       [results]
     );
@@ -145,7 +147,7 @@ export const UserList = React.forwardRef<UserListRef, UserListProps>(
     const onUserCreate = (user: User) => {
       transactionsRef.current.push(user);
 
-      setResults((prev) => [{ ...user, id: "" }, ...prev]);
+      setResults((prev) => [{ ...user, id: undefined }, ...prev]);
       setOpenUserPopup(false);
     };
 
@@ -197,7 +199,7 @@ export const UserList = React.forwardRef<UserListRef, UserListProps>(
             </tr>
             {filteredResults.map((el, index) => (
               <UserRow
-                key={index}
+                key={el.id || index}
                 isAdmin={isAdmin}
                 user={el}
                 onEdit={(user) => handleUserEdit(user, index)}

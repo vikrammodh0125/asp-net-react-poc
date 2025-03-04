@@ -1,4 +1,11 @@
-import React, { Fragment, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react";
+import React, {
+  Fragment,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Popup from "reactjs-popup";
 import { NotesList } from "./notes-list";
 import { Button, Input } from "../ui";
@@ -12,6 +19,7 @@ interface NotesProps {
 
 export interface NotesListRef {
   transactions: BulkUpsertItem<Note>[];
+  clear: () => void;
 }
 
 export const Notes = React.forwardRef<NotesListRef, NotesProps>(
@@ -31,6 +39,7 @@ export const Notes = React.forwardRef<NotesListRef, NotesProps>(
       ref,
       () => ({
         transactions: transactionsRef.current,
+        clear: () => (transactionsRef.current = []),
       }),
       [results]
     );
@@ -86,7 +95,7 @@ export const Notes = React.forwardRef<NotesListRef, NotesProps>(
     const onNoteCreate = (note: Note) => {
       transactionsRef.current.push(note);
 
-      setResults((prev) => [{ ...note, id: "" }, ...prev]);
+      setResults((prev) => [{ ...note, id: undefined }, ...prev]);
       setOpenNotePopup(false);
     };
 
