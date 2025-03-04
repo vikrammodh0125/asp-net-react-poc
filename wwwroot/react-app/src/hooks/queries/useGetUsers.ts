@@ -8,7 +8,7 @@ export const useGetUsers = () => {
     queryFn: async () => {
       return await apiRequest<
         void,
-        { id: string; name: string; email: string }[]
+        { id?: string; name: string; email: string }[]
       >("/user-management/users");
     },
   });

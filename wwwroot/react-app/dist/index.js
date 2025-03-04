@@ -18618,6 +18618,11 @@ const HomePage = ()=>{
         if (users.length || notes.length) mutate({
             notes,
             users
+        }, {
+            onSuccess: ()=>{
+                userListRef.current?.clear();
+                notesRef.current?.clear();
+            }
         });
     };
     if (!isLoggedIn) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18627,12 +18632,12 @@ const HomePage = ()=>{
             children: "Please login to access this page"
         }, void 0, false, {
             fileName: "src/pages/home/index.tsx",
-            lineNumber: 35,
+            lineNumber: 43,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/home/index.tsx",
-        lineNumber: 34,
+        lineNumber: 42,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18653,7 +18658,7 @@ const HomePage = ()=>{
                 ]
             }, void 0, false, {
                 fileName: "src/pages/home/index.tsx",
-                lineNumber: 42,
+                lineNumber: 50,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18663,12 +18668,12 @@ const HomePage = ()=>{
                     ref: userListRef
                 }, void 0, false, {
                     fileName: "src/pages/home/index.tsx",
-                    lineNumber: 59,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/home/index.tsx",
-                lineNumber: 56,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18678,12 +18683,12 @@ const HomePage = ()=>{
                     ref: notesRef
                 }, void 0, false, {
                     fileName: "src/pages/home/index.tsx",
-                    lineNumber: 65,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/home/index.tsx",
-                lineNumber: 62,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
@@ -18692,13 +18697,13 @@ const HomePage = ()=>{
                 children: isPending ? "Saving..." : "Save"
             }, void 0, false, {
                 fileName: "src/pages/home/index.tsx",
-                lineNumber: 68,
+                lineNumber: 76,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/home/index.tsx",
-        lineNumber: 41,
+        lineNumber: 49,
         columnNumber: 5
     }, undefined);
 };
@@ -18791,9 +18796,9 @@ const validationSchema = _yup.object().shape({
 const UserCreate = ({ initialValues, onSave })=>{
     _s();
     const { values, handleChange, handleSubmit, touched, errors, handleBlur } = (0, _formik.useFormik)({
-        initialValues: {
-            name: initialValues?.name ?? "",
-            email: initialValues?.email ?? "",
+        initialValues: initialValues ?? {
+            name: "",
+            email: "",
             dob: "",
             code: "",
             ssn: "",
@@ -27412,7 +27417,7 @@ const NotesList = ({ notes = [], onRemove, onEdit })=>{
                         note: note,
                         onRemove: (note)=>onRemove(note, index),
                         onEdit: (note)=>onEdit(note, index)
-                    }, note.id, false, {
+                    }, note.id || index, false, {
                         fileName: "src/containers/notes-list.tsx",
                         lineNumber: 84,
                         columnNumber: 11
@@ -31507,7 +31512,8 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
         data
     ]);
     (0, _react.useImperativeHandle)(ref, ()=>({
-            transactions: transactionsRef.current
+            transactions: transactionsRef.current,
+            clear: ()=>transactionsRef.current = []
         }), [
         results
     ]);
@@ -31543,7 +31549,7 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
         setResults((prev)=>[
                 {
                     ...note,
-                    id: ""
+                    id: undefined
                 },
                 ...prev
             ]);
@@ -31560,7 +31566,7 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
                         children: "Notes"
                     }, void 0, false, {
                         fileName: "src/containers/notes.tsx",
-                        lineNumber: 96,
+                        lineNumber: 105,
                         columnNumber: 11
                     }, undefined),
                     isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
@@ -31575,17 +31581,17 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
                                         onSave: onNoteCreate
                                     }, void 0, false, {
                                         fileName: "src/containers/notes.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 115,
                                         columnNumber: 19
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/containers/notes.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 114,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/notes.tsx",
-                                lineNumber: 100,
+                                lineNumber: 109,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
@@ -31593,19 +31599,19 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
                                 children: "Add New"
                             }, void 0, false, {
                                 fileName: "src/containers/notes.tsx",
-                                lineNumber: 109,
+                                lineNumber: 118,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/containers/notes.tsx",
-                        lineNumber: 99,
+                        lineNumber: 108,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/containers/notes.tsx",
-                lineNumber: 95,
+                lineNumber: 104,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
@@ -31614,14 +31620,14 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
                 onChange: (e)=>setSearch(e.target.value)
             }, void 0, false, {
                 fileName: "src/containers/notes.tsx",
-                lineNumber: 114,
+                lineNumber: 123,
                 columnNumber: 9
             }, undefined),
             isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "src/containers/notes.tsx",
-                lineNumber: 120,
+                lineNumber: 129,
                 columnNumber: 23
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31632,18 +31638,18 @@ const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ 
                     onEdit: handleNoteEdit
                 }, void 0, false, {
                     fileName: "src/containers/notes.tsx",
-                    lineNumber: 122,
+                    lineNumber: 131,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/containers/notes.tsx",
-                lineNumber: 121,
+                lineNumber: 130,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/containers/notes.tsx",
-        lineNumber: 94,
+        lineNumber: 103,
         columnNumber: 7
     }, undefined);
 }, "djA7jGB+ZnrUI+QiVrwERynIO1Q=", false, function() {
@@ -31812,7 +31818,8 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
     const [isOpenUserPopup, setOpenUserPopup] = (0, _react.useState)(false);
     const [results, setResults] = (0, _react.useState)(data);
     (0, _react.useImperativeHandle)(ref, ()=>({
-            transactions: transactionsRef.current
+            transactions: transactionsRef.current,
+            clear: ()=>transactionsRef.current = []
         }), [
         results
     ]);
@@ -31853,7 +31860,7 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
         setResults((prev)=>[
                 {
                     ...user,
-                    id: ""
+                    id: undefined
                 },
                 ...prev
             ]);
@@ -31870,7 +31877,7 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                         children: "Users"
                     }, void 0, false, {
                         fileName: "src/containers/user-list.tsx",
-                        lineNumber: 155,
+                        lineNumber: 157,
                         columnNumber: 11
                     }, undefined),
                     isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
@@ -31885,17 +31892,17 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                         onSave: onUserCreate
                                     }, void 0, false, {
                                         fileName: "src/containers/user-list.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 167,
                                         columnNumber: 19
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/containers/user-list.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 166,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-list.tsx",
-                                lineNumber: 159,
+                                lineNumber: 161,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
@@ -31903,19 +31910,19 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                 children: "Add New"
                             }, void 0, false, {
                                 fileName: "src/containers/user-list.tsx",
-                                lineNumber: 168,
+                                lineNumber: 170,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/containers/user-list.tsx",
-                        lineNumber: 158,
+                        lineNumber: 160,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/containers/user-list.tsx",
-                lineNumber: 154,
+                lineNumber: 156,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
@@ -31924,14 +31931,14 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                 onChange: (e)=>setSearch(e.target.value)
             }, void 0, false, {
                 fileName: "src/containers/user-list.tsx",
-                lineNumber: 172,
+                lineNumber: 174,
                 columnNumber: 9
             }, undefined),
             isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "src/containers/user-list.tsx",
-                lineNumber: 178,
+                lineNumber: 180,
                 columnNumber: 23
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31946,12 +31953,12 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                         children: "ID"
                                     }, void 0, false, {
                                         fileName: "src/containers/user-list.tsx",
-                                        lineNumber: 184,
+                                        lineNumber: 186,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/containers/user-list.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 185,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -31960,12 +31967,12 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "src/containers/user-list.tsx",
-                                        lineNumber: 187,
+                                        lineNumber: 189,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/containers/user-list.tsx",
-                                    lineNumber: 186,
+                                    lineNumber: 188,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -31974,12 +31981,12 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                         children: "Email"
                                     }, void 0, false, {
                                         fileName: "src/containers/user-list.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 192,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/containers/user-list.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 191,
                                     columnNumber: 15
                                 }, undefined),
                                 isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -31988,18 +31995,18 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "src/containers/user-list.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 196,
                                         columnNumber: 19
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/containers/user-list.tsx",
-                                    lineNumber: 193,
+                                    lineNumber: 195,
                                     columnNumber: 17
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/containers/user-list.tsx",
-                            lineNumber: 182,
+                            lineNumber: 184,
                             columnNumber: 13
                         }, undefined),
                         filteredResults.map((el, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserRow, {
@@ -32007,26 +32014,26 @@ const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _
                                 user: el,
                                 onEdit: (user)=>handleUserEdit(user, index),
                                 onRemove: (user)=>handleUserRemove(user, index)
-                            }, index, false, {
+                            }, el.id || index, false, {
                                 fileName: "src/containers/user-list.tsx",
-                                lineNumber: 199,
+                                lineNumber: 201,
                                 columnNumber: 15
                             }, undefined))
                     ]
                 }, void 0, true, {
                     fileName: "src/containers/user-list.tsx",
-                    lineNumber: 181,
+                    lineNumber: 183,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/containers/user-list.tsx",
-                lineNumber: 180,
+                lineNumber: 182,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/containers/user-list.tsx",
-        lineNumber: 153,
+        lineNumber: 155,
         columnNumber: 7
     }, undefined);
 }, "T8AVqMu9dakzqv/x6hExYUg+f48=", false, function() {

@@ -39,9 +39,9 @@ export const UserCreate: React.FC<UserCreateProps> = ({
 }) => {
   const { values, handleChange, handleSubmit, touched, errors, handleBlur } =
     useFormik({
-      initialValues: {
-        name: initialValues?.name ?? "",
-        email: initialValues?.email ?? "",
+      initialValues: initialValues ?? {
+        name: "",
+        email: "",
         dob: "",
         code: "",
         ssn: "",

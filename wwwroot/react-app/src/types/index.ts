@@ -12,4 +12,15 @@ export interface Note {
 export interface User {
   name: string;
   email: string;
+
+  dob?: string
+  code?: string;
+  ssn?: string;
+  gender?: string;
+  unit?:string;
+  streetAddress?: string;
+  city?: string;
+  state?: string;
+  zipcode?: string;
+  country?: string;
 }

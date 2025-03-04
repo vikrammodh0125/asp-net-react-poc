@@ -83,7 +83,7 @@ export const NotesList: React.FC<NotesListProps> = ({
         {notes.map((note, index) => (
           <NoteRow
             note={note}
-            key={note.id}
+            key={note.id || index}
             onRemove={(note) => onRemove(note, index)}
             onEdit={(note) => onEdit(note, index)}
           />

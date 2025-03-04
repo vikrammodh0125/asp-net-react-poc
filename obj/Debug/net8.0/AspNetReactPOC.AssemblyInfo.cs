@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetReactPOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82d0f82a65dba819cf096c7bdc036bc203afda8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65c7d33f11818dbd5c99ffcc8524c66108bcbaa7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetReactPOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetReactPOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
