@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HomePage, NotesPage } from "./pages";
+import { HomePage } from "./pages";
 import "./index.css";
+import 'reactjs-popup/dist/index.css';
 import { BaseProvider } from "./providers";
 
 const pages = [
@@ -12,15 +13,7 @@ const pages = [
         <HomePage />
       </BaseProvider>
     ),
-  },
-  {
-    container: "#notes-page",
-    component: (
-      <BaseProvider>
-        <NotesPage />
-      </BaseProvider>
-    ),
-  },
+  }
 ];
 
 pages.forEach((page) => {

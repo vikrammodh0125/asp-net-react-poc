@@ -11,8 +11,7 @@
     <header>
         <div class="hero-container">
             <div class="navigation-link-container">
-                <a href="/">User</a>
-                <a href="/notes">Notes</a>
+                <p>Welcome to ASP.NET + React POC</p>
             </div>
         </div>
         <div id="user-info-container">
@@ -24,7 +23,7 @@
 
     <script>
         async function checkLogin() {
-            const res = await fetch('/api/users/me');
+            const res = await fetch('/api/user-management/me');
             const data = await res.json();
 
             if (res.ok) {

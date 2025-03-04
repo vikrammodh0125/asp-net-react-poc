@@ -1,7 +1,8 @@
 import React from "react";
 import { useFormik } from "formik";
+import * as yup from "yup";
 import { Button, Input, Select } from "../ui";
-import { useCreateUser } from "../hooks";
+import { User } from "../types";
 
 const FormField = ({ label, children }) => {
   return (
@@ -12,39 +13,62 @@ const FormField = ({ label, children }) => {
   );
 };
 
-export const UserCreate = () => {
-  const { mutateAsync: createUser } = useCreateUser();
+const validationSchema = yup.object().shape({
+  name: yup.string().required("Name is reuqired"),
+  email: yup.string().required("Email is required").email("Invalid email"),
+  dob: yup.string().required("DOB is required"),
+  code: yup.string().required("Code is required"),
+  ssn: yup.string().required("SSN is required"),
+  gender: yup.string().required("Gender is required"),
+  streetAddress: yup.string().required("Street address is required"),
+  unit: yup.string().required("Unit is required"),
+  city: yup.string().required("City is required"),
+  state: yup.string().required("State is required"),
+  zipcode: yup.string().required("Zip code is required"),
+  country: yup.string().required("Country is required"),
+});
 
-  const { values, handleChange, handleSubmit } = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      dob: "",
-      code: "",
-      ssn: "",
-      gender: "",
-      streetAddress: "",
-      unit: "",
-      city: "",
-      state: "",
-      zipcode: "",
-      country: "",
-    },
-    onSubmit: async (formValues, helper) => {
-      try {
-        await createUser({
-          name: formValues.name,
-          email: formValues.email,
-        });
+interface UserCreateProps {
+  initialValues?: User;
+  onSave: (user: User) => void;
+}
 
-        alert("User created successfully");
-        helper.resetForm();
-      } catch (error) {
-        console.log("error", error.message);
-        alert("Failed to create user: " + error.message);
-      }
-    },
-  });
+export const UserCreate: React.FC<UserCreateProps> = ({
+  initialValues,
+  onSave,
+}) => {
+  const { values, handleChange, handleSubmit, touched, errors, handleBlur } =
+    useFormik({
+      initialValues: {
+        name: initialValues?.name ?? "",
+        email: initialValues?.email ?? "",
+        dob: "",
+        code: "",
+        ssn: "",
+        gender: "",
+        streetAddress: "",
+        unit: "",
+        city: "",
+        state: "",
+        zipcode: "",
+        country: "",
+      },
+      validationSchema,
+      onSubmit: async (values) => {
+        onSave(values);
+      },
+    });
+
+  const registerField = (field: string) => {
+    return {
+      touched: touched[field],
+      error: errors[field],
+      name: field,
+      onChange: handleChange,
+      value: values[field],
+      onBlur: handleBlur,
+    };
+  };
 
   return (
     <form
@@ -55,52 +79,31 @@ export const UserCreate = () => {
       <div className="web-grid web-grid-cols-2 web-gap-12 web-flex-1">
         <div className="web-space-y-4">
           <FormField label="First Name">
-            <Input
-              placeholder="First name"
-              value={values.name}
-              onChange={handleChange}
-              name="name"
-            />
+            <Input placeholder="First name" {...registerField("name")} />
           </FormField>
           <FormField label="Email Address">
             <Input
               placeholder="Email Address"
-              value={values.email}
-              onChange={handleChange}
-              name="email"
               type="email"
+              {...registerField("email")}
             />
           </FormField>
           <FormField label="Date of birth">
             <Input
               placeholder="Date of birth"
               type="date"
-              value={values.dob}
-              onChange={handleChange}
-              name="dob"
+              {...registerField("dob")}
             />
           </FormField>
           <FormField label="Patient Code">
-            <Input
-              placeholder="Patient Code"
-              value={values.code}
-              onChange={handleChange}
-              name="code"
-            />
+            <Input placeholder="Patient Code" {...registerField("code")} />
           </FormField>
           <FormField label="SSN">
-            <Input
-              placeholder="SSN"
-              value={values.ssn}
-              onChange={handleChange}
-              name="ssn"
-            />
+            <Input placeholder="SSN" {...registerField("ssn")} />
           </FormField>
           <FormField label="Gender">
             <Select
-              value={values.gender}
-              onChange={handleChange}
-              name="gender"
+              {...registerField("gender")}
               defaultValue=""
               data={[
                 {
@@ -123,55 +126,28 @@ export const UserCreate = () => {
           <FormField label="Street Address">
             <Input
               placeholder="Street Address"
-              value={values.streetAddress}
-              onChange={handleChange}
-              name="streetAddress"
+              {...registerField("streetAddress")}
             />
           </FormField>
           <FormField label="Apt/Suite/Unit">
-            <Input
-              placeholder="Apt/Suite/Unit"
-              value={values.unit}
-              onChange={handleChange}
-              name="unit"
-            />
+            <Input placeholder="Apt/Suite/Unit" {...registerField("unit")} />
           </FormField>
           <FormField label="City">
-            <Input
-              placeholder="City"
-              value={values.city}
-              onChange={handleChange}
-              name="city"
-            />
+            <Input placeholder="City" {...registerField("city")} />
           </FormField>
           <FormField label="State">
-            <Input
-              placeholder="State"
-              value={values.state}
-              onChange={handleChange}
-              name="state"
-            />
+            <Input placeholder="State" {...registerField("state")} />
           </FormField>
           <FormField label="Zipcode">
-            <Input
-              placeholder="Zipcode"
-              value={values.zipcode}
-              onChange={handleChange}
-              name="zipcode"
-            />
+            <Input placeholder="Zipcode" {...registerField("zipcode")} />
           </FormField>
           <FormField label="Country">
-            <Input
-              placeholder="Country"
-              value={values.country}
-              onChange={handleChange}
-              name="country"
-            />
+            <Input placeholder="Country" {...registerField("country")} />
           </FormField>
         </div>
       </div>
 
-      <Button>Save</Button>
+      <Button type="submit">Save</Button>
     </form>
   );
 };

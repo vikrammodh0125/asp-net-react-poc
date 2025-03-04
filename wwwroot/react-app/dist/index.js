@@ -2953,6 +2953,7 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _pages = require("./pages");
 var _indexCss = require("./index.css");
+var _indexCss1 = require("reactjs-popup/dist/index.css");
 var _providers = require("./providers");
 const pages = [
     {
@@ -2960,26 +2961,12 @@ const pages = [
         component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _providers.BaseProvider), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pages.HomePage), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/index.tsx",
-            lineNumber: 11,
-            columnNumber: 7
-        }, undefined)
-    },
-    {
-        container: "#notes-page",
-        component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _providers.BaseProvider), {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pages.NotesPage), {}, void 0, false, {
-                fileName: "src/index.tsx",
-                lineNumber: 20,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/index.tsx",
-            lineNumber: 19,
+            lineNumber: 12,
             columnNumber: 7
         }, undefined)
     }
@@ -2994,7 +2981,7 @@ pages.forEach((page)=>{
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","react-dom/client":"1jvyu","./pages":"eNRav","./index.css":"idoe5","./providers":"4WvB3","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"227mq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","react-dom/client":"1jvyu","./pages":"eNRav","./index.css":"idoe5","./providers":"4WvB3","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","reactjs-popup/dist/index.css":"21kVA"}],"227mq":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -18594,10 +18581,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _home = require("./home");
 parcelHelpers.exportAll(_home, exports);
-var _notes = require("./notes");
-parcelHelpers.exportAll(_notes, exports);
 
-},{"./home":"fVu9H","./notes":"jpm3u","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"fVu9H":[function(require,module,exports,__globalThis) {
+},{"./home":"fVu9H","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"fVu9H":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$f43e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18612,10 +18597,29 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _containers = require("../../containers");
 var _useMe = require("../../hooks/useMe");
+var _ui = require("../../ui");
+var _hooks = require("../../hooks");
 var _s = $RefreshSig$();
+var Tab = /*#__PURE__*/ function(Tab) {
+    Tab["USER"] = "user";
+    Tab["NOTE"] = "note";
+    return Tab;
+}(Tab || {});
 const HomePage = ()=>{
     _s();
     const { isLoggedIn, isAdmin } = (0, _useMe.useMe)();
+    const [activeTab, setActiveTab] = (0, _react.useState)("user");
+    const { mutate, isPending } = (0, _hooks.useBulkUpsert)();
+    const userListRef = (0, _react.useRef)(null);
+    const notesRef = (0, _react.useRef)(null);
+    const handleBulkUpsert = ()=>{
+        const users = userListRef.current?.transactions ?? [];
+        const notes = notesRef.current?.transactions ?? [];
+        if (users.length || notes.length) mutate({
+            notes,
+            users
+        });
+    };
     if (!isLoggedIn) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "web-px-12 web-py-8 web-flex-1 web-flex web-justify-center web-items-center",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -18623,44 +18627,85 @@ const HomePage = ()=>{
             children: "Please login to access this page"
         }, void 0, false, {
             fileName: "src/pages/home/index.tsx",
-            lineNumber: 11,
+            lineNumber: 35,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/home/index.tsx",
-        lineNumber: 10,
+        lineNumber: 34,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "web-px-12 web-py-8 web-flex-1 web-grid web-grid-cols-4 web-gap-12",
+        className: "web-px-12 web-py-8 web-flex-1 web-flex web-flex-col web-space-y-4 web-overflow-hidden",
         children: [
-            isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "web-col-span-3 web-flex-1 web-flex",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.UserCreate), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Tabs), {
+                onChange: setActiveTab,
+                active: activeTab,
+                items: [
+                    {
+                        label: "User",
+                        value: "user"
+                    },
+                    {
+                        label: "Notes",
+                        value: "note"
+                    }
+                ]
+            }, void 0, false, {
+                fileName: "src/pages/home/index.tsx",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `${activeTab === "user" ? "web-visible" : "web-hidden"}`,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.UserList), {
+                    isAdmin: isAdmin,
+                    ref: userListRef
+                }, void 0, false, {
                     fileName: "src/pages/home/index.tsx",
-                    lineNumber: 20,
-                    columnNumber: 11
+                    lineNumber: 59,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/home/index.tsx",
-                lineNumber: 19,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.UserSearch), {}, void 0, false, {
-                fileName: "src/pages/home/index.tsx",
-                lineNumber: 23,
+                lineNumber: 56,
                 columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `${activeTab === "note" ? "web-visible" : "web-hidden"}`,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.Notes), {
+                    isAdmin: isAdmin,
+                    ref: notesRef
+                }, void 0, false, {
+                    fileName: "src/pages/home/index.tsx",
+                    lineNumber: 65,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/home/index.tsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, undefined),
+            isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                onClick: handleBulkUpsert,
+                disabled: isPending,
+                children: isPending ? "Saving..." : "Save"
+            }, void 0, false, {
+                fileName: "src/pages/home/index.tsx",
+                lineNumber: 68,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/home/index.tsx",
-        lineNumber: 17,
+        lineNumber: 41,
         columnNumber: 5
     }, undefined);
 };
-_s(HomePage, "jNbN0dNIPUGqI5xrAf+TYkhJWRE=", false, function() {
+_s(HomePage, "SkoF4W3tv3CaRCP0pn528KCuAoU=", false, function() {
     return [
-        (0, _useMe.useMe)
+        (0, _useMe.useMe),
+        (0, _hooks.useBulkUpsert)
     ];
 });
 _c = HomePage;
@@ -18672,17 +18717,19 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../containers":"cEPKa","../../hooks/useMe":"ewF7W","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"cEPKa":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../containers":"cEPKa","../../hooks/useMe":"ewF7W","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","../../ui":"gkHWQ","../../hooks":"hpGpu"}],"cEPKa":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _userCreate = require("./user-create");
 parcelHelpers.exportAll(_userCreate, exports);
-var _userSearch = require("./user-search");
-parcelHelpers.exportAll(_userSearch, exports);
+var _userList = require("./user-list");
+parcelHelpers.exportAll(_userList, exports);
 var _notesList = require("./notes-list");
 parcelHelpers.exportAll(_notesList, exports);
+var _notes = require("./notes");
+parcelHelpers.exportAll(_notes, exports);
 
-},{"./user-create":"cFNfi","./user-search":"3TU19","./notes-list":"7DnZ4","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"cFNfi":[function(require,module,exports,__globalThis) {
+},{"./user-create":"cFNfi","./notes-list":"7DnZ4","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","./notes":"7wa9P","./user-list":"cAlhi"}],"cFNfi":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e0f4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18696,8 +18743,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _formik = require("formik");
+var _yup = require("yup");
 var _ui = require("../ui");
-var _hooks = require("../hooks");
 var _s = $RefreshSig$();
 const FormField = ({ label, children })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18708,7 +18755,7 @@ const FormField = ({ label, children })=>{
                 children: label
             }, void 0, false, {
                 fileName: "src/containers/user-create.tsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18716,24 +18763,37 @@ const FormField = ({ label, children })=>{
                 children: children
             }, void 0, false, {
                 fileName: "src/containers/user-create.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/containers/user-create.tsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
 _c = FormField;
-const UserCreate = ()=>{
+const validationSchema = _yup.object().shape({
+    name: _yup.string().required("Name is reuqired"),
+    email: _yup.string().required("Email is required").email("Invalid email"),
+    dob: _yup.string().required("DOB is required"),
+    code: _yup.string().required("Code is required"),
+    ssn: _yup.string().required("SSN is required"),
+    gender: _yup.string().required("Gender is required"),
+    streetAddress: _yup.string().required("Street address is required"),
+    unit: _yup.string().required("Unit is required"),
+    city: _yup.string().required("City is required"),
+    state: _yup.string().required("State is required"),
+    zipcode: _yup.string().required("Zip code is required"),
+    country: _yup.string().required("Country is required")
+});
+const UserCreate = ({ initialValues, onSave })=>{
     _s();
-    const { mutateAsync: createUser } = (0, _hooks.useCreateUser)();
-    const { values, handleChange, handleSubmit } = (0, _formik.useFormik)({
+    const { values, handleChange, handleSubmit, touched, errors, handleBlur } = (0, _formik.useFormik)({
         initialValues: {
-            name: "",
-            email: "",
+            name: initialValues?.name ?? "",
+            email: initialValues?.email ?? "",
             dob: "",
             code: "",
             ssn: "",
@@ -18745,20 +18805,21 @@ const UserCreate = ()=>{
             zipcode: "",
             country: ""
         },
-        onSubmit: async (formValues, helper)=>{
-            try {
-                await createUser({
-                    name: formValues.name,
-                    email: formValues.email
-                });
-                alert("User created successfully");
-                helper.resetForm();
-            } catch (error) {
-                console.log("error", error.message);
-                alert("Failed to create user: " + error.message);
-            }
+        validationSchema,
+        onSubmit: async (values)=>{
+            onSave(values);
         }
     });
+    const registerField = (field)=>{
+        return {
+            touched: touched[field],
+            error: errors[field],
+            name: field,
+            onChange: handleChange,
+            value: values[field],
+            onBlur: handleBlur
+        };
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
         className: "web-flex-1 web-flex-col web-flex web-space-y-4",
         onSubmit: handleSubmit,
@@ -18768,7 +18829,7 @@ const UserCreate = ()=>{
                 children: "Create User"
             }, void 0, false, {
                 fileName: "src/containers/user-create.tsx",
-                lineNumber: 54,
+                lineNumber: 78,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18781,35 +18842,31 @@ const UserCreate = ()=>{
                                 label: "First Name",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "First name",
-                                    value: values.name,
-                                    onChange: handleChange,
-                                    name: "name"
+                                    ...registerField("name")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 82,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 57,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "Email Address",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "Email Address",
-                                    value: values.email,
-                                    onChange: handleChange,
-                                    name: "email",
-                                    type: "email"
+                                    type: "email",
+                                    ...registerField("email")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 65,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
@@ -18817,43 +18874,7 @@ const UserCreate = ()=>{
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "Date of birth",
                                     type: "date",
-                                    value: values.dob,
-                                    onChange: handleChange,
-                                    name: "dob"
-                                }, void 0, false, {
-                                    fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 75,
-                                    columnNumber: 13
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/containers/user-create.tsx",
-                                lineNumber: 74,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
-                                label: "Patient Code",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
-                                    placeholder: "Patient Code",
-                                    value: values.code,
-                                    onChange: handleChange,
-                                    name: "code"
-                                }, void 0, false, {
-                                    fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 84,
-                                    columnNumber: 13
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/containers/user-create.tsx",
-                                lineNumber: 83,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
-                                label: "SSN",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
-                                    placeholder: "SSN",
-                                    value: values.ssn,
-                                    onChange: handleChange,
-                                    name: "ssn"
+                                    ...registerField("dob")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
                                     lineNumber: 92,
@@ -18865,11 +18886,39 @@ const UserCreate = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
+                                label: "Patient Code",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
+                                    placeholder: "Patient Code",
+                                    ...registerField("code")
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 99,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 98,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
+                                label: "SSN",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
+                                    placeholder: "SSN",
+                                    ...registerField("ssn")
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-create.tsx",
+                                    lineNumber: 102,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/containers/user-create.tsx",
+                                lineNumber: 101,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "Gender",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Select), {
-                                    value: values.gender,
-                                    onChange: handleChange,
-                                    name: "gender",
+                                    ...registerField("gender"),
                                     defaultValue: "",
                                     data: [
                                         {
@@ -18887,18 +18936,18 @@ const UserCreate = ()=>{
                                     ]
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 99,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/containers/user-create.tsx",
-                        lineNumber: 56,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18908,133 +18957,121 @@ const UserCreate = ()=>{
                                 label: "Street Address",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "Street Address",
-                                    value: values.streetAddress,
-                                    onChange: handleChange,
-                                    name: "streetAddress"
+                                    ...registerField("streetAddress")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 123,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "Apt/Suite/Unit",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "Apt/Suite/Unit",
-                                    value: values.unit,
-                                    onChange: handleChange,
-                                    name: "unit"
+                                    ...registerField("unit")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 132,
+                                    lineNumber: 133,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 131,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "City",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "City",
-                                    value: values.city,
-                                    onChange: handleChange,
-                                    name: "city"
+                                    ...registerField("city")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 139,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "State",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "State",
-                                    value: values.state,
-                                    onChange: handleChange,
-                                    name: "state"
+                                    ...registerField("state")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 148,
+                                    lineNumber: 139,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 147,
+                                lineNumber: 138,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "Zipcode",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "Zipcode",
-                                    value: values.zipcode,
-                                    onChange: handleChange,
-                                    name: "zipcode"
+                                    ...registerField("zipcode")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 156,
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 155,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
                                 label: "Country",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
                                     placeholder: "Country",
-                                    value: values.country,
-                                    onChange: handleChange,
-                                    name: "country"
+                                    ...registerField("country")
                                 }, void 0, false, {
                                     fileName: "src/containers/user-create.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 145,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/containers/user-create.tsx",
-                                lineNumber: 163,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/containers/user-create.tsx",
-                        lineNumber: 122,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/containers/user-create.tsx",
-                lineNumber: 55,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                type: "submit",
                 children: "Save"
             }, void 0, false, {
                 fileName: "src/containers/user-create.tsx",
-                lineNumber: 174,
+                lineNumber: 150,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/containers/user-create.tsx",
-        lineNumber: 50,
+        lineNumber: 74,
         columnNumber: 5
     }, undefined);
 };
-_s(UserCreate, "Ul61HJGuELxGF3JBzDavBcZvbBw=", false, function() {
+_s(UserCreate, "DHxGxL3YquXqhqVhI8v6I7jNEVM=", false, function() {
     return [
-        (0, _hooks.useCreateUser),
         (0, _formik.useFormik)
     ];
 });
@@ -19048,7 +19085,7 @@ $RefreshReg$(_c1, "UserCreate");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","formik":"6qx63","../ui":"gkHWQ","../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL"}],"6qx63":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","formik":"6qx63","../ui":"gkHWQ","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL","yup":"g702A"}],"6qx63":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ErrorMessage", ()=>ErrorMessage);
@@ -23997,8 +24034,10 @@ var _select = require("./select");
 parcelHelpers.exportAll(_select, exports);
 var _button = require("./button");
 parcelHelpers.exportAll(_button, exports);
+var _tabs = require("./tabs");
+parcelHelpers.exportAll(_tabs, exports);
 
-},{"./input":"dVZKe","./select":"52Im3","./button":"4mazE","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"dVZKe":[function(require,module,exports,__globalThis) {
+},{"./input":"dVZKe","./select":"52Im3","./button":"4mazE","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","./tabs":"KKiC2"}],"dVZKe":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$cbe1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -24011,13 +24050,30 @@ parcelHelpers.export(exports, "Input", ()=>Input);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const Input = ({ ...rest })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-        ...rest,
-        className: "web-outline-none web-px-2 web-py-1 web-border-2 web-rounded-md web-w-full"
-    }, void 0, false, {
+const Input = ({ error, touched, ...rest })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "web-space-y-1",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                ...rest,
+                className: "web-outline-none web-px-2 web-py-1 web-border-2 web-rounded-md web-w-full"
+            }, void 0, false, {
+                fileName: "src/ui/input.tsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            !!touched && !!error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "web-text-xs web-text-red-600",
+                children: error
+            }, void 0, false, {
+                fileName: "src/ui/input.tsx",
+                lineNumber: 23,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/ui/input.tsx",
-        lineNumber: 10,
+        lineNumber: 17,
         columnNumber: 5
     }, undefined);
 };
@@ -24633,21 +24689,39 @@ parcelHelpers.export(exports, "Select", ()=>Select);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const Select = ({ data })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-        className: "web-outline-none web-px-2 web-py-1 web-border-2 web-rounded-md web-w-full",
-        children: data.map((element)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                value: element.value,
-                disabled: element.disabled,
-                children: element.label
+const Select = ({ error, touched, data, ...rest })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "web-space-y-1",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                ...rest,
+                className: "web-outline-none web-px-2 web-py-1 web-border-2 web-rounded-md web-w-full",
+                children: data.map((element)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        value: element.value,
+                        disabled: element.disabled,
+                        children: element.label
+                    }, void 0, false, {
+                        fileName: "src/ui/select.tsx",
+                        lineNumber: 22,
+                        columnNumber: 11
+                    }, undefined))
             }, void 0, false, {
                 fileName: "src/ui/select.tsx",
-                lineNumber: 14,
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            !!touched && !!error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "web-text-xs web-text-red-600",
+                children: error
+            }, void 0, false, {
+                fileName: "src/ui/select.tsx",
+                lineNumber: 28,
                 columnNumber: 9
-            }, undefined))
-    }, void 0, false, {
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/ui/select.tsx",
-        lineNumber: 12,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
@@ -24693,7 +24767,2684 @@ $RefreshReg$(_c, "Button");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"hpGpu":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"KKiC2":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$643e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$643e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Tabs", ()=>Tabs);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function Tabs({ items, active, onChange }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "web-space-x-4",
+        children: items.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>onChange(item.value),
+                className: `web-font-medium !web-border !web-border-solid ${active === item.value ? "web-bg-blue-600 web-text-white !web-bg-blue-600!" : "web-text-blue-600 !web-border-gray-600!"}`,
+                children: item.label
+            }, String(item.value), false, {
+                fileName: "src/ui/tabs.tsx",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "src/ui/tabs.tsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_c = Tabs;
+var _c;
+$RefreshReg$(_c, "Tabs");
+
+  $parcel$ReactRefreshHelpers$643e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"g702A":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ArraySchema", ()=>ArraySchema);
+parcelHelpers.export(exports, "BooleanSchema", ()=>BooleanSchema);
+parcelHelpers.export(exports, "DateSchema", ()=>DateSchema);
+parcelHelpers.export(exports, "LazySchema", ()=>Lazy);
+parcelHelpers.export(exports, "MixedSchema", ()=>MixedSchema);
+parcelHelpers.export(exports, "NumberSchema", ()=>NumberSchema);
+parcelHelpers.export(exports, "ObjectSchema", ()=>ObjectSchema);
+parcelHelpers.export(exports, "Schema", ()=>Schema);
+parcelHelpers.export(exports, "StringSchema", ()=>StringSchema);
+parcelHelpers.export(exports, "TupleSchema", ()=>TupleSchema);
+parcelHelpers.export(exports, "ValidationError", ()=>ValidationError);
+parcelHelpers.export(exports, "addMethod", ()=>addMethod);
+parcelHelpers.export(exports, "array", ()=>create$2);
+parcelHelpers.export(exports, "bool", ()=>create$7);
+parcelHelpers.export(exports, "boolean", ()=>create$7);
+parcelHelpers.export(exports, "date", ()=>create$4);
+parcelHelpers.export(exports, "defaultLocale", ()=>locale);
+parcelHelpers.export(exports, "getIn", ()=>getIn);
+parcelHelpers.export(exports, "isSchema", ()=>isSchema);
+parcelHelpers.export(exports, "lazy", ()=>create);
+parcelHelpers.export(exports, "mixed", ()=>create$8);
+parcelHelpers.export(exports, "number", ()=>create$5);
+parcelHelpers.export(exports, "object", ()=>create$3);
+parcelHelpers.export(exports, "printValue", ()=>printValue);
+parcelHelpers.export(exports, "reach", ()=>reach);
+parcelHelpers.export(exports, "ref", ()=>create$9);
+parcelHelpers.export(exports, "setLocale", ()=>setLocale);
+parcelHelpers.export(exports, "string", ()=>create$6);
+parcelHelpers.export(exports, "tuple", ()=>create$1);
+var _propertyExpr = require("property-expr");
+var _tinyCase = require("tiny-case");
+var _toposort = require("toposort");
+var _toposortDefault = parcelHelpers.interopDefault(_toposort);
+const toString = Object.prototype.toString;
+const errorToString = Error.prototype.toString;
+const regExpToString = RegExp.prototype.toString;
+const symbolToString = typeof Symbol !== 'undefined' ? Symbol.prototype.toString : ()=>'';
+const SYMBOL_REGEXP = /^Symbol\((.*)\)(.*)$/;
+function printNumber(val) {
+    if (val != +val) return 'NaN';
+    const isNegativeZero = val === 0 && 1 / val < 0;
+    return isNegativeZero ? '-0' : '' + val;
+}
+function printSimpleValue(val, quoteStrings = false) {
+    if (val == null || val === true || val === false) return '' + val;
+    const typeOf = typeof val;
+    if (typeOf === 'number') return printNumber(val);
+    if (typeOf === 'string') return quoteStrings ? `"${val}"` : val;
+    if (typeOf === 'function') return '[Function ' + (val.name || 'anonymous') + ']';
+    if (typeOf === 'symbol') return symbolToString.call(val).replace(SYMBOL_REGEXP, 'Symbol($1)');
+    const tag = toString.call(val).slice(8, -1);
+    if (tag === 'Date') return isNaN(val.getTime()) ? '' + val : val.toISOString(val);
+    if (tag === 'Error' || val instanceof Error) return '[' + errorToString.call(val) + ']';
+    if (tag === 'RegExp') return regExpToString.call(val);
+    return null;
+}
+function printValue(value, quoteStrings) {
+    let result = printSimpleValue(value, quoteStrings);
+    if (result !== null) return result;
+    return JSON.stringify(value, function(key, value) {
+        let result = printSimpleValue(this[key], quoteStrings);
+        if (result !== null) return result;
+        return value;
+    }, 2);
+}
+function toArray(value) {
+    return value == null ? [] : [].concat(value);
+}
+let _Symbol$toStringTag, _Symbol$hasInstance, _Symbol$toStringTag2;
+let strReg = /\$\{\s*(\w+)\s*\}/g;
+_Symbol$toStringTag = Symbol.toStringTag;
+class ValidationErrorNoStack {
+    constructor(errorOrErrors, value, field, type){
+        this.name = void 0;
+        this.message = void 0;
+        this.value = void 0;
+        this.path = void 0;
+        this.type = void 0;
+        this.params = void 0;
+        this.errors = void 0;
+        this.inner = void 0;
+        this[_Symbol$toStringTag] = 'Error';
+        this.name = 'ValidationError';
+        this.value = value;
+        this.path = field;
+        this.type = type;
+        this.errors = [];
+        this.inner = [];
+        toArray(errorOrErrors).forEach((err)=>{
+            if (ValidationError.isError(err)) {
+                this.errors.push(...err.errors);
+                const innerErrors = err.inner.length ? err.inner : [
+                    err
+                ];
+                this.inner.push(...innerErrors);
+            } else this.errors.push(err);
+        });
+        this.message = this.errors.length > 1 ? `${this.errors.length} errors occurred` : this.errors[0];
+    }
+}
+_Symbol$hasInstance = Symbol.hasInstance;
+_Symbol$toStringTag2 = Symbol.toStringTag;
+class ValidationError extends Error {
+    static formatError(message, params) {
+        // Attempt to make the path more friendly for error message interpolation.
+        const path = params.label || params.path || 'this';
+        // Store the original path under `originalPath` so it isn't lost to custom
+        // message functions; e.g., ones provided in `setLocale()` calls.
+        params = Object.assign({}, params, {
+            path,
+            originalPath: params.path
+        });
+        if (typeof message === 'string') return message.replace(strReg, (_, key)=>printValue(params[key]));
+        if (typeof message === 'function') return message(params);
+        return message;
+    }
+    static isError(err) {
+        return err && err.name === 'ValidationError';
+    }
+    constructor(errorOrErrors, value, field, type, disableStack){
+        const errorNoStack = new ValidationErrorNoStack(errorOrErrors, value, field, type);
+        if (disableStack) return errorNoStack;
+        super();
+        this.value = void 0;
+        this.path = void 0;
+        this.type = void 0;
+        this.params = void 0;
+        this.errors = [];
+        this.inner = [];
+        this[_Symbol$toStringTag2] = 'Error';
+        this.name = errorNoStack.name;
+        this.message = errorNoStack.message;
+        this.type = errorNoStack.type;
+        this.value = errorNoStack.value;
+        this.path = errorNoStack.path;
+        this.errors = errorNoStack.errors;
+        this.inner = errorNoStack.inner;
+        if (Error.captureStackTrace) Error.captureStackTrace(this, ValidationError);
+    }
+    static [_Symbol$hasInstance](inst) {
+        return ValidationErrorNoStack[Symbol.hasInstance](inst) || super[Symbol.hasInstance](inst);
+    }
+}
+let mixed = {
+    default: '${path} is invalid',
+    required: '${path} is a required field',
+    defined: '${path} must be defined',
+    notNull: '${path} cannot be null',
+    oneOf: '${path} must be one of the following values: ${values}',
+    notOneOf: '${path} must not be one of the following values: ${values}',
+    notType: ({ path, type, value, originalValue })=>{
+        const castMsg = originalValue != null && originalValue !== value ? ` (cast from the value \`${printValue(originalValue, true)}\`).` : '.';
+        return type !== 'mixed' ? `${path} must be a \`${type}\` type, ` + `but the final value was: \`${printValue(value, true)}\`` + castMsg : `${path} must match the configured type. ` + `The validated value was: \`${printValue(value, true)}\`` + castMsg;
+    }
+};
+let string = {
+    length: '${path} must be exactly ${length} characters',
+    min: '${path} must be at least ${min} characters',
+    max: '${path} must be at most ${max} characters',
+    matches: '${path} must match the following: "${regex}"',
+    email: '${path} must be a valid email',
+    url: '${path} must be a valid URL',
+    uuid: '${path} must be a valid UUID',
+    datetime: '${path} must be a valid ISO date-time',
+    datetime_precision: '${path} must be a valid ISO date-time with a sub-second precision of exactly ${precision} digits',
+    datetime_offset: '${path} must be a valid ISO date-time with UTC "Z" timezone',
+    trim: '${path} must be a trimmed string',
+    lowercase: '${path} must be a lowercase string',
+    uppercase: '${path} must be a upper case string'
+};
+let number = {
+    min: '${path} must be greater than or equal to ${min}',
+    max: '${path} must be less than or equal to ${max}',
+    lessThan: '${path} must be less than ${less}',
+    moreThan: '${path} must be greater than ${more}',
+    positive: '${path} must be a positive number',
+    negative: '${path} must be a negative number',
+    integer: '${path} must be an integer'
+};
+let date = {
+    min: '${path} field must be later than ${min}',
+    max: '${path} field must be at earlier than ${max}'
+};
+let boolean = {
+    isValue: '${path} field must be ${value}'
+};
+let object = {
+    noUnknown: '${path} field has unspecified keys: ${unknown}',
+    exact: '${path} object contains unknown properties: ${properties}'
+};
+let array = {
+    min: '${path} field must have at least ${min} items',
+    max: '${path} field must have less than or equal to ${max} items',
+    length: '${path} must have ${length} items'
+};
+let tuple = {
+    notType: (params)=>{
+        const { path, value, spec } = params;
+        const typeLen = spec.types.length;
+        if (Array.isArray(value)) {
+            if (value.length < typeLen) return `${path} tuple value has too few items, expected a length of ${typeLen} but got ${value.length} for value: \`${printValue(value, true)}\``;
+            if (value.length > typeLen) return `${path} tuple value has too many items, expected a length of ${typeLen} but got ${value.length} for value: \`${printValue(value, true)}\``;
+        }
+        return ValidationError.formatError(mixed.notType, params);
+    }
+};
+var locale = Object.assign(Object.create(null), {
+    mixed,
+    string,
+    number,
+    date,
+    object,
+    array,
+    boolean,
+    tuple
+});
+const isSchema = (obj)=>obj && obj.__isYupSchema__;
+class Condition {
+    static fromOptions(refs, config) {
+        if (!config.then && !config.otherwise) throw new TypeError('either `then:` or `otherwise:` is required for `when()` conditions');
+        let { is, then, otherwise } = config;
+        let check = typeof is === 'function' ? is : (...values)=>values.every((value)=>value === is);
+        return new Condition(refs, (values, schema)=>{
+            var _branch;
+            let branch = check(...values) ? then : otherwise;
+            return (_branch = branch == null ? void 0 : branch(schema)) != null ? _branch : schema;
+        });
+    }
+    constructor(refs, builder){
+        this.fn = void 0;
+        this.refs = refs;
+        this.refs = refs;
+        this.fn = builder;
+    }
+    resolve(base, options) {
+        let values = this.refs.map((ref)=>// TODO: ? operator here?
+            ref.getValue(options == null ? void 0 : options.value, options == null ? void 0 : options.parent, options == null ? void 0 : options.context));
+        let schema = this.fn(values, base, options);
+        if (schema === undefined || // @ts-ignore this can be base
+        schema === base) return base;
+        if (!isSchema(schema)) throw new TypeError('conditions must return a schema object');
+        return schema.resolve(options);
+    }
+}
+const prefixes = {
+    context: '$',
+    value: '.'
+};
+function create$9(key, options) {
+    return new Reference(key, options);
+}
+class Reference {
+    constructor(key, options = {}){
+        this.key = void 0;
+        this.isContext = void 0;
+        this.isValue = void 0;
+        this.isSibling = void 0;
+        this.path = void 0;
+        this.getter = void 0;
+        this.map = void 0;
+        if (typeof key !== 'string') throw new TypeError('ref must be a string, got: ' + key);
+        this.key = key.trim();
+        if (key === '') throw new TypeError('ref must be a non-empty string');
+        this.isContext = this.key[0] === prefixes.context;
+        this.isValue = this.key[0] === prefixes.value;
+        this.isSibling = !this.isContext && !this.isValue;
+        let prefix = this.isContext ? prefixes.context : this.isValue ? prefixes.value : '';
+        this.path = this.key.slice(prefix.length);
+        this.getter = this.path && (0, _propertyExpr.getter)(this.path, true);
+        this.map = options.map;
+    }
+    getValue(value, parent, context) {
+        let result = this.isContext ? context : this.isValue ? value : parent;
+        if (this.getter) result = this.getter(result || {});
+        if (this.map) result = this.map(result);
+        return result;
+    }
+    /**
+   *
+   * @param {*} value
+   * @param {Object} options
+   * @param {Object=} options.context
+   * @param {Object=} options.parent
+   */ cast(value, options) {
+        return this.getValue(value, options == null ? void 0 : options.parent, options == null ? void 0 : options.context);
+    }
+    resolve() {
+        return this;
+    }
+    describe() {
+        return {
+            type: 'ref',
+            key: this.key
+        };
+    }
+    toString() {
+        return `Ref(${this.key})`;
+    }
+    static isRef(value) {
+        return value && value.__isYupRef;
+    }
+}
+// @ts-ignore
+Reference.prototype.__isYupRef = true;
+const isAbsent = (value)=>value == null;
+function createValidation(config) {
+    function validate({ value, path = '', options, originalValue, schema }, panic, next) {
+        const { name, test, params, message, skipAbsent } = config;
+        let { parent, context, abortEarly = schema.spec.abortEarly, disableStackTrace = schema.spec.disableStackTrace } = options;
+        function resolve(item) {
+            return Reference.isRef(item) ? item.getValue(value, parent, context) : item;
+        }
+        function createError(overrides = {}) {
+            const nextParams = Object.assign({
+                value,
+                originalValue,
+                label: schema.spec.label,
+                path: overrides.path || path,
+                spec: schema.spec,
+                disableStackTrace: overrides.disableStackTrace || disableStackTrace
+            }, params, overrides.params);
+            for (const key of Object.keys(nextParams))nextParams[key] = resolve(nextParams[key]);
+            const error = new ValidationError(ValidationError.formatError(overrides.message || message, nextParams), value, nextParams.path, overrides.type || name, nextParams.disableStackTrace);
+            error.params = nextParams;
+            return error;
+        }
+        const invalid = abortEarly ? panic : next;
+        let ctx = {
+            path,
+            parent,
+            type: name,
+            from: options.from,
+            createError,
+            resolve,
+            options,
+            originalValue,
+            schema
+        };
+        const handleResult = (validOrError)=>{
+            if (ValidationError.isError(validOrError)) invalid(validOrError);
+            else if (!validOrError) invalid(createError());
+            else next(null);
+        };
+        const handleError = (err)=>{
+            if (ValidationError.isError(err)) invalid(err);
+            else panic(err);
+        };
+        const shouldSkip = skipAbsent && isAbsent(value);
+        if (shouldSkip) return handleResult(true);
+        let result;
+        try {
+            var _result;
+            result = test.call(ctx, value, ctx);
+            if (typeof ((_result = result) == null ? void 0 : _result.then) === 'function') {
+                if (options.sync) throw new Error(`Validation test of type: "${ctx.type}" returned a Promise during a synchronous validate. ` + `This test will finish after the validate call has returned`);
+                return Promise.resolve(result).then(handleResult, handleError);
+            }
+        } catch (err) {
+            handleError(err);
+            return;
+        }
+        handleResult(result);
+    }
+    validate.OPTIONS = config;
+    return validate;
+}
+function getIn(schema, path, value, context = value) {
+    let parent, lastPart, lastPartDebug;
+    // root path: ''
+    if (!path) return {
+        parent,
+        parentPath: path,
+        schema
+    };
+    (0, _propertyExpr.forEach)(path, (_part, isBracket, isArray)=>{
+        let part = isBracket ? _part.slice(1, _part.length - 1) : _part;
+        schema = schema.resolve({
+            context,
+            parent,
+            value
+        });
+        let isTuple = schema.type === 'tuple';
+        let idx = isArray ? parseInt(part, 10) : 0;
+        if (schema.innerType || isTuple) {
+            if (isTuple && !isArray) throw new Error(`Yup.reach cannot implicitly index into a tuple type. the path part "${lastPartDebug}" must contain an index to the tuple element, e.g. "${lastPartDebug}[0]"`);
+            if (value && idx >= value.length) throw new Error(`Yup.reach cannot resolve an array item at index: ${_part}, in the path: ${path}. ` + `because there is no value at that index. `);
+            parent = value;
+            value = value && value[idx];
+            schema = isTuple ? schema.spec.types[idx] : schema.innerType;
+        }
+        // sometimes the array index part of a path doesn't exist: "nested.arr.child"
+        // in these cases the current part is the next schema and should be processed
+        // in this iteration. For cases where the index signature is included this
+        // check will fail and we'll handle the `child` part on the next iteration like normal
+        if (!isArray) {
+            if (!schema.fields || !schema.fields[part]) throw new Error(`The schema does not contain the path: ${path}. ` + `(failed at: ${lastPartDebug} which is a type: "${schema.type}")`);
+            parent = value;
+            value = value && value[part];
+            schema = schema.fields[part];
+        }
+        lastPart = part;
+        lastPartDebug = isBracket ? '[' + _part + ']' : '.' + _part;
+    });
+    return {
+        schema,
+        parent,
+        parentPath: lastPart
+    };
+}
+function reach(obj, path, value, context) {
+    return getIn(obj, path, value, context).schema;
+}
+class ReferenceSet extends Set {
+    describe() {
+        const description = [];
+        for (const item of this.values())description.push(Reference.isRef(item) ? item.describe() : item);
+        return description;
+    }
+    resolveAll(resolve) {
+        let result = [];
+        for (const item of this.values())result.push(resolve(item));
+        return result;
+    }
+    clone() {
+        return new ReferenceSet(this.values());
+    }
+    merge(newItems, removeItems) {
+        const next = this.clone();
+        newItems.forEach((value)=>next.add(value));
+        removeItems.forEach((value)=>next.delete(value));
+        return next;
+    }
+}
+// tweaked from https://github.com/Kelin2025/nanoclone/blob/0abeb7635bda9b68ef2277093f76dbe3bf3948e1/src/index.js
+function clone(src, seen = new Map()) {
+    if (isSchema(src) || !src || typeof src !== 'object') return src;
+    if (seen.has(src)) return seen.get(src);
+    let copy;
+    if (src instanceof Date) {
+        // Date
+        copy = new Date(src.getTime());
+        seen.set(src, copy);
+    } else if (src instanceof RegExp) {
+        // RegExp
+        copy = new RegExp(src);
+        seen.set(src, copy);
+    } else if (Array.isArray(src)) {
+        // Array
+        copy = new Array(src.length);
+        seen.set(src, copy);
+        for(let i = 0; i < src.length; i++)copy[i] = clone(src[i], seen);
+    } else if (src instanceof Map) {
+        // Map
+        copy = new Map();
+        seen.set(src, copy);
+        for (const [k, v] of src.entries())copy.set(k, clone(v, seen));
+    } else if (src instanceof Set) {
+        // Set
+        copy = new Set();
+        seen.set(src, copy);
+        for (const v of src)copy.add(clone(v, seen));
+    } else if (src instanceof Object) {
+        // Object
+        copy = {};
+        seen.set(src, copy);
+        for (const [k, v] of Object.entries(src))copy[k] = clone(v, seen);
+    } else throw Error(`Unable to clone ${src}`);
+    return copy;
+}
+// If `CustomSchemaMeta` isn't extended with any keys, we'll fall back to a
+// loose Record definition allowing free form usage.
+class Schema {
+    constructor(options){
+        this.type = void 0;
+        this.deps = [];
+        this.tests = void 0;
+        this.transforms = void 0;
+        this.conditions = [];
+        this._mutate = void 0;
+        this.internalTests = {};
+        this._whitelist = new ReferenceSet();
+        this._blacklist = new ReferenceSet();
+        this.exclusiveTests = Object.create(null);
+        this._typeCheck = void 0;
+        this.spec = void 0;
+        this.tests = [];
+        this.transforms = [];
+        this.withMutation(()=>{
+            this.typeError(mixed.notType);
+        });
+        this.type = options.type;
+        this._typeCheck = options.check;
+        this.spec = Object.assign({
+            strip: false,
+            strict: false,
+            abortEarly: true,
+            recursive: true,
+            disableStackTrace: false,
+            nullable: false,
+            optional: true,
+            coerce: true
+        }, options == null ? void 0 : options.spec);
+        this.withMutation((s)=>{
+            s.nonNullable();
+        });
+    }
+    // TODO: remove
+    get _type() {
+        return this.type;
+    }
+    clone(spec) {
+        if (this._mutate) {
+            if (spec) Object.assign(this.spec, spec);
+            return this;
+        }
+        // if the nested value is a schema we can skip cloning, since
+        // they are already immutable
+        const next = Object.create(Object.getPrototypeOf(this));
+        // @ts-expect-error this is readonly
+        next.type = this.type;
+        next._typeCheck = this._typeCheck;
+        next._whitelist = this._whitelist.clone();
+        next._blacklist = this._blacklist.clone();
+        next.internalTests = Object.assign({}, this.internalTests);
+        next.exclusiveTests = Object.assign({}, this.exclusiveTests);
+        // @ts-expect-error this is readonly
+        next.deps = [
+            ...this.deps
+        ];
+        next.conditions = [
+            ...this.conditions
+        ];
+        next.tests = [
+            ...this.tests
+        ];
+        next.transforms = [
+            ...this.transforms
+        ];
+        next.spec = clone(Object.assign({}, this.spec, spec));
+        return next;
+    }
+    label(label) {
+        let next = this.clone();
+        next.spec.label = label;
+        return next;
+    }
+    meta(...args) {
+        if (args.length === 0) return this.spec.meta;
+        let next = this.clone();
+        next.spec.meta = Object.assign(next.spec.meta || {}, args[0]);
+        return next;
+    }
+    withMutation(fn) {
+        let before = this._mutate;
+        this._mutate = true;
+        let result = fn(this);
+        this._mutate = before;
+        return result;
+    }
+    concat(schema) {
+        if (!schema || schema === this) return this;
+        if (schema.type !== this.type && this.type !== 'mixed') throw new TypeError(`You cannot \`concat()\` schema's of different types: ${this.type} and ${schema.type}`);
+        let base = this;
+        let combined = schema.clone();
+        const mergedSpec = Object.assign({}, base.spec, combined.spec);
+        combined.spec = mergedSpec;
+        combined.internalTests = Object.assign({}, base.internalTests, combined.internalTests);
+        // manually merge the blacklist/whitelist (the other `schema` takes
+        // precedence in case of conflicts)
+        combined._whitelist = base._whitelist.merge(schema._whitelist, schema._blacklist);
+        combined._blacklist = base._blacklist.merge(schema._blacklist, schema._whitelist);
+        // start with the current tests
+        combined.tests = base.tests;
+        combined.exclusiveTests = base.exclusiveTests;
+        // manually add the new tests to ensure
+        // the deduping logic is consistent
+        combined.withMutation((next)=>{
+            schema.tests.forEach((fn)=>{
+                next.test(fn.OPTIONS);
+            });
+        });
+        combined.transforms = [
+            ...base.transforms,
+            ...combined.transforms
+        ];
+        return combined;
+    }
+    isType(v) {
+        if (v == null) {
+            if (this.spec.nullable && v === null) return true;
+            if (this.spec.optional && v === undefined) return true;
+            return false;
+        }
+        return this._typeCheck(v);
+    }
+    resolve(options) {
+        let schema = this;
+        if (schema.conditions.length) {
+            let conditions = schema.conditions;
+            schema = schema.clone();
+            schema.conditions = [];
+            schema = conditions.reduce((prevSchema, condition)=>condition.resolve(prevSchema, options), schema);
+            schema = schema.resolve(options);
+        }
+        return schema;
+    }
+    resolveOptions(options) {
+        var _options$strict, _options$abortEarly, _options$recursive, _options$disableStack;
+        return Object.assign({}, options, {
+            from: options.from || [],
+            strict: (_options$strict = options.strict) != null ? _options$strict : this.spec.strict,
+            abortEarly: (_options$abortEarly = options.abortEarly) != null ? _options$abortEarly : this.spec.abortEarly,
+            recursive: (_options$recursive = options.recursive) != null ? _options$recursive : this.spec.recursive,
+            disableStackTrace: (_options$disableStack = options.disableStackTrace) != null ? _options$disableStack : this.spec.disableStackTrace
+        });
+    }
+    /**
+   * Run the configured transform pipeline over an input value.
+   */ cast(value, options = {}) {
+        let resolvedSchema = this.resolve(Object.assign({
+            value
+        }, options));
+        let allowOptionality = options.assert === 'ignore-optionality';
+        let result = resolvedSchema._cast(value, options);
+        if (options.assert !== false && !resolvedSchema.isType(result)) {
+            if (allowOptionality && isAbsent(result)) return result;
+            let formattedValue = printValue(value);
+            let formattedResult = printValue(result);
+            throw new TypeError(`The value of ${options.path || 'field'} could not be cast to a value ` + `that satisfies the schema type: "${resolvedSchema.type}". \n\n` + `attempted value: ${formattedValue} \n` + (formattedResult !== formattedValue ? `result of cast: ${formattedResult}` : ''));
+        }
+        return result;
+    }
+    _cast(rawValue, options) {
+        let value = rawValue === undefined ? rawValue : this.transforms.reduce((prevValue, fn)=>fn.call(this, prevValue, rawValue, this), rawValue);
+        if (value === undefined) value = this.getDefault(options);
+        return value;
+    }
+    _validate(_value, options = {}, panic, next) {
+        let { path, originalValue = _value, strict = this.spec.strict } = options;
+        let value = _value;
+        if (!strict) value = this._cast(value, Object.assign({
+            assert: false
+        }, options));
+        let initialTests = [];
+        for (let test of Object.values(this.internalTests))if (test) initialTests.push(test);
+        this.runTests({
+            path,
+            value,
+            originalValue,
+            options,
+            tests: initialTests
+        }, panic, (initialErrors)=>{
+            // even if we aren't ending early we can't proceed further if the types aren't correct
+            if (initialErrors.length) return next(initialErrors, value);
+            this.runTests({
+                path,
+                value,
+                originalValue,
+                options,
+                tests: this.tests
+            }, panic, next);
+        });
+    }
+    /**
+   * Executes a set of validations, either schema, produced Tests or a nested
+   * schema validate result.
+   */ runTests(runOptions, panic, next) {
+        let fired = false;
+        let { tests, value, originalValue, path, options } = runOptions;
+        let panicOnce = (arg)=>{
+            if (fired) return;
+            fired = true;
+            panic(arg, value);
+        };
+        let nextOnce = (arg)=>{
+            if (fired) return;
+            fired = true;
+            next(arg, value);
+        };
+        let count = tests.length;
+        let nestedErrors = [];
+        if (!count) return nextOnce([]);
+        let args = {
+            value,
+            originalValue,
+            path,
+            options,
+            schema: this
+        };
+        for(let i = 0; i < tests.length; i++){
+            const test = tests[i];
+            test(args, panicOnce, function finishTestRun(err) {
+                if (err) Array.isArray(err) ? nestedErrors.push(...err) : nestedErrors.push(err);
+                if (--count <= 0) nextOnce(nestedErrors);
+            });
+        }
+    }
+    asNestedTest({ key, index, parent, parentPath, originalParent, options }) {
+        const k = key != null ? key : index;
+        if (k == null) throw TypeError('Must include `key` or `index` for nested validations');
+        const isIndex = typeof k === 'number';
+        let value = parent[k];
+        const testOptions = Object.assign({}, options, {
+            // Nested validations fields are always strict:
+            //    1. parent isn't strict so the casting will also have cast inner values
+            //    2. parent is strict in which case the nested values weren't cast either
+            strict: true,
+            parent,
+            value,
+            originalValue: originalParent[k],
+            // FIXME: tests depend on `index` being passed around deeply,
+            //   we should not let the options.key/index bleed through
+            key: undefined,
+            // index: undefined,
+            [isIndex ? 'index' : 'key']: k,
+            path: isIndex || k.includes('.') ? `${parentPath || ''}[${isIndex ? k : `"${k}"`}]` : (parentPath ? `${parentPath}.` : '') + key
+        });
+        return (_, panic, next)=>this.resolve(testOptions)._validate(value, testOptions, panic, next);
+    }
+    validate(value, options) {
+        var _options$disableStack2;
+        let schema = this.resolve(Object.assign({}, options, {
+            value
+        }));
+        let disableStackTrace = (_options$disableStack2 = options == null ? void 0 : options.disableStackTrace) != null ? _options$disableStack2 : schema.spec.disableStackTrace;
+        return new Promise((resolve, reject)=>schema._validate(value, options, (error, parsed)=>{
+                if (ValidationError.isError(error)) error.value = parsed;
+                reject(error);
+            }, (errors, validated)=>{
+                if (errors.length) reject(new ValidationError(errors, validated, undefined, undefined, disableStackTrace));
+                else resolve(validated);
+            }));
+    }
+    validateSync(value, options) {
+        var _options$disableStack3;
+        let schema = this.resolve(Object.assign({}, options, {
+            value
+        }));
+        let result;
+        let disableStackTrace = (_options$disableStack3 = options == null ? void 0 : options.disableStackTrace) != null ? _options$disableStack3 : schema.spec.disableStackTrace;
+        schema._validate(value, Object.assign({}, options, {
+            sync: true
+        }), (error, parsed)=>{
+            if (ValidationError.isError(error)) error.value = parsed;
+            throw error;
+        }, (errors, validated)=>{
+            if (errors.length) throw new ValidationError(errors, value, undefined, undefined, disableStackTrace);
+            result = validated;
+        });
+        return result;
+    }
+    isValid(value, options) {
+        return this.validate(value, options).then(()=>true, (err)=>{
+            if (ValidationError.isError(err)) return false;
+            throw err;
+        });
+    }
+    isValidSync(value, options) {
+        try {
+            this.validateSync(value, options);
+            return true;
+        } catch (err) {
+            if (ValidationError.isError(err)) return false;
+            throw err;
+        }
+    }
+    _getDefault(options) {
+        let defaultValue = this.spec.default;
+        if (defaultValue == null) return defaultValue;
+        return typeof defaultValue === 'function' ? defaultValue.call(this, options) : clone(defaultValue);
+    }
+    getDefault(options) {
+        let schema = this.resolve(options || {});
+        return schema._getDefault(options);
+    }
+    default(def) {
+        if (arguments.length === 0) return this._getDefault();
+        let next = this.clone({
+            default: def
+        });
+        return next;
+    }
+    strict(isStrict = true) {
+        return this.clone({
+            strict: isStrict
+        });
+    }
+    nullability(nullable, message) {
+        const next = this.clone({
+            nullable
+        });
+        next.internalTests.nullable = createValidation({
+            message,
+            name: 'nullable',
+            test (value) {
+                return value === null ? this.schema.spec.nullable : true;
+            }
+        });
+        return next;
+    }
+    optionality(optional, message) {
+        const next = this.clone({
+            optional
+        });
+        next.internalTests.optionality = createValidation({
+            message,
+            name: 'optionality',
+            test (value) {
+                return value === undefined ? this.schema.spec.optional : true;
+            }
+        });
+        return next;
+    }
+    optional() {
+        return this.optionality(true);
+    }
+    defined(message = mixed.defined) {
+        return this.optionality(false, message);
+    }
+    nullable() {
+        return this.nullability(true);
+    }
+    nonNullable(message = mixed.notNull) {
+        return this.nullability(false, message);
+    }
+    required(message = mixed.required) {
+        return this.clone().withMutation((next)=>next.nonNullable(message).defined(message));
+    }
+    notRequired() {
+        return this.clone().withMutation((next)=>next.nullable().optional());
+    }
+    transform(fn) {
+        let next = this.clone();
+        next.transforms.push(fn);
+        return next;
+    }
+    /**
+   * Adds a test function to the schema's queue of tests.
+   * tests can be exclusive or non-exclusive.
+   *
+   * - exclusive tests, will replace any existing tests of the same name.
+   * - non-exclusive: can be stacked
+   *
+   * If a non-exclusive test is added to a schema with an exclusive test of the same name
+   * the exclusive test is removed and further tests of the same name will be stacked.
+   *
+   * If an exclusive test is added to a schema with non-exclusive tests of the same name
+   * the previous tests are removed and further tests of the same name will replace each other.
+   */ test(...args) {
+        let opts;
+        if (args.length === 1) {
+            if (typeof args[0] === 'function') opts = {
+                test: args[0]
+            };
+            else opts = args[0];
+        } else if (args.length === 2) opts = {
+            name: args[0],
+            test: args[1]
+        };
+        else opts = {
+            name: args[0],
+            message: args[1],
+            test: args[2]
+        };
+        if (opts.message === undefined) opts.message = mixed.default;
+        if (typeof opts.test !== 'function') throw new TypeError('`test` is a required parameters');
+        let next = this.clone();
+        let validate = createValidation(opts);
+        let isExclusive = opts.exclusive || opts.name && next.exclusiveTests[opts.name] === true;
+        if (opts.exclusive) {
+            if (!opts.name) throw new TypeError('Exclusive tests must provide a unique `name` identifying the test');
+        }
+        if (opts.name) next.exclusiveTests[opts.name] = !!opts.exclusive;
+        next.tests = next.tests.filter((fn)=>{
+            if (fn.OPTIONS.name === opts.name) {
+                if (isExclusive) return false;
+                if (fn.OPTIONS.test === validate.OPTIONS.test) return false;
+            }
+            return true;
+        });
+        next.tests.push(validate);
+        return next;
+    }
+    when(keys, options) {
+        if (!Array.isArray(keys) && typeof keys !== 'string') {
+            options = keys;
+            keys = '.';
+        }
+        let next = this.clone();
+        let deps = toArray(keys).map((key)=>new Reference(key));
+        deps.forEach((dep)=>{
+            // @ts-ignore readonly array
+            if (dep.isSibling) next.deps.push(dep.key);
+        });
+        next.conditions.push(typeof options === 'function' ? new Condition(deps, options) : Condition.fromOptions(deps, options));
+        return next;
+    }
+    typeError(message) {
+        let next = this.clone();
+        next.internalTests.typeError = createValidation({
+            message,
+            name: 'typeError',
+            skipAbsent: true,
+            test (value) {
+                if (!this.schema._typeCheck(value)) return this.createError({
+                    params: {
+                        type: this.schema.type
+                    }
+                });
+                return true;
+            }
+        });
+        return next;
+    }
+    oneOf(enums, message = mixed.oneOf) {
+        let next = this.clone();
+        enums.forEach((val)=>{
+            next._whitelist.add(val);
+            next._blacklist.delete(val);
+        });
+        next.internalTests.whiteList = createValidation({
+            message,
+            name: 'oneOf',
+            skipAbsent: true,
+            test (value) {
+                let valids = this.schema._whitelist;
+                let resolved = valids.resolveAll(this.resolve);
+                return resolved.includes(value) ? true : this.createError({
+                    params: {
+                        values: Array.from(valids).join(', '),
+                        resolved
+                    }
+                });
+            }
+        });
+        return next;
+    }
+    notOneOf(enums, message = mixed.notOneOf) {
+        let next = this.clone();
+        enums.forEach((val)=>{
+            next._blacklist.add(val);
+            next._whitelist.delete(val);
+        });
+        next.internalTests.blacklist = createValidation({
+            message,
+            name: 'notOneOf',
+            test (value) {
+                let invalids = this.schema._blacklist;
+                let resolved = invalids.resolveAll(this.resolve);
+                if (resolved.includes(value)) return this.createError({
+                    params: {
+                        values: Array.from(invalids).join(', '),
+                        resolved
+                    }
+                });
+                return true;
+            }
+        });
+        return next;
+    }
+    strip(strip = true) {
+        let next = this.clone();
+        next.spec.strip = strip;
+        return next;
+    }
+    /**
+   * Return a serialized description of the schema including validations, flags, types etc.
+   *
+   * @param options Provide any needed context for resolving runtime schema alterations (lazy, when conditions, etc).
+   */ describe(options) {
+        const next = (options ? this.resolve(options) : this).clone();
+        const { label, meta, optional, nullable } = next.spec;
+        const description = {
+            meta,
+            label,
+            optional,
+            nullable,
+            default: next.getDefault(options),
+            type: next.type,
+            oneOf: next._whitelist.describe(),
+            notOneOf: next._blacklist.describe(),
+            tests: next.tests.map((fn)=>({
+                    name: fn.OPTIONS.name,
+                    params: fn.OPTIONS.params
+                })).filter((n, idx, list)=>list.findIndex((c)=>c.name === n.name) === idx)
+        };
+        return description;
+    }
+}
+// @ts-expect-error
+Schema.prototype.__isYupSchema__ = true;
+for (const method of [
+    'validate',
+    'validateSync'
+])Schema.prototype[`${method}At`] = function(path, value, options = {}) {
+    const { parent, parentPath, schema } = getIn(this, path, value, options.context);
+    return schema[method](parent && parent[parentPath], Object.assign({}, options, {
+        parent,
+        path
+    }));
+};
+for (const alias of [
+    'equals',
+    'is'
+])Schema.prototype[alias] = Schema.prototype.oneOf;
+for (const alias of [
+    'not',
+    'nope'
+])Schema.prototype[alias] = Schema.prototype.notOneOf;
+const returnsTrue = ()=>true;
+function create$8(spec) {
+    return new MixedSchema(spec);
+}
+class MixedSchema extends Schema {
+    constructor(spec){
+        super(typeof spec === 'function' ? {
+            type: 'mixed',
+            check: spec
+        } : Object.assign({
+            type: 'mixed',
+            check: returnsTrue
+        }, spec));
+    }
+}
+create$8.prototype = MixedSchema.prototype;
+function create$7() {
+    return new BooleanSchema();
+}
+class BooleanSchema extends Schema {
+    constructor(){
+        super({
+            type: 'boolean',
+            check (v) {
+                if (v instanceof Boolean) v = v.valueOf();
+                return typeof v === 'boolean';
+            }
+        });
+        this.withMutation(()=>{
+            this.transform((value, _raw, ctx)=>{
+                if (ctx.spec.coerce && !ctx.isType(value)) {
+                    if (/^(true|1)$/i.test(String(value))) return true;
+                    if (/^(false|0)$/i.test(String(value))) return false;
+                }
+                return value;
+            });
+        });
+    }
+    isTrue(message = boolean.isValue) {
+        return this.test({
+            message,
+            name: 'is-value',
+            exclusive: true,
+            params: {
+                value: 'true'
+            },
+            test (value) {
+                return isAbsent(value) || value === true;
+            }
+        });
+    }
+    isFalse(message = boolean.isValue) {
+        return this.test({
+            message,
+            name: 'is-value',
+            exclusive: true,
+            params: {
+                value: 'false'
+            },
+            test (value) {
+                return isAbsent(value) || value === false;
+            }
+        });
+    }
+    default(def) {
+        return super.default(def);
+    }
+    defined(msg) {
+        return super.defined(msg);
+    }
+    optional() {
+        return super.optional();
+    }
+    required(msg) {
+        return super.required(msg);
+    }
+    notRequired() {
+        return super.notRequired();
+    }
+    nullable() {
+        return super.nullable();
+    }
+    nonNullable(msg) {
+        return super.nonNullable(msg);
+    }
+    strip(v) {
+        return super.strip(v);
+    }
+}
+create$7.prototype = BooleanSchema.prototype;
+/**
+ * This file is a modified version of the file from the following repository:
+ * Date.parse with progressive enhancement for ISO 8601 <https://github.com/csnover/js-iso8601>
+ * NON-CONFORMANT EDITION.
+ * © 2011 Colin Snover <http://zetafleet.com>
+ * Released under MIT license.
+ */ // prettier-ignore
+//                1 YYYY                2 MM        3 DD              4 HH     5 mm        6 ss           7 msec         8 Z 9 ±   10 tzHH    11 tzmm
+const isoReg = /^(\d{4}|[+-]\d{6})(?:-?(\d{2})(?:-?(\d{2}))?)?(?:[ T]?(\d{2}):?(\d{2})(?::?(\d{2})(?:[,.](\d{1,}))?)?(?:(Z)|([+-])(\d{2})(?::?(\d{2}))?)?)?$/;
+function parseIsoDate(date) {
+    const struct = parseDateStruct(date);
+    if (!struct) return Date.parse ? Date.parse(date) : Number.NaN;
+    // timestamps without timezone identifiers should be considered local time
+    if (struct.z === undefined && struct.plusMinus === undefined) return new Date(struct.year, struct.month, struct.day, struct.hour, struct.minute, struct.second, struct.millisecond).valueOf();
+    let totalMinutesOffset = 0;
+    if (struct.z !== 'Z' && struct.plusMinus !== undefined) {
+        totalMinutesOffset = struct.hourOffset * 60 + struct.minuteOffset;
+        if (struct.plusMinus === '+') totalMinutesOffset = 0 - totalMinutesOffset;
+    }
+    return Date.UTC(struct.year, struct.month, struct.day, struct.hour, struct.minute + totalMinutesOffset, struct.second, struct.millisecond);
+}
+function parseDateStruct(date) {
+    var _regexResult$7$length, _regexResult$;
+    const regexResult = isoReg.exec(date);
+    if (!regexResult) return null;
+    // use of toNumber() avoids NaN timestamps caused by “undefined”
+    // values being passed to Date constructor
+    return {
+        year: toNumber(regexResult[1]),
+        month: toNumber(regexResult[2], 1) - 1,
+        day: toNumber(regexResult[3], 1),
+        hour: toNumber(regexResult[4]),
+        minute: toNumber(regexResult[5]),
+        second: toNumber(regexResult[6]),
+        millisecond: regexResult[7] ? // allow arbitrary sub-second precision beyond milliseconds
+        toNumber(regexResult[7].substring(0, 3)) : 0,
+        precision: (_regexResult$7$length = (_regexResult$ = regexResult[7]) == null ? void 0 : _regexResult$.length) != null ? _regexResult$7$length : undefined,
+        z: regexResult[8] || undefined,
+        plusMinus: regexResult[9] || undefined,
+        hourOffset: toNumber(regexResult[10]),
+        minuteOffset: toNumber(regexResult[11])
+    };
+}
+function toNumber(str, defaultValue = 0) {
+    return Number(str) || defaultValue;
+}
+// Taken from HTML spec: https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address
+let rEmail = // eslint-disable-next-line
+/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+let rUrl = // eslint-disable-next-line
+/^((https?|ftp):)?\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i;
+// eslint-disable-next-line
+let rUUID = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+let yearMonthDay = '^\\d{4}-\\d{2}-\\d{2}';
+let hourMinuteSecond = '\\d{2}:\\d{2}:\\d{2}';
+let zOrOffset = '(([+-]\\d{2}(:?\\d{2})?)|Z)';
+let rIsoDateTime = new RegExp(`${yearMonthDay}T${hourMinuteSecond}(\\.\\d+)?${zOrOffset}$`);
+let isTrimmed = (value)=>isAbsent(value) || value === value.trim();
+let objStringTag = ({}).toString();
+function create$6() {
+    return new StringSchema();
+}
+class StringSchema extends Schema {
+    constructor(){
+        super({
+            type: 'string',
+            check (value) {
+                if (value instanceof String) value = value.valueOf();
+                return typeof value === 'string';
+            }
+        });
+        this.withMutation(()=>{
+            this.transform((value, _raw, ctx)=>{
+                if (!ctx.spec.coerce || ctx.isType(value)) return value;
+                // don't ever convert arrays
+                if (Array.isArray(value)) return value;
+                const strValue = value != null && value.toString ? value.toString() : value;
+                // no one wants plain objects converted to [Object object]
+                if (strValue === objStringTag) return value;
+                return strValue;
+            });
+        });
+    }
+    required(message) {
+        return super.required(message).withMutation((schema)=>schema.test({
+                message: message || mixed.required,
+                name: 'required',
+                skipAbsent: true,
+                test: (value)=>!!value.length
+            }));
+    }
+    notRequired() {
+        return super.notRequired().withMutation((schema)=>{
+            schema.tests = schema.tests.filter((t)=>t.OPTIONS.name !== 'required');
+            return schema;
+        });
+    }
+    length(length, message = string.length) {
+        return this.test({
+            message,
+            name: 'length',
+            exclusive: true,
+            params: {
+                length
+            },
+            skipAbsent: true,
+            test (value) {
+                return value.length === this.resolve(length);
+            }
+        });
+    }
+    min(min, message = string.min) {
+        return this.test({
+            message,
+            name: 'min',
+            exclusive: true,
+            params: {
+                min
+            },
+            skipAbsent: true,
+            test (value) {
+                return value.length >= this.resolve(min);
+            }
+        });
+    }
+    max(max, message = string.max) {
+        return this.test({
+            name: 'max',
+            exclusive: true,
+            message,
+            params: {
+                max
+            },
+            skipAbsent: true,
+            test (value) {
+                return value.length <= this.resolve(max);
+            }
+        });
+    }
+    matches(regex, options) {
+        let excludeEmptyString = false;
+        let message;
+        let name;
+        if (options) {
+            if (typeof options === 'object') ({ excludeEmptyString = false, message, name } = options);
+            else message = options;
+        }
+        return this.test({
+            name: name || 'matches',
+            message: message || string.matches,
+            params: {
+                regex
+            },
+            skipAbsent: true,
+            test: (value)=>value === '' && excludeEmptyString || value.search(regex) !== -1
+        });
+    }
+    email(message = string.email) {
+        return this.matches(rEmail, {
+            name: 'email',
+            message,
+            excludeEmptyString: true
+        });
+    }
+    url(message = string.url) {
+        return this.matches(rUrl, {
+            name: 'url',
+            message,
+            excludeEmptyString: true
+        });
+    }
+    uuid(message = string.uuid) {
+        return this.matches(rUUID, {
+            name: 'uuid',
+            message,
+            excludeEmptyString: false
+        });
+    }
+    datetime(options) {
+        let message = '';
+        let allowOffset;
+        let precision;
+        if (options) {
+            if (typeof options === 'object') ({ message = '', allowOffset = false, precision } = options);
+            else message = options;
+        }
+        return this.matches(rIsoDateTime, {
+            name: 'datetime',
+            message: message || string.datetime,
+            excludeEmptyString: true
+        }).test({
+            name: 'datetime_offset',
+            message: message || string.datetime_offset,
+            params: {
+                allowOffset
+            },
+            skipAbsent: true,
+            test: (value)=>{
+                if (!value || allowOffset) return true;
+                const struct = parseDateStruct(value);
+                if (!struct) return false;
+                return !!struct.z;
+            }
+        }).test({
+            name: 'datetime_precision',
+            message: message || string.datetime_precision,
+            params: {
+                precision
+            },
+            skipAbsent: true,
+            test: (value)=>{
+                if (!value || precision == undefined) return true;
+                const struct = parseDateStruct(value);
+                if (!struct) return false;
+                return struct.precision === precision;
+            }
+        });
+    }
+    //-- transforms --
+    ensure() {
+        return this.default('').transform((val)=>val === null ? '' : val);
+    }
+    trim(message = string.trim) {
+        return this.transform((val)=>val != null ? val.trim() : val).test({
+            message,
+            name: 'trim',
+            test: isTrimmed
+        });
+    }
+    lowercase(message = string.lowercase) {
+        return this.transform((value)=>!isAbsent(value) ? value.toLowerCase() : value).test({
+            message,
+            name: 'string_case',
+            exclusive: true,
+            skipAbsent: true,
+            test: (value)=>isAbsent(value) || value === value.toLowerCase()
+        });
+    }
+    uppercase(message = string.uppercase) {
+        return this.transform((value)=>!isAbsent(value) ? value.toUpperCase() : value).test({
+            message,
+            name: 'string_case',
+            exclusive: true,
+            skipAbsent: true,
+            test: (value)=>isAbsent(value) || value === value.toUpperCase()
+        });
+    }
+}
+create$6.prototype = StringSchema.prototype;
+//
+// String Interfaces
+//
+let isNaN$1 = (value)=>value != +value;
+function create$5() {
+    return new NumberSchema();
+}
+class NumberSchema extends Schema {
+    constructor(){
+        super({
+            type: 'number',
+            check (value) {
+                if (value instanceof Number) value = value.valueOf();
+                return typeof value === 'number' && !isNaN$1(value);
+            }
+        });
+        this.withMutation(()=>{
+            this.transform((value, _raw, ctx)=>{
+                if (!ctx.spec.coerce) return value;
+                let parsed = value;
+                if (typeof parsed === 'string') {
+                    parsed = parsed.replace(/\s/g, '');
+                    if (parsed === '') return NaN;
+                    // don't use parseFloat to avoid positives on alpha-numeric strings
+                    parsed = +parsed;
+                }
+                // null -> NaN isn't useful; treat all nulls as null and let it fail on
+                // nullability check vs TypeErrors
+                if (ctx.isType(parsed) || parsed === null) return parsed;
+                return parseFloat(parsed);
+            });
+        });
+    }
+    min(min, message = number.min) {
+        return this.test({
+            message,
+            name: 'min',
+            exclusive: true,
+            params: {
+                min
+            },
+            skipAbsent: true,
+            test (value) {
+                return value >= this.resolve(min);
+            }
+        });
+    }
+    max(max, message = number.max) {
+        return this.test({
+            message,
+            name: 'max',
+            exclusive: true,
+            params: {
+                max
+            },
+            skipAbsent: true,
+            test (value) {
+                return value <= this.resolve(max);
+            }
+        });
+    }
+    lessThan(less, message = number.lessThan) {
+        return this.test({
+            message,
+            name: 'max',
+            exclusive: true,
+            params: {
+                less
+            },
+            skipAbsent: true,
+            test (value) {
+                return value < this.resolve(less);
+            }
+        });
+    }
+    moreThan(more, message = number.moreThan) {
+        return this.test({
+            message,
+            name: 'min',
+            exclusive: true,
+            params: {
+                more
+            },
+            skipAbsent: true,
+            test (value) {
+                return value > this.resolve(more);
+            }
+        });
+    }
+    positive(msg = number.positive) {
+        return this.moreThan(0, msg);
+    }
+    negative(msg = number.negative) {
+        return this.lessThan(0, msg);
+    }
+    integer(message = number.integer) {
+        return this.test({
+            name: 'integer',
+            message,
+            skipAbsent: true,
+            test: (val)=>Number.isInteger(val)
+        });
+    }
+    truncate() {
+        return this.transform((value)=>!isAbsent(value) ? value | 0 : value);
+    }
+    round(method) {
+        var _method;
+        let avail = [
+            'ceil',
+            'floor',
+            'round',
+            'trunc'
+        ];
+        method = ((_method = method) == null ? void 0 : _method.toLowerCase()) || 'round';
+        // this exists for symemtry with the new Math.trunc
+        if (method === 'trunc') return this.truncate();
+        if (avail.indexOf(method.toLowerCase()) === -1) throw new TypeError('Only valid options for round() are: ' + avail.join(', '));
+        return this.transform((value)=>!isAbsent(value) ? Math[method](value) : value);
+    }
+}
+create$5.prototype = NumberSchema.prototype;
+//
+// Number Interfaces
+//
+let invalidDate = new Date('');
+let isDate = (obj)=>Object.prototype.toString.call(obj) === '[object Date]';
+function create$4() {
+    return new DateSchema();
+}
+class DateSchema extends Schema {
+    constructor(){
+        super({
+            type: 'date',
+            check (v) {
+                return isDate(v) && !isNaN(v.getTime());
+            }
+        });
+        this.withMutation(()=>{
+            this.transform((value, _raw, ctx)=>{
+                // null -> InvalidDate isn't useful; treat all nulls as null and let it fail on
+                // nullability check vs TypeErrors
+                if (!ctx.spec.coerce || ctx.isType(value) || value === null) return value;
+                value = parseIsoDate(value);
+                // 0 is a valid timestamp equivalent to 1970-01-01T00:00:00Z(unix epoch) or before.
+                return !isNaN(value) ? new Date(value) : DateSchema.INVALID_DATE;
+            });
+        });
+    }
+    prepareParam(ref, name) {
+        let param;
+        if (!Reference.isRef(ref)) {
+            let cast = this.cast(ref);
+            if (!this._typeCheck(cast)) throw new TypeError(`\`${name}\` must be a Date or a value that can be \`cast()\` to a Date`);
+            param = cast;
+        } else param = ref;
+        return param;
+    }
+    min(min, message = date.min) {
+        let limit = this.prepareParam(min, 'min');
+        return this.test({
+            message,
+            name: 'min',
+            exclusive: true,
+            params: {
+                min
+            },
+            skipAbsent: true,
+            test (value) {
+                return value >= this.resolve(limit);
+            }
+        });
+    }
+    max(max, message = date.max) {
+        let limit = this.prepareParam(max, 'max');
+        return this.test({
+            message,
+            name: 'max',
+            exclusive: true,
+            params: {
+                max
+            },
+            skipAbsent: true,
+            test (value) {
+                return value <= this.resolve(limit);
+            }
+        });
+    }
+}
+DateSchema.INVALID_DATE = invalidDate;
+create$4.prototype = DateSchema.prototype;
+create$4.INVALID_DATE = invalidDate;
+// @ts-expect-error
+function sortFields(fields, excludedEdges = []) {
+    let edges = [];
+    let nodes = new Set();
+    let excludes = new Set(excludedEdges.map(([a, b])=>`${a}-${b}`));
+    function addNode(depPath, key) {
+        let node = (0, _propertyExpr.split)(depPath)[0];
+        nodes.add(node);
+        if (!excludes.has(`${key}-${node}`)) edges.push([
+            key,
+            node
+        ]);
+    }
+    for (const key of Object.keys(fields)){
+        let value = fields[key];
+        nodes.add(key);
+        if (Reference.isRef(value) && value.isSibling) addNode(value.path, key);
+        else if (isSchema(value) && 'deps' in value) value.deps.forEach((path)=>addNode(path, key));
+    }
+    return (0, _toposortDefault.default).array(Array.from(nodes), edges).reverse();
+}
+function findIndex(arr, err) {
+    let idx = Infinity;
+    arr.some((key, ii)=>{
+        var _err$path;
+        if ((_err$path = err.path) != null && _err$path.includes(key)) {
+            idx = ii;
+            return true;
+        }
+    });
+    return idx;
+}
+function sortByKeyOrder(keys) {
+    return (a, b)=>{
+        return findIndex(keys, a) - findIndex(keys, b);
+    };
+}
+const parseJson = (value, _, ctx)=>{
+    if (typeof value !== 'string') return value;
+    let parsed = value;
+    try {
+        parsed = JSON.parse(value);
+    } catch (err) {
+    /* */ }
+    return ctx.isType(parsed) ? parsed : value;
+};
+// @ts-ignore
+function deepPartial(schema) {
+    if ('fields' in schema) {
+        const partial = {};
+        for (const [key, fieldSchema] of Object.entries(schema.fields))partial[key] = deepPartial(fieldSchema);
+        return schema.setFields(partial);
+    }
+    if (schema.type === 'array') {
+        const nextArray = schema.optional();
+        if (nextArray.innerType) nextArray.innerType = deepPartial(nextArray.innerType);
+        return nextArray;
+    }
+    if (schema.type === 'tuple') return schema.optional().clone({
+        types: schema.spec.types.map(deepPartial)
+    });
+    if ('optional' in schema) return schema.optional();
+    return schema;
+}
+const deepHas = (obj, p)=>{
+    const path = [
+        ...(0, _propertyExpr.normalizePath)(p)
+    ];
+    if (path.length === 1) return path[0] in obj;
+    let last = path.pop();
+    let parent = (0, _propertyExpr.getter)((0, _propertyExpr.join)(path), true)(obj);
+    return !!(parent && last in parent);
+};
+let isObject = (obj)=>Object.prototype.toString.call(obj) === '[object Object]';
+function unknown(ctx, value) {
+    let known = Object.keys(ctx.fields);
+    return Object.keys(value).filter((key)=>known.indexOf(key) === -1);
+}
+const defaultSort = sortByKeyOrder([]);
+function create$3(spec) {
+    return new ObjectSchema(spec);
+}
+class ObjectSchema extends Schema {
+    constructor(spec){
+        super({
+            type: 'object',
+            check (value) {
+                return isObject(value) || typeof value === 'function';
+            }
+        });
+        this.fields = Object.create(null);
+        this._sortErrors = defaultSort;
+        this._nodes = [];
+        this._excludedEdges = [];
+        this.withMutation(()=>{
+            if (spec) this.shape(spec);
+        });
+    }
+    _cast(_value, options = {}) {
+        var _options$stripUnknown;
+        let value = super._cast(_value, options);
+        //should ignore nulls here
+        if (value === undefined) return this.getDefault(options);
+        if (!this._typeCheck(value)) return value;
+        let fields = this.fields;
+        let strip = (_options$stripUnknown = options.stripUnknown) != null ? _options$stripUnknown : this.spec.noUnknown;
+        let props = [].concat(this._nodes, Object.keys(value).filter((v)=>!this._nodes.includes(v)));
+        let intermediateValue = {}; // is filled during the transform below
+        let innerOptions = Object.assign({}, options, {
+            parent: intermediateValue,
+            __validating: options.__validating || false
+        });
+        let isChanged = false;
+        for (const prop of props){
+            let field = fields[prop];
+            let exists = prop in value;
+            if (field) {
+                let fieldValue;
+                let inputValue = value[prop];
+                // safe to mutate since this is fired in sequence
+                innerOptions.path = (options.path ? `${options.path}.` : '') + prop;
+                field = field.resolve({
+                    value: inputValue,
+                    context: options.context,
+                    parent: intermediateValue
+                });
+                let fieldSpec = field instanceof Schema ? field.spec : undefined;
+                let strict = fieldSpec == null ? void 0 : fieldSpec.strict;
+                if (fieldSpec != null && fieldSpec.strip) {
+                    isChanged = isChanged || prop in value;
+                    continue;
+                }
+                fieldValue = !options.__validating || !strict ? // TODO: use _cast, this is double resolving
+                field.cast(value[prop], innerOptions) : value[prop];
+                if (fieldValue !== undefined) intermediateValue[prop] = fieldValue;
+            } else if (exists && !strip) intermediateValue[prop] = value[prop];
+            if (exists !== prop in intermediateValue || intermediateValue[prop] !== value[prop]) isChanged = true;
+        }
+        return isChanged ? intermediateValue : value;
+    }
+    _validate(_value, options = {}, panic, next) {
+        let { from = [], originalValue = _value, recursive = this.spec.recursive } = options;
+        options.from = [
+            {
+                schema: this,
+                value: originalValue
+            },
+            ...from
+        ];
+        // this flag is needed for handling `strict` correctly in the context of
+        // validation vs just casting. e.g strict() on a field is only used when validating
+        options.__validating = true;
+        options.originalValue = originalValue;
+        super._validate(_value, options, panic, (objectErrors, value)=>{
+            if (!recursive || !isObject(value)) {
+                next(objectErrors, value);
+                return;
+            }
+            originalValue = originalValue || value;
+            let tests = [];
+            for (let key of this._nodes){
+                let field = this.fields[key];
+                if (!field || Reference.isRef(field)) continue;
+                tests.push(field.asNestedTest({
+                    options,
+                    key,
+                    parent: value,
+                    parentPath: options.path,
+                    originalParent: originalValue
+                }));
+            }
+            this.runTests({
+                tests,
+                value,
+                originalValue,
+                options
+            }, panic, (fieldErrors)=>{
+                next(fieldErrors.sort(this._sortErrors).concat(objectErrors), value);
+            });
+        });
+    }
+    clone(spec) {
+        const next = super.clone(spec);
+        next.fields = Object.assign({}, this.fields);
+        next._nodes = this._nodes;
+        next._excludedEdges = this._excludedEdges;
+        next._sortErrors = this._sortErrors;
+        return next;
+    }
+    concat(schema) {
+        let next = super.concat(schema);
+        let nextFields = next.fields;
+        for (let [field, schemaOrRef] of Object.entries(this.fields)){
+            const target = nextFields[field];
+            nextFields[field] = target === undefined ? schemaOrRef : target;
+        }
+        return next.withMutation((s)=>// XXX: excludes here is wrong
+            s.setFields(nextFields, [
+                ...this._excludedEdges,
+                ...schema._excludedEdges
+            ]));
+    }
+    _getDefault(options) {
+        if ('default' in this.spec) return super._getDefault(options);
+        // if there is no default set invent one
+        if (!this._nodes.length) return undefined;
+        let dft = {};
+        this._nodes.forEach((key)=>{
+            var _innerOptions;
+            const field = this.fields[key];
+            let innerOptions = options;
+            if ((_innerOptions = innerOptions) != null && _innerOptions.value) innerOptions = Object.assign({}, innerOptions, {
+                parent: innerOptions.value,
+                value: innerOptions.value[key]
+            });
+            dft[key] = field && 'getDefault' in field ? field.getDefault(innerOptions) : undefined;
+        });
+        return dft;
+    }
+    setFields(shape, excludedEdges) {
+        let next = this.clone();
+        next.fields = shape;
+        next._nodes = sortFields(shape, excludedEdges);
+        next._sortErrors = sortByKeyOrder(Object.keys(shape));
+        // XXX: this carries over edges which may not be what you want
+        if (excludedEdges) next._excludedEdges = excludedEdges;
+        return next;
+    }
+    shape(additions, excludes = []) {
+        return this.clone().withMutation((next)=>{
+            let edges = next._excludedEdges;
+            if (excludes.length) {
+                if (!Array.isArray(excludes[0])) excludes = [
+                    excludes
+                ];
+                edges = [
+                    ...next._excludedEdges,
+                    ...excludes
+                ];
+            }
+            // XXX: excludes here is wrong
+            return next.setFields(Object.assign(next.fields, additions), edges);
+        });
+    }
+    partial() {
+        const partial = {};
+        for (const [key, schema] of Object.entries(this.fields))partial[key] = 'optional' in schema && schema.optional instanceof Function ? schema.optional() : schema;
+        return this.setFields(partial);
+    }
+    deepPartial() {
+        const next = deepPartial(this);
+        return next;
+    }
+    pick(keys) {
+        const picked = {};
+        for (const key of keys)if (this.fields[key]) picked[key] = this.fields[key];
+        return this.setFields(picked, this._excludedEdges.filter(([a, b])=>keys.includes(a) && keys.includes(b)));
+    }
+    omit(keys) {
+        const remaining = [];
+        for (const key of Object.keys(this.fields)){
+            if (keys.includes(key)) continue;
+            remaining.push(key);
+        }
+        return this.pick(remaining);
+    }
+    from(from, to, alias) {
+        let fromGetter = (0, _propertyExpr.getter)(from, true);
+        return this.transform((obj)=>{
+            if (!obj) return obj;
+            let newObj = obj;
+            if (deepHas(obj, from)) {
+                newObj = Object.assign({}, obj);
+                if (!alias) delete newObj[from];
+                newObj[to] = fromGetter(obj);
+            }
+            return newObj;
+        });
+    }
+    /** Parse an input JSON string to an object */ json() {
+        return this.transform(parseJson);
+    }
+    /**
+   * Similar to `noUnknown` but only validates that an object is the right shape without stripping the unknown keys
+   */ exact(message) {
+        return this.test({
+            name: 'exact',
+            exclusive: true,
+            message: message || object.exact,
+            test (value) {
+                if (value == null) return true;
+                const unknownKeys = unknown(this.schema, value);
+                return unknownKeys.length === 0 || this.createError({
+                    params: {
+                        properties: unknownKeys.join(', ')
+                    }
+                });
+            }
+        });
+    }
+    stripUnknown() {
+        return this.clone({
+            noUnknown: true
+        });
+    }
+    noUnknown(noAllow = true, message = object.noUnknown) {
+        if (typeof noAllow !== 'boolean') {
+            message = noAllow;
+            noAllow = true;
+        }
+        let next = this.test({
+            name: 'noUnknown',
+            exclusive: true,
+            message: message,
+            test (value) {
+                if (value == null) return true;
+                const unknownKeys = unknown(this.schema, value);
+                return !noAllow || unknownKeys.length === 0 || this.createError({
+                    params: {
+                        unknown: unknownKeys.join(', ')
+                    }
+                });
+            }
+        });
+        next.spec.noUnknown = noAllow;
+        return next;
+    }
+    unknown(allow = true, message = object.noUnknown) {
+        return this.noUnknown(!allow, message);
+    }
+    transformKeys(fn) {
+        return this.transform((obj)=>{
+            if (!obj) return obj;
+            const result = {};
+            for (const key of Object.keys(obj))result[fn(key)] = obj[key];
+            return result;
+        });
+    }
+    camelCase() {
+        return this.transformKeys((0, _tinyCase.camelCase));
+    }
+    snakeCase() {
+        return this.transformKeys((0, _tinyCase.snakeCase));
+    }
+    constantCase() {
+        return this.transformKeys((key)=>(0, _tinyCase.snakeCase)(key).toUpperCase());
+    }
+    describe(options) {
+        const next = (options ? this.resolve(options) : this).clone();
+        const base = super.describe(options);
+        base.fields = {};
+        for (const [key, value] of Object.entries(next.fields)){
+            var _innerOptions2;
+            let innerOptions = options;
+            if ((_innerOptions2 = innerOptions) != null && _innerOptions2.value) innerOptions = Object.assign({}, innerOptions, {
+                parent: innerOptions.value,
+                value: innerOptions.value[key]
+            });
+            base.fields[key] = value.describe(innerOptions);
+        }
+        return base;
+    }
+}
+create$3.prototype = ObjectSchema.prototype;
+function create$2(type) {
+    return new ArraySchema(type);
+}
+class ArraySchema extends Schema {
+    constructor(type){
+        super({
+            type: 'array',
+            spec: {
+                types: type
+            },
+            check (v) {
+                return Array.isArray(v);
+            }
+        });
+        // `undefined` specifically means uninitialized, as opposed to "no subtype"
+        this.innerType = void 0;
+        this.innerType = type;
+    }
+    _cast(_value, _opts) {
+        const value = super._cast(_value, _opts);
+        // should ignore nulls here
+        if (!this._typeCheck(value) || !this.innerType) return value;
+        let isChanged = false;
+        const castArray = value.map((v, idx)=>{
+            const castElement = this.innerType.cast(v, Object.assign({}, _opts, {
+                path: `${_opts.path || ''}[${idx}]`
+            }));
+            if (castElement !== v) isChanged = true;
+            return castElement;
+        });
+        return isChanged ? castArray : value;
+    }
+    _validate(_value, options = {}, panic, next) {
+        var _options$recursive;
+        // let sync = options.sync;
+        // let path = options.path;
+        let innerType = this.innerType;
+        // let endEarly = options.abortEarly ?? this.spec.abortEarly;
+        let recursive = (_options$recursive = options.recursive) != null ? _options$recursive : this.spec.recursive;
+        options.originalValue != null ? options.originalValue : _value;
+        super._validate(_value, options, panic, (arrayErrors, value)=>{
+            var _options$originalValu2;
+            if (!recursive || !innerType || !this._typeCheck(value)) {
+                next(arrayErrors, value);
+                return;
+            }
+            // #950 Ensure that sparse array empty slots are validated
+            let tests = new Array(value.length);
+            for(let index = 0; index < value.length; index++){
+                var _options$originalValu;
+                tests[index] = innerType.asNestedTest({
+                    options,
+                    index,
+                    parent: value,
+                    parentPath: options.path,
+                    originalParent: (_options$originalValu = options.originalValue) != null ? _options$originalValu : _value
+                });
+            }
+            this.runTests({
+                value,
+                tests,
+                originalValue: (_options$originalValu2 = options.originalValue) != null ? _options$originalValu2 : _value,
+                options
+            }, panic, (innerTypeErrors)=>next(innerTypeErrors.concat(arrayErrors), value));
+        });
+    }
+    clone(spec) {
+        const next = super.clone(spec);
+        // @ts-expect-error readonly
+        next.innerType = this.innerType;
+        return next;
+    }
+    /** Parse an input JSON string to an object */ json() {
+        return this.transform(parseJson);
+    }
+    concat(schema) {
+        let next = super.concat(schema);
+        // @ts-expect-error readonly
+        next.innerType = this.innerType;
+        if (schema.innerType) // @ts-expect-error readonly
+        next.innerType = next.innerType ? // @ts-expect-error Lazy doesn't have concat and will break
+        next.innerType.concat(schema.innerType) : schema.innerType;
+        return next;
+    }
+    of(schema) {
+        // FIXME: this should return a new instance of array without the default to be
+        let next = this.clone();
+        if (!isSchema(schema)) throw new TypeError('`array.of()` sub-schema must be a valid yup schema not: ' + printValue(schema));
+        // @ts-expect-error readonly
+        next.innerType = schema;
+        next.spec = Object.assign({}, next.spec, {
+            types: schema
+        });
+        return next;
+    }
+    length(length, message = array.length) {
+        return this.test({
+            message,
+            name: 'length',
+            exclusive: true,
+            params: {
+                length
+            },
+            skipAbsent: true,
+            test (value) {
+                return value.length === this.resolve(length);
+            }
+        });
+    }
+    min(min, message) {
+        message = message || array.min;
+        return this.test({
+            message,
+            name: 'min',
+            exclusive: true,
+            params: {
+                min
+            },
+            skipAbsent: true,
+            // FIXME(ts): Array<typeof T>
+            test (value) {
+                return value.length >= this.resolve(min);
+            }
+        });
+    }
+    max(max, message) {
+        message = message || array.max;
+        return this.test({
+            message,
+            name: 'max',
+            exclusive: true,
+            params: {
+                max
+            },
+            skipAbsent: true,
+            test (value) {
+                return value.length <= this.resolve(max);
+            }
+        });
+    }
+    ensure() {
+        return this.default(()=>[]).transform((val, original)=>{
+            // We don't want to return `null` for nullable schema
+            if (this._typeCheck(val)) return val;
+            return original == null ? [] : [].concat(original);
+        });
+    }
+    compact(rejector) {
+        let reject = !rejector ? (v)=>!!v : (v, i, a)=>!rejector(v, i, a);
+        return this.transform((values)=>values != null ? values.filter(reject) : values);
+    }
+    describe(options) {
+        const next = (options ? this.resolve(options) : this).clone();
+        const base = super.describe(options);
+        if (next.innerType) {
+            var _innerOptions;
+            let innerOptions = options;
+            if ((_innerOptions = innerOptions) != null && _innerOptions.value) innerOptions = Object.assign({}, innerOptions, {
+                parent: innerOptions.value,
+                value: innerOptions.value[0]
+            });
+            base.innerType = next.innerType.describe(innerOptions);
+        }
+        return base;
+    }
+}
+create$2.prototype = ArraySchema.prototype;
+// @ts-ignore
+function create$1(schemas) {
+    return new TupleSchema(schemas);
+}
+class TupleSchema extends Schema {
+    constructor(schemas){
+        super({
+            type: 'tuple',
+            spec: {
+                types: schemas
+            },
+            check (v) {
+                const types = this.spec.types;
+                return Array.isArray(v) && v.length === types.length;
+            }
+        });
+        this.withMutation(()=>{
+            this.typeError(tuple.notType);
+        });
+    }
+    _cast(inputValue, options) {
+        const { types } = this.spec;
+        const value = super._cast(inputValue, options);
+        if (!this._typeCheck(value)) return value;
+        let isChanged = false;
+        const castArray = types.map((type, idx)=>{
+            const castElement = type.cast(value[idx], Object.assign({}, options, {
+                path: `${options.path || ''}[${idx}]`
+            }));
+            if (castElement !== value[idx]) isChanged = true;
+            return castElement;
+        });
+        return isChanged ? castArray : value;
+    }
+    _validate(_value, options = {}, panic, next) {
+        let itemTypes = this.spec.types;
+        super._validate(_value, options, panic, (tupleErrors, value)=>{
+            var _options$originalValu2;
+            // intentionally not respecting recursive
+            if (!this._typeCheck(value)) {
+                next(tupleErrors, value);
+                return;
+            }
+            let tests = [];
+            for (let [index, itemSchema] of itemTypes.entries()){
+                var _options$originalValu;
+                tests[index] = itemSchema.asNestedTest({
+                    options,
+                    index,
+                    parent: value,
+                    parentPath: options.path,
+                    originalParent: (_options$originalValu = options.originalValue) != null ? _options$originalValu : _value
+                });
+            }
+            this.runTests({
+                value,
+                tests,
+                originalValue: (_options$originalValu2 = options.originalValue) != null ? _options$originalValu2 : _value,
+                options
+            }, panic, (innerTypeErrors)=>next(innerTypeErrors.concat(tupleErrors), value));
+        });
+    }
+    describe(options) {
+        const next = (options ? this.resolve(options) : this).clone();
+        const base = super.describe(options);
+        base.innerType = next.spec.types.map((schema, index)=>{
+            var _innerOptions;
+            let innerOptions = options;
+            if ((_innerOptions = innerOptions) != null && _innerOptions.value) innerOptions = Object.assign({}, innerOptions, {
+                parent: innerOptions.value,
+                value: innerOptions.value[index]
+            });
+            return schema.describe(innerOptions);
+        });
+        return base;
+    }
+}
+create$1.prototype = TupleSchema.prototype;
+function create(builder) {
+    return new Lazy(builder);
+}
+function catchValidationError(fn) {
+    try {
+        return fn();
+    } catch (err) {
+        if (ValidationError.isError(err)) return Promise.reject(err);
+        throw err;
+    }
+}
+class Lazy {
+    constructor(builder){
+        this.type = 'lazy';
+        this.__isYupSchema__ = true;
+        this.spec = void 0;
+        this._resolve = (value, options = {})=>{
+            let schema = this.builder(value, options);
+            if (!isSchema(schema)) throw new TypeError('lazy() functions must return a valid schema');
+            if (this.spec.optional) schema = schema.optional();
+            return schema.resolve(options);
+        };
+        this.builder = builder;
+        this.spec = {
+            meta: undefined,
+            optional: false
+        };
+    }
+    clone(spec) {
+        const next = new Lazy(this.builder);
+        next.spec = Object.assign({}, this.spec, spec);
+        return next;
+    }
+    optionality(optional) {
+        const next = this.clone({
+            optional
+        });
+        return next;
+    }
+    optional() {
+        return this.optionality(true);
+    }
+    resolve(options) {
+        return this._resolve(options.value, options);
+    }
+    cast(value, options) {
+        return this._resolve(value, options).cast(value, options);
+    }
+    asNestedTest(config) {
+        let { key, index, parent, options } = config;
+        let value = parent[index != null ? index : key];
+        return this._resolve(value, Object.assign({}, options, {
+            value,
+            parent
+        })).asNestedTest(config);
+    }
+    validate(value, options) {
+        return catchValidationError(()=>this._resolve(value, options).validate(value, options));
+    }
+    validateSync(value, options) {
+        return this._resolve(value, options).validateSync(value, options);
+    }
+    validateAt(path, value, options) {
+        return catchValidationError(()=>this._resolve(value, options).validateAt(path, value, options));
+    }
+    validateSyncAt(path, value, options) {
+        return this._resolve(value, options).validateSyncAt(path, value, options);
+    }
+    isValid(value, options) {
+        try {
+            return this._resolve(value, options).isValid(value, options);
+        } catch (err) {
+            if (ValidationError.isError(err)) return Promise.resolve(false);
+            throw err;
+        }
+    }
+    isValidSync(value, options) {
+        return this._resolve(value, options).isValidSync(value, options);
+    }
+    describe(options) {
+        return options ? this.resolve(options).describe(options) : {
+            type: 'lazy',
+            meta: this.spec.meta,
+            label: undefined
+        };
+    }
+    meta(...args) {
+        if (args.length === 0) return this.spec.meta;
+        let next = this.clone();
+        next.spec.meta = Object.assign(next.spec.meta || {}, args[0]);
+        return next;
+    }
+}
+function setLocale(custom) {
+    Object.keys(custom).forEach((type)=>{
+        // @ts-ignore
+        Object.keys(custom[type]).forEach((method)=>{
+            // @ts-ignore
+            locale[type][method] = custom[type][method];
+        });
+    });
+}
+function addMethod(schemaType, name, fn) {
+    if (!schemaType || !isSchema(schemaType.prototype)) throw new TypeError('You must provide a yup schema constructor function');
+    if (typeof name !== 'string') throw new TypeError('A Method name must be provided');
+    if (typeof fn !== 'function') throw new TypeError('Method function must be provided');
+    schemaType.prototype[name] = fn;
+}
+
+},{"property-expr":"4Hl13","tiny-case":"hNoCH","toposort":"9GtJP","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"4Hl13":[function(require,module,exports,__globalThis) {
+/**
+ * Based on Kendo UI Core expression code <https://github.com/telerik/kendo-ui-core#license-information>
+ */ 'use strict';
+function Cache(maxSize) {
+    this._maxSize = maxSize;
+    this.clear();
+}
+Cache.prototype.clear = function() {
+    this._size = 0;
+    this._values = Object.create(null);
+};
+Cache.prototype.get = function(key) {
+    return this._values[key];
+};
+Cache.prototype.set = function(key, value) {
+    this._size >= this._maxSize && this.clear();
+    if (!(key in this._values)) this._size++;
+    return this._values[key] = value;
+};
+var SPLIT_REGEX = /[^.^\]^[]+|(?=\[\]|\.\.)/g, DIGIT_REGEX = /^\d+$/, LEAD_DIGIT_REGEX = /^\d/, SPEC_CHAR_REGEX = /[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g, CLEAN_QUOTES_REGEX = /^\s*(['"]?)(.*?)(\1)\s*$/, MAX_CACHE_SIZE = 512;
+var pathCache = new Cache(MAX_CACHE_SIZE), setCache = new Cache(MAX_CACHE_SIZE), getCache = new Cache(MAX_CACHE_SIZE);
+var config;
+module.exports = {
+    Cache: Cache,
+    split: split,
+    normalizePath: normalizePath,
+    setter: function(path) {
+        var parts = normalizePath(path);
+        return setCache.get(path) || setCache.set(path, function setter(obj, value) {
+            var index = 0;
+            var len = parts.length;
+            var data = obj;
+            while(index < len - 1){
+                var part = parts[index];
+                if (part === '__proto__' || part === 'constructor' || part === 'prototype') return obj;
+                data = data[parts[index++]];
+            }
+            data[parts[index]] = value;
+        });
+    },
+    getter: function(path, safe) {
+        var parts = normalizePath(path);
+        return getCache.get(path) || getCache.set(path, function getter(data) {
+            var index = 0, len = parts.length;
+            while(index < len){
+                if (data != null || !safe) data = data[parts[index++]];
+                else return;
+            }
+            return data;
+        });
+    },
+    join: function(segments) {
+        return segments.reduce(function(path, part) {
+            return path + (isQuoted(part) || DIGIT_REGEX.test(part) ? '[' + part + ']' : (path ? '.' : '') + part);
+        }, '');
+    },
+    forEach: function(path, cb, thisArg) {
+        forEach(Array.isArray(path) ? path : split(path), cb, thisArg);
+    }
+};
+function normalizePath(path) {
+    return pathCache.get(path) || pathCache.set(path, split(path).map(function(part) {
+        return part.replace(CLEAN_QUOTES_REGEX, '$2');
+    }));
+}
+function split(path) {
+    return path.match(SPLIT_REGEX) || [
+        ''
+    ];
+}
+function forEach(parts, iter, thisArg) {
+    var len = parts.length, part, idx, isArray, isBracket;
+    for(idx = 0; idx < len; idx++){
+        part = parts[idx];
+        if (part) {
+            if (shouldBeQuoted(part)) part = '"' + part + '"';
+            isBracket = isQuoted(part);
+            isArray = !isBracket && /^\d+$/.test(part);
+            iter.call(thisArg, part, isBracket, isArray, idx, parts);
+        }
+    }
+}
+function isQuoted(str) {
+    return typeof str === 'string' && str && [
+        "'",
+        '"'
+    ].indexOf(str.charAt(0)) !== -1;
+}
+function hasLeadingNumber(part) {
+    return part.match(LEAD_DIGIT_REGEX) && !part.match(DIGIT_REGEX);
+}
+function hasSpecialChars(part) {
+    return SPEC_CHAR_REGEX.test(part);
+}
+function shouldBeQuoted(part) {
+    return !isQuoted(part) && (hasLeadingNumber(part) || hasSpecialChars(part));
+}
+
+},{}],"hNoCH":[function(require,module,exports,__globalThis) {
+const reWords = /[A-Z\xc0-\xd6\xd8-\xde]?[a-z\xdf-\xf6\xf8-\xff]+(?:['’](?:d|ll|m|re|s|t|ve))?(?=[\xac\xb1\xd7\xf7\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\xbf\u2000-\u206f \t\x0b\f\xa0\ufeff\n\r\u2028\u2029\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000]|[A-Z\xc0-\xd6\xd8-\xde]|$)|(?:[A-Z\xc0-\xd6\xd8-\xde]|[^\ud800-\udfff\xac\xb1\xd7\xf7\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\xbf\u2000-\u206f \t\x0b\f\xa0\ufeff\n\r\u2028\u2029\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\d+\u2700-\u27bfa-z\xdf-\xf6\xf8-\xffA-Z\xc0-\xd6\xd8-\xde])+(?:['’](?:D|LL|M|RE|S|T|VE))?(?=[\xac\xb1\xd7\xf7\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\xbf\u2000-\u206f \t\x0b\f\xa0\ufeff\n\r\u2028\u2029\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000]|[A-Z\xc0-\xd6\xd8-\xde](?:[a-z\xdf-\xf6\xf8-\xff]|[^\ud800-\udfff\xac\xb1\xd7\xf7\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\xbf\u2000-\u206f \t\x0b\f\xa0\ufeff\n\r\u2028\u2029\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\d+\u2700-\u27bfa-z\xdf-\xf6\xf8-\xffA-Z\xc0-\xd6\xd8-\xde])|$)|[A-Z\xc0-\xd6\xd8-\xde]?(?:[a-z\xdf-\xf6\xf8-\xff]|[^\ud800-\udfff\xac\xb1\xd7\xf7\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\xbf\u2000-\u206f \t\x0b\f\xa0\ufeff\n\r\u2028\u2029\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\d+\u2700-\u27bfa-z\xdf-\xf6\xf8-\xffA-Z\xc0-\xd6\xd8-\xde])+(?:['’](?:d|ll|m|re|s|t|ve))?|[A-Z\xc0-\xd6\xd8-\xde]+(?:['’](?:D|LL|M|RE|S|T|VE))?|\d*(?:1ST|2ND|3RD|(?![123])\dTH)(?=\b|[a-z_])|\d*(?:1st|2nd|3rd|(?![123])\dth)(?=\b|[A-Z_])|\d+|(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g;
+const words = (str)=>str.match(reWords) || [];
+const upperFirst = (str)=>str[0].toUpperCase() + str.slice(1);
+const join = (str, d)=>words(str).join(d).toLowerCase();
+const camelCase = (str)=>words(str).reduce((acc, next)=>`${acc}${!acc ? next.toLowerCase() : next[0].toUpperCase() + next.slice(1).toLowerCase()}`, '');
+const pascalCase = (str)=>upperFirst(camelCase(str));
+const snakeCase = (str)=>join(str, '_');
+const kebabCase = (str)=>join(str, '-');
+const sentenceCase = (str)=>upperFirst(join(str, ' '));
+const titleCase = (str)=>words(str).map(upperFirst).join(' ');
+module.exports = {
+    words,
+    upperFirst,
+    camelCase,
+    pascalCase,
+    snakeCase,
+    kebabCase,
+    sentenceCase,
+    titleCase
+};
+
+},{}],"9GtJP":[function(require,module,exports,__globalThis) {
+/**
+ * Topological sorting function
+ *
+ * @param {Array} edges
+ * @returns {Array}
+ */ module.exports = function(edges) {
+    return toposort(uniqueNodes(edges), edges);
+};
+module.exports.array = toposort;
+function toposort(nodes, edges) {
+    var cursor = nodes.length, sorted = new Array(cursor), visited = {}, i = cursor, outgoingEdges = makeOutgoingEdges(edges), nodesHash = makeNodesHash(nodes);
+    // check for unknown nodes
+    edges.forEach(function(edge) {
+        if (!nodesHash.has(edge[0]) || !nodesHash.has(edge[1])) throw new Error('Unknown node. There is an unknown node in the supplied edges.');
+    });
+    while(i--)if (!visited[i]) visit(nodes[i], i, new Set());
+    return sorted;
+    function visit(node, i, predecessors) {
+        if (predecessors.has(node)) {
+            var nodeRep;
+            try {
+                nodeRep = ", node was:" + JSON.stringify(node);
+            } catch (e) {
+                nodeRep = "";
+            }
+            throw new Error('Cyclic dependency' + nodeRep);
+        }
+        if (!nodesHash.has(node)) throw new Error('Found unknown node. Make sure to provided all involved nodes. Unknown node: ' + JSON.stringify(node));
+        if (visited[i]) return;
+        visited[i] = true;
+        var outgoing = outgoingEdges.get(node) || new Set();
+        outgoing = Array.from(outgoing);
+        if (i = outgoing.length) {
+            predecessors.add(node);
+            do {
+                var child = outgoing[--i];
+                visit(child, nodesHash.get(child), predecessors);
+            }while (i);
+            predecessors.delete(node);
+        }
+        sorted[--cursor] = node;
+    }
+}
+function uniqueNodes(arr) {
+    var res = new Set();
+    for(var i = 0, len = arr.length; i < len; i++){
+        var edge = arr[i];
+        res.add(edge[0]);
+        res.add(edge[1]);
+    }
+    return Array.from(res);
+}
+function makeOutgoingEdges(arr) {
+    var edges = new Map();
+    for(var i = 0, len = arr.length; i < len; i++){
+        var edge = arr[i];
+        if (!edges.has(edge[0])) edges.set(edge[0], new Set());
+        if (!edges.has(edge[1])) edges.set(edge[1], new Set());
+        edges.get(edge[0]).add(edge[1]);
+    }
+    return edges;
+}
+function makeNodesHash(arr) {
+    var res = new Map();
+    for(var i = 0, len = arr.length; i < len; i++)res.set(arr[i], i);
+    return res;
+}
+
+},{}],"7DnZ4":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$03c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$03c3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NotesList", ()=>NotesList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ui = require("../ui");
+var _hooks = require("../hooks");
+var _reactjsPopup = require("reactjs-popup");
+var _reactjsPopupDefault = parcelHelpers.interopDefault(_reactjsPopup);
+var _noteCreate = require("./note-create");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const NoteRow = ({ note, onRemove, onEdit })=>{
+    _s();
+    const { isAdmin } = (0, _hooks.useMe)();
+    const [isOpenNotePopup, setOpenNotePopup] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `web-grid web-gap-2 ${isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "web-text-center web-items-center web-flex web-justify-center web-py-2",
+                children: note.id
+            }, void 0, false, {
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "web-text-center web-items-center web-flex web-justify-center web-py-2",
+                children: note.content
+            }, void 0, false, {
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "web-text-center web-items-center web-flex web-justify-center web-py-2 web-space-x-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                        onClick: ()=>setOpenNotePopup(true),
+                        children: "Edit"
+                    }, void 0, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                        onClick: ()=>onRemove(note),
+                        children: "Remove"
+                    }, void 0, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 33,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 31,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactjsPopupDefault.default), {
+                open: isOpenNotePopup,
+                onClose: ()=>setOpenNotePopup(false),
+                modal: true,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "web-px-6 web-py-4",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _noteCreate.NoteCreate), {
+                        onSave: (values)=>{
+                            onEdit({
+                                ...note,
+                                ...values
+                            });
+                            setOpenNotePopup(false);
+                        },
+                        initialValues: note
+                    }, void 0, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/containers/notes-list.tsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/containers/notes-list.tsx",
+        lineNumber: 19,
+        columnNumber: 5
+    }, undefined);
+};
+_s(NoteRow, "AcQ2mH1HR7gwcKMRhqffJGoA16A=", false, function() {
+    return [
+        (0, _hooks.useMe)
+    ];
+});
+_c = NoteRow;
+const NotesList = ({ notes = [], onRemove, onEdit })=>{
+    _s1();
+    const { isAdmin } = (0, _hooks.useMe)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "web-rounded-md",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `web-grid web-gap-2 web-bg-gray-200  ${isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"}`,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "web-text-center web-font-bold web-py-2",
+                        children: "ID"
+                    }, void 0, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 76,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "web-text-center web-font-bold web-py-2",
+                        children: "Description"
+                    }, void 0, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 77,
+                        columnNumber: 9
+                    }, undefined),
+                    isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "web-text-center web-font-bold web-py-2",
+                        children: "Actions"
+                    }, void 0, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 79,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 71,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: notes.map((note, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NoteRow, {
+                        note: note,
+                        onRemove: (note)=>onRemove(note, index),
+                        onEdit: (note)=>onEdit(note, index)
+                    }, note.id, false, {
+                        fileName: "src/containers/notes-list.tsx",
+                        lineNumber: 84,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/containers/notes-list.tsx",
+                lineNumber: 82,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/containers/notes-list.tsx",
+        lineNumber: 70,
+        columnNumber: 5
+    }, undefined);
+};
+_s1(NotesList, "ENZUCnskS7v1+KqJOXzwuzxf32Q=", false, function() {
+    return [
+        (0, _hooks.useMe)
+    ];
+});
+_c1 = NotesList;
+var _c, _c1;
+$RefreshReg$(_c, "NoteRow");
+$RefreshReg$(_c1, "NotesList");
+
+  $parcel$ReactRefreshHelpers$03c3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"227mq","../ui":"gkHWQ","../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL","reactjs-popup":"lcgIQ","./note-create":"5sxQz"}],"hpGpu":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useMe = require("./useMe");
@@ -24817,7 +27568,7 @@ const useGetUsers = ()=>{
     return (0, _reactQuery.useQuery)({
         queryKey: (0, _constants.QUERY_GET_USERS),
         queryFn: async ()=>{
-            return await (0, _services.apiRequest)("/users");
+            return await (0, _services.apiRequest)("/user-management/users");
         }
     });
 };
@@ -27988,29 +30739,34 @@ parcelHelpers.export(exports, "QUERY_GET_NOTES", ()=>QUERY_GET_NOTES);
 parcelHelpers.export(exports, "MUTATION_DELETE_NOTE", ()=>MUTATION_DELETE_NOTE);
 parcelHelpers.export(exports, "MUTATION_CREATE_NOTE", ()=>MUTATION_CREATE_NOTE);
 parcelHelpers.export(exports, "MUTATION_EDIT_NOTE", ()=>MUTATION_EDIT_NOTE);
+parcelHelpers.export(exports, "MUTATION_USER_MANAGEMENT_BULK_UPSERT", ()=>MUTATION_USER_MANAGEMENT_BULK_UPSERT);
 const QUERY_GET_USERS = [
-    'USERS',
-    'QUERY_GET_USERS'
+    "USERS",
+    "QUERY_GET_USERS"
 ];
 const MUTATION_CREATE_USER = [
-    'USERS',
-    'MUTATION_CREATE_USER'
+    "USERS",
+    "MUTATION_CREATE_USER"
 ];
 const QUERY_GET_NOTES = [
-    'NOTES',
-    'QUERY_GET_NOTES'
+    "NOTES",
+    "QUERY_GET_NOTES"
 ];
 const MUTATION_DELETE_NOTE = [
-    'NOTES',
-    'MUTATION_DELETE_NOTE'
+    "NOTES",
+    "MUTATION_DELETE_NOTE"
 ];
 const MUTATION_CREATE_NOTE = [
-    'NOTES',
-    'MUTATION_CREATE_NOTE'
+    "NOTES",
+    "MUTATION_CREATE_NOTE"
 ];
 const MUTATION_EDIT_NOTE = [
-    'NOTES',
-    'MUTATION_EDIT_NOTE'
+    "NOTES",
+    "MUTATION_EDIT_NOTE"
+];
+const MUTATION_USER_MANAGEMENT_BULK_UPSERT = [
+    "USER_MANAGEMENT",
+    "BULK_UPSERT"
 ];
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"050OR":[function(require,module,exports,__globalThis) {
@@ -28024,7 +30780,7 @@ const useGetNotes = ()=>{
     return (0, _reactQuery.useQuery)({
         queryKey: (0, _constants.QUERY_GET_NOTES),
         queryFn: async ()=>{
-            return await (0, _services.apiRequest)("/notes");
+            return await (0, _services.apiRequest)("/user-management/notes");
         }
     });
 };
@@ -28032,96 +30788,27 @@ const useGetNotes = ()=>{
 },{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"2EoGS":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _useDeleteNote = require("./useDeleteNote");
-parcelHelpers.exportAll(_useDeleteNote, exports);
-var _useCreateNote = require("./useCreateNote");
-parcelHelpers.exportAll(_useCreateNote, exports);
-var _useEditNote = require("./useEditNote");
-parcelHelpers.exportAll(_useEditNote, exports);
-var _useCreateUser = require("./useCreateUser");
-parcelHelpers.exportAll(_useCreateUser, exports);
+var _useBulkUpsert = require("./useBulkUpsert");
+parcelHelpers.exportAll(_useBulkUpsert, exports);
 
-},{"./useDeleteNote":"fjzJL","./useCreateNote":"1iT8O","./useEditNote":"2ALhB","./useCreateUser":"lEn8X","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"fjzJL":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","./useBulkUpsert":"7vnBy"}],"7vnBy":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "useDeleteNote", ()=>useDeleteNote);
+parcelHelpers.export(exports, "useBulkUpsert", ()=>useBulkUpsert);
 var _reactQuery = require("@tanstack/react-query");
 var _constants = require("../../constants");
 var _services = require("../../services");
-const useDeleteNote = ()=>{
+const useBulkUpsert = ()=>{
     const queryClient = (0, _reactQuery.useQueryClient)();
     return (0, _reactQuery.useMutation)({
-        mutationKey: (0, _constants.MUTATION_DELETE_NOTE),
-        mutationFn: async (id)=>{
-            return await (0, _services.apiRequest)(`/notes/${id}`, "DELETE");
+        mutationKey: (0, _constants.MUTATION_USER_MANAGEMENT_BULK_UPSERT),
+        mutationFn: async (payload)=>{
+            return await (0, _services.apiRequest)("/user-management/upsert", "POST", payload);
         },
         onSuccess: ()=>{
             queryClient.invalidateQueries({
                 queryKey: (0, _constants.QUERY_GET_NOTES)
             });
-        }
-    });
-};
-
-},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"1iT8O":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "useCreateNote", ()=>useCreateNote);
-var _reactQuery = require("@tanstack/react-query");
-var _constants = require("../../constants");
-var _services = require("../../services");
-const useCreateNote = ()=>{
-    const queryClient = (0, _reactQuery.useQueryClient)();
-    return (0, _reactQuery.useMutation)({
-        mutationKey: (0, _constants.MUTATION_CREATE_NOTE),
-        mutationFn: async (payload)=>{
-            return await (0, _services.apiRequest)("/notes", "POST", payload);
-        },
-        onSuccess: ()=>{
-            queryClient.invalidateQueries({
-                queryKey: (0, _constants.QUERY_GET_NOTES)
-            });
-        }
-    });
-};
-
-},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"2ALhB":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "useEditNote", ()=>useEditNote);
-var _reactQuery = require("@tanstack/react-query");
-var _constants = require("../../constants");
-var _services = require("../../services");
-const useEditNote = ()=>{
-    const queryClient = (0, _reactQuery.useQueryClient)();
-    return (0, _reactQuery.useMutation)({
-        mutationKey: (0, _constants.MUTATION_EDIT_NOTE),
-        mutationFn: async (payload)=>{
-            return await (0, _services.apiRequest)(`/notes/${payload.id}`, "PUT", payload);
-        },
-        onSuccess: ()=>{
-            queryClient.invalidateQueries({
-                queryKey: (0, _constants.QUERY_GET_NOTES)
-            });
-        }
-    });
-};
-
-},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"lEn8X":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "useCreateUser", ()=>useCreateUser);
-var _reactQuery = require("@tanstack/react-query");
-var _constants = require("../../constants");
-var _services = require("../../services");
-const useCreateUser = ()=>{
-    const queryClient = (0, _reactQuery.useQueryClient)();
-    return (0, _reactQuery.useMutation)({
-        mutationKey: (0, _constants.MUTATION_CREATE_USER),
-        mutationFn: async (payload)=>{
-            return await (0, _services.apiRequest)("/users", "POST", payload);
-        },
-        onSuccess: ()=>{
             queryClient.invalidateQueries({
                 queryKey: (0, _constants.QUERY_GET_USERS)
             });
@@ -28129,383 +30816,741 @@ const useCreateUser = ()=>{
     });
 };
 
-},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"3TU19":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$4bfc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@tanstack/react-query":"f0Z0I","../../constants":"CZE1P","../../services":"kSaNT","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"lcgIQ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Popup", ()=>Popup);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactDom = require("react-dom");
+var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+var useOnEscape = function useOnEscape(handler, active) {
+    if (active === void 0) active = true;
+    (0, _react.useEffect)(function() {
+        if (!active) return;
+        var listener = function listener(event) {
+            // check if key is an Escape
+            if (event.key === 'Escape') handler(event);
+        };
+        document.addEventListener('keyup', listener);
+        return function() {
+            if (!active) return;
+            document.removeEventListener('keyup', listener);
+        };
+    }, [
+        handler,
+        active
+    ]);
+};
+var useRepositionOnResize = function useRepositionOnResize(handler, active) {
+    if (active === void 0) active = true;
+    (0, _react.useEffect)(function() {
+        if (!active) return;
+        var listener = function listener() {
+            handler();
+        };
+        window.addEventListener('resize', listener);
+        return function() {
+            if (!active) return;
+            window.removeEventListener('resize', listener);
+        };
+    }, [
+        handler,
+        active
+    ]);
+};
+var useOnClickOutside = function useOnClickOutside(ref, handler, active) {
+    if (active === void 0) active = true;
+    (0, _react.useEffect)(function() {
+        if (!active) return;
+        var listener = function listener(event) {
+            // Do nothing if clicking ref's element or descendent elements
+            var refs = Array.isArray(ref) ? ref : [
+                ref
+            ];
+            var contains = false;
+            refs.forEach(function(r) {
+                if (!r.current || r.current.contains(event.target)) {
+                    contains = true;
+                    return;
+                }
+            });
+            event.stopPropagation();
+            if (!contains) handler(event);
+        };
+        document.addEventListener('mousedown', listener);
+        document.addEventListener('touchstart', listener);
+        return function() {
+            if (!active) return;
+            document.removeEventListener('mousedown', listener);
+            document.removeEventListener('touchstart', listener);
+        };
+    }, [
+        ref,
+        handler,
+        active
+    ]);
+}; // Make sure that user is not able TAB out of the Modal content on Open
+var useTabbing = function useTabbing(contentRef, active) {
+    if (active === void 0) active = true;
+    (0, _react.useEffect)(function() {
+        if (!active) return;
+        var listener = function listener(event) {
+            // check if key is an Tab
+            if (event.keyCode === 9) {
+                var _contentRef$current;
+                var els = contentRef === null || contentRef === void 0 ? void 0 : (_contentRef$current = contentRef.current) === null || _contentRef$current === void 0 ? void 0 : _contentRef$current.querySelectorAll('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]');
+                var focusableEls = Array.prototype.slice.call(els);
+                if (focusableEls.length === 1) {
+                    event.preventDefault();
+                    return;
+                }
+                var firstFocusableEl = focusableEls[0];
+                var lastFocusableEl = focusableEls[focusableEls.length - 1];
+                if (event.shiftKey && document.activeElement === firstFocusableEl) {
+                    event.preventDefault();
+                    lastFocusableEl.focus();
+                } else if (document.activeElement === lastFocusableEl) {
+                    event.preventDefault();
+                    firstFocusableEl.focus();
+                }
+            }
+        };
+        document.addEventListener('keydown', listener);
+        return function() {
+            if (!active) return;
+            document.removeEventListener('keydown', listener);
+        };
+    }, [
+        contentRef,
+        active
+    ]);
+};
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
+var Style = {
+    popupContent: {
+        tooltip: {
+            position: 'absolute',
+            zIndex: 999
+        },
+        modal: {
+            position: 'relative',
+            margin: 'auto'
+        }
+    },
+    popupArrow: {
+        height: '8px',
+        width: '16px',
+        position: 'absolute',
+        background: 'transparent',
+        color: '#FFF',
+        zIndex: -1
+    },
+    overlay: {
+        tooltip: {
+            position: 'fixed',
+            top: '0',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            zIndex: 999
+        },
+        modal: {
+            position: 'fixed',
+            top: '0',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            display: 'flex',
+            zIndex: 999
+        }
+    }
+};
+var POSITION_TYPES = [
+    'top left',
+    'top center',
+    'top right',
+    'right top',
+    'right center',
+    'right bottom',
+    'bottom left',
+    'bottom center',
+    'bottom right',
+    'left top',
+    'left center',
+    'left bottom'
+];
+var getCoordinatesForPosition = function getCoordinatesForPosition(triggerBounding, ContentBounding, position, arrow, _ref) {
+    var offsetX = _ref.offsetX, offsetY = _ref.offsetY;
+    var margin = arrow ? 8 : 0;
+    var args = position.split(' '); // the step N 1 : center the popup content => ok
+    var CenterTop = triggerBounding.top + triggerBounding.height / 2;
+    var CenterLeft = triggerBounding.left + triggerBounding.width / 2;
+    var height = ContentBounding.height, width = ContentBounding.width;
+    var top = CenterTop - height / 2;
+    var left = CenterLeft - width / 2;
+    var transform = '';
+    var arrowTop = '0%';
+    var arrowLeft = '0%'; // the  step N 2 : => ok
+    switch(args[0]){
+        case 'top':
+            top -= height / 2 + triggerBounding.height / 2 + margin;
+            transform = "rotate(180deg)  translateX(50%)";
+            arrowTop = '100%';
+            arrowLeft = '50%';
+            break;
+        case 'bottom':
+            top += height / 2 + triggerBounding.height / 2 + margin;
+            transform = "rotate(0deg) translateY(-100%) translateX(-50%)";
+            arrowLeft = '50%';
+            break;
+        case 'left':
+            left -= width / 2 + triggerBounding.width / 2 + margin;
+            transform = " rotate(90deg)  translateY(50%) translateX(-25%)";
+            arrowLeft = '100%';
+            arrowTop = '50%';
+            break;
+        case 'right':
+            left += width / 2 + triggerBounding.width / 2 + margin;
+            transform = "rotate(-90deg)  translateY(-150%) translateX(25%)";
+            arrowTop = '50%';
+            break;
+    }
+    switch(args[1]){
+        case 'top':
+            top = triggerBounding.top;
+            arrowTop = triggerBounding.height / 2 + "px";
+            break;
+        case 'bottom':
+            top = triggerBounding.top - height + triggerBounding.height;
+            arrowTop = height - triggerBounding.height / 2 + "px";
+            break;
+        case 'left':
+            left = triggerBounding.left;
+            arrowLeft = triggerBounding.width / 2 + "px";
+            break;
+        case 'right':
+            left = triggerBounding.left - width + triggerBounding.width;
+            arrowLeft = width - triggerBounding.width / 2 + "px";
+            break;
+    }
+    top = args[0] === 'top' ? top - offsetY : top + offsetY;
+    left = args[0] === 'left' ? left - offsetX : left + offsetX;
+    return {
+        top: top,
+        left: left,
+        transform: transform,
+        arrowLeft: arrowLeft,
+        arrowTop: arrowTop
+    };
+};
+var getTooltipBoundary = function getTooltipBoundary(keepTooltipInside) {
+    // add viewport
+    var boundingBox = {
+        top: 0,
+        left: 0,
+        /* eslint-disable-next-line no-undef */ width: window.innerWidth,
+        /* eslint-disable-next-line no-undef */ height: window.innerHeight
+    };
+    if (typeof keepTooltipInside === 'string') {
+        /* eslint-disable-next-line no-undef */ var selector = document.querySelector(keepTooltipInside);
+        if (selector === null) throw new Error(keepTooltipInside + " selector does not exist : keepTooltipInside must be a valid html selector 'class' or 'Id'  or a boolean value");
+        if (selector !== null) boundingBox = selector.getBoundingClientRect();
+    }
+    return boundingBox;
+};
+var calculatePosition = function calculatePosition(triggerBounding, ContentBounding, position, arrow, _ref2, keepTooltipInside) {
+    var offsetX = _ref2.offsetX, offsetY = _ref2.offsetY;
+    var bestCoords = {
+        arrowLeft: '0%',
+        arrowTop: '0%',
+        left: 0,
+        top: 0,
+        transform: 'rotate(135deg)'
+    };
+    var i = 0;
+    var wrapperBox = getTooltipBoundary(keepTooltipInside);
+    var positions = Array.isArray(position) ? position : [
+        position
+    ]; // keepTooltipInside would be activated if the  keepTooltipInside exist or the position is Array
+    if (keepTooltipInside || Array.isArray(position)) positions = [].concat(positions, POSITION_TYPES); // add viewPort for WarpperBox
+    // wrapperBox.top = wrapperBox.top + window.scrollY;
+    // wrapperBox.left = wrapperBox.left + window.scrollX;
+    while(i < positions.length){
+        bestCoords = getCoordinatesForPosition(triggerBounding, ContentBounding, positions[i], arrow, {
+            offsetX: offsetX,
+            offsetY: offsetY
+        });
+        var contentBox = {
+            top: bestCoords.top,
+            left: bestCoords.left,
+            width: ContentBounding.width,
+            height: ContentBounding.height
+        };
+        if (contentBox.top <= wrapperBox.top || contentBox.left <= wrapperBox.left || contentBox.top + contentBox.height >= wrapperBox.top + wrapperBox.height || contentBox.left + contentBox.width >= wrapperBox.left + wrapperBox.width) i++;
+        else break;
+    }
+    return bestCoords;
+};
+var popupIdCounter = 0;
+var getRootPopup = function getRootPopup() {
+    var PopupRoot = document.getElementById('popup-root');
+    if (PopupRoot === null) {
+        PopupRoot = document.createElement('div');
+        PopupRoot.setAttribute('id', 'popup-root');
+        document.body.appendChild(PopupRoot);
+    }
+    return PopupRoot;
+};
+var Popup = /*#__PURE__*/ (0, _react.forwardRef)(function(_ref, ref) {
+    var _ref$trigger = _ref.trigger, trigger = _ref$trigger === void 0 ? null : _ref$trigger, _ref$onOpen = _ref.onOpen, onOpen = _ref$onOpen === void 0 ? function() {} : _ref$onOpen, _ref$onClose = _ref.onClose, onClose = _ref$onClose === void 0 ? function() {} : _ref$onClose, _ref$defaultOpen = _ref.defaultOpen, defaultOpen = _ref$defaultOpen === void 0 ? false : _ref$defaultOpen, _ref$open = _ref.open, open = _ref$open === void 0 ? undefined : _ref$open, _ref$disabled = _ref.disabled, disabled = _ref$disabled === void 0 ? false : _ref$disabled, _ref$nested = _ref.nested, nested = _ref$nested === void 0 ? false : _ref$nested, _ref$closeOnDocumentC = _ref.closeOnDocumentClick, closeOnDocumentClick = _ref$closeOnDocumentC === void 0 ? true : _ref$closeOnDocumentC, _ref$repositionOnResi = _ref.repositionOnResize, repositionOnResize = _ref$repositionOnResi === void 0 ? true : _ref$repositionOnResi, _ref$closeOnEscape = _ref.closeOnEscape, closeOnEscape = _ref$closeOnEscape === void 0 ? true : _ref$closeOnEscape, _ref$on = _ref.on, on = _ref$on === void 0 ? [
+        'click'
+    ] : _ref$on, _ref$contentStyle = _ref.contentStyle, contentStyle = _ref$contentStyle === void 0 ? {} : _ref$contentStyle, _ref$arrowStyle = _ref.arrowStyle, arrowStyle = _ref$arrowStyle === void 0 ? {} : _ref$arrowStyle, _ref$overlayStyle = _ref.overlayStyle, overlayStyle = _ref$overlayStyle === void 0 ? {} : _ref$overlayStyle, _ref$className = _ref.className, className = _ref$className === void 0 ? '' : _ref$className, _ref$position = _ref.position, position = _ref$position === void 0 ? 'bottom center' : _ref$position, _ref$modal = _ref.modal, modal = _ref$modal === void 0 ? false : _ref$modal, _ref$lockScroll = _ref.lockScroll, lockScroll = _ref$lockScroll === void 0 ? false : _ref$lockScroll, _ref$arrow = _ref.arrow, arrow = _ref$arrow === void 0 ? true : _ref$arrow, _ref$offsetX = _ref.offsetX, offsetX = _ref$offsetX === void 0 ? 0 : _ref$offsetX, _ref$offsetY = _ref.offsetY, offsetY = _ref$offsetY === void 0 ? 0 : _ref$offsetY, _ref$mouseEnterDelay = _ref.mouseEnterDelay, mouseEnterDelay = _ref$mouseEnterDelay === void 0 ? 100 : _ref$mouseEnterDelay, _ref$mouseLeaveDelay = _ref.mouseLeaveDelay, mouseLeaveDelay = _ref$mouseLeaveDelay === void 0 ? 100 : _ref$mouseLeaveDelay, _ref$keepTooltipInsid = _ref.keepTooltipInside, keepTooltipInside = _ref$keepTooltipInsid === void 0 ? false : _ref$keepTooltipInsid, children = _ref.children;
+    var _useState = (0, _react.useState)(open || defaultOpen), isOpen = _useState[0], setIsOpen = _useState[1];
+    var triggerRef = (0, _react.useRef)(null);
+    var contentRef = (0, _react.useRef)(null);
+    var arrowRef = (0, _react.useRef)(null);
+    var focusedElBeforeOpen = (0, _react.useRef)(null);
+    var popupId = (0, _react.useRef)("popup-" + ++popupIdCounter);
+    var isModal = modal ? true : !trigger;
+    var timeOut = (0, _react.useRef)(0);
+    useIsomorphicLayoutEffect(function() {
+        if (isOpen) {
+            focusedElBeforeOpen.current = document.activeElement;
+            setPosition();
+            focusContentOnOpen(); // for accessibility
+            lockScrolll();
+        } else resetScroll();
+        return function() {
+            clearTimeout(timeOut.current);
+        };
+    }, [
+        isOpen
+    ]); // for uncontrolled popup we need to sync isOpen with open prop
+    (0, _react.useEffect)(function() {
+        if (typeof open === 'boolean') {
+            if (open) openPopup();
+            else closePopup();
+        }
+    }, [
+        open,
+        disabled
+    ]);
+    var openPopup = function openPopup(event) {
+        if (isOpen || disabled) return;
+        setIsOpen(true);
+        setTimeout(function() {
+            return onOpen(event);
+        }, 0);
+    };
+    var closePopup = function closePopup(event) {
+        var _focusedElBeforeOpen$;
+        if (!isOpen || disabled) return;
+        setIsOpen(false);
+        if (isModal) (_focusedElBeforeOpen$ = focusedElBeforeOpen.current) === null || _focusedElBeforeOpen$ === void 0 || _focusedElBeforeOpen$.focus();
+        setTimeout(function() {
+            return onClose(event);
+        }, 0);
+    };
+    var togglePopup = function togglePopup(event) {
+        event === null || event === void 0 || event.stopPropagation();
+        if (!isOpen) openPopup(event);
+        else closePopup(event);
+    };
+    var onMouseEnter = function onMouseEnter(event) {
+        clearTimeout(timeOut.current);
+        timeOut.current = setTimeout(function() {
+            return openPopup(event);
+        }, mouseEnterDelay);
+    };
+    var onContextMenu = function onContextMenu(event) {
+        event === null || event === void 0 || event.preventDefault();
+        togglePopup();
+    };
+    var onMouseLeave = function onMouseLeave(event) {
+        clearTimeout(timeOut.current);
+        timeOut.current = setTimeout(function() {
+            return closePopup(event);
+        }, mouseLeaveDelay);
+    };
+    var lockScrolll = function lockScrolll() {
+        if (isModal && lockScroll) document.getElementsByTagName('body')[0].style.overflow = 'hidden'; // migrate to document.body
+    };
+    var resetScroll = function resetScroll() {
+        if (isModal && lockScroll) document.getElementsByTagName('body')[0].style.overflow = 'auto';
+    };
+    var focusContentOnOpen = function focusContentOnOpen() {
+        var _contentRef$current;
+        var focusableEls = contentRef === null || contentRef === void 0 ? void 0 : (_contentRef$current = contentRef.current) === null || _contentRef$current === void 0 ? void 0 : _contentRef$current.querySelectorAll('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]');
+        var firstEl = Array.prototype.slice.call(focusableEls)[0];
+        firstEl === null || firstEl === void 0 || firstEl.focus();
+    };
+    (0, _react.useImperativeHandle)(ref, function() {
+        return {
+            open: function open() {
+                openPopup();
+            },
+            close: function close() {
+                closePopup();
+            },
+            toggle: function toggle() {
+                togglePopup();
+            }
+        };
+    }); // set Position
+    var setPosition = function setPosition() {
+        if (isModal || !isOpen) return;
+        if (!(triggerRef === null || triggerRef === void 0 ? void 0 : triggerRef.current) || !(triggerRef === null || triggerRef === void 0 ? void 0 : triggerRef.current) || !(contentRef === null || contentRef === void 0 ? void 0 : contentRef.current)) return; /// show error as one of ref is undefined
+        var trigger = triggerRef.current.getBoundingClientRect();
+        var content = contentRef.current.getBoundingClientRect();
+        var cords = calculatePosition(trigger, content, position, arrow, {
+            offsetX: offsetX,
+            offsetY: offsetY
+        }, keepTooltipInside);
+        contentRef.current.style.top = cords.top + window.scrollY + "px";
+        contentRef.current.style.left = cords.left + window.scrollX + "px";
+        if (arrow && !!arrowRef.current) {
+            var _arrowStyle$top, _arrowStyle$left;
+            arrowRef.current.style.transform = cords.transform;
+            arrowRef.current.style.setProperty('-ms-transform', cords.transform);
+            arrowRef.current.style.setProperty('-webkit-transform', cords.transform);
+            arrowRef.current.style.top = ((_arrowStyle$top = arrowStyle.top) === null || _arrowStyle$top === void 0 ? void 0 : _arrowStyle$top.toString()) || cords.arrowTop;
+            arrowRef.current.style.left = ((_arrowStyle$left = arrowStyle.left) === null || _arrowStyle$left === void 0 ? void 0 : _arrowStyle$left.toString()) || cords.arrowLeft;
+        }
+    }; // hooks
+    useOnEscape(closePopup, closeOnEscape); // can be optimized if we disabled for hover
+    useTabbing(contentRef, isOpen && isModal);
+    useRepositionOnResize(setPosition, repositionOnResize);
+    useOnClickOutside(!!trigger ? [
+        contentRef,
+        triggerRef
+    ] : [
+        contentRef
+    ], closePopup, closeOnDocumentClick && !nested); // we need to add a ne
+    // render the trigger element and add events
+    var renderTrigger = function renderTrigger() {
+        var triggerProps = {
+            key: 'T',
+            ref: triggerRef,
+            'aria-describedby': popupId.current
+        };
+        var onAsArray = Array.isArray(on) ? on : [
+            on
+        ];
+        for(var i = 0, len = onAsArray.length; i < len; i++)switch(onAsArray[i]){
+            case 'click':
+                triggerProps.onClick = togglePopup;
+                break;
+            case 'right-click':
+                triggerProps.onContextMenu = onContextMenu;
+                break;
+            case 'hover':
+                triggerProps.onMouseEnter = onMouseEnter;
+                triggerProps.onMouseLeave = onMouseLeave;
+                break;
+            case 'focus':
+                triggerProps.onFocus = onMouseEnter;
+                triggerProps.onBlur = onMouseLeave;
+                break;
+        }
+        if (typeof trigger === 'function') {
+            var comp = trigger(isOpen);
+            return !!trigger && (0, _reactDefault.default).cloneElement(comp, triggerProps);
+        }
+        return !!trigger && (0, _reactDefault.default).cloneElement(trigger, triggerProps);
+    };
+    var addWarperAction = function addWarperAction() {
+        var popupContentStyle = isModal ? Style.popupContent.modal : Style.popupContent.tooltip;
+        var childrenElementProps = {
+            className: "popup-content " + (className !== '' ? className.split(' ').map(function(c) {
+                return c + "-content";
+            }).join(' ') : ''),
+            style: _extends({}, popupContentStyle, contentStyle, {
+                pointerEvents: 'auto'
+            }),
+            ref: contentRef,
+            onClick: function onClick(e) {
+                e.stopPropagation();
+            }
+        };
+        if (!modal && on.indexOf('hover') >= 0) {
+            childrenElementProps.onMouseEnter = onMouseEnter;
+            childrenElementProps.onMouseLeave = onMouseLeave;
+        }
+        return childrenElementProps;
+    };
+    var renderContent = function renderContent() {
+        return (0, _reactDefault.default).createElement("div", Object.assign({}, addWarperAction(), {
+            key: "C",
+            role: isModal ? 'dialog' : 'tooltip',
+            id: popupId.current
+        }), arrow && !isModal && (0, _reactDefault.default).createElement("div", {
+            ref: arrowRef,
+            style: Style.popupArrow
+        }, (0, _reactDefault.default).createElement("svg", {
+            "data-testid": "arrow",
+            className: "popup-arrow " + (className !== '' ? className.split(' ').map(function(c) {
+                return c + "-arrow";
+            }).join(' ') : ''),
+            viewBox: "0 0 32 16",
+            style: _extends({
+                position: 'absolute'
+            }, arrowStyle)
+        }, (0, _reactDefault.default).createElement("path", {
+            d: "M16 0l16 16H0z",
+            fill: "currentcolor"
+        }))), children && typeof children === 'function' ? children(closePopup, isOpen) : children);
+    };
+    var overlay = !(on.indexOf('hover') >= 0);
+    var ovStyle = isModal ? Style.overlay.modal : Style.overlay.tooltip;
+    var content = [
+        overlay && (0, _reactDefault.default).createElement("div", {
+            key: "O",
+            "data-testid": "overlay",
+            "data-popup": isModal ? 'modal' : 'tooltip',
+            className: "popup-overlay " + (className !== '' ? className.split(' ').map(function(c) {
+                return c + "-overlay";
+            }).join(' ') : ''),
+            style: _extends({}, ovStyle, overlayStyle, {
+                pointerEvents: closeOnDocumentClick && nested || isModal ? 'auto' : 'none'
+            }),
+            onClick: closeOnDocumentClick && nested ? closePopup : undefined,
+            tabIndex: -1
+        }, isModal && renderContent()),
+        !isModal && renderContent()
+    ];
+    return (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, renderTrigger(), isOpen && (0, _reactDomDefault.default).createPortal(content, getRootPopup()));
+});
+exports.default = Popup;
+
+},{"react":"8sXGL","react-dom":"g7mQZ","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj"}],"5sxQz":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$cc11 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4bfc.prelude(module);
+$parcel$ReactRefreshHelpers$cc11.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "UserSearch", ()=>UserSearch);
+parcelHelpers.export(exports, "NoteCreate", ()=>NoteCreate);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _formik = require("formik");
+var _yup = require("yup");
 var _ui = require("../ui");
-var _queries = require("../hooks/queries");
 var _s = $RefreshSig$();
-const UserSearch = ()=>{
-    _s();
-    const [search, setSearch] = (0, _react.useState)("");
-    const [searchResults, setSearchResults] = (0, _react.useState)([]);
-    const { data: results = [], isLoading } = (0, _queries.useGetUsers)();
-    (0, _react.useEffect)(()=>{
-        if (!search) {
-            setSearchResults([]);
-            return;
-        }
-        const filteredResults = results.filter((el)=>el.name.toLowerCase().includes(search?.toLowerCase()));
-        setSearchResults(filteredResults);
-    }, [
-        search
-    ]);
+const FormField = ({ label, children })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "web-grid web-grid-cols-3 web-gap-4 web-items-center",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                className: "web-font-medium",
+                children: label
+            }, void 0, false, {
+                fileName: "src/containers/note-create.tsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "web-col-span-2",
+                children: children
+            }, void 0, false, {
+                fileName: "src/containers/note-create.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/containers/note-create.tsx",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = FormField;
+const validationSchema = _yup.object().shape({
+    content: _yup.string().required("Content is required")
+});
+const NoteCreate = ({ initialValues, onSave })=>{
+    _s();
+    const { values, handleChange, handleSubmit, touched, errors, handleBlur } = (0, _formik.useFormik)({
+        initialValues: initialValues ?? {
+            content: ""
+        },
+        validationSchema,
+        onSubmit: (values)=>{
+            onSave(values);
+        },
+        enableReinitialize: true
+    });
+    const registerField = (field)=>{
+        return {
+            touched: touched[field],
+            error: errors[field],
+            name: field,
+            onChange: handleChange,
+            value: values[field],
+            onBlur: handleBlur
+        };
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
         className: "web-flex-1 web-flex-col web-flex web-space-y-4",
+        onSubmit: handleSubmit,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "web-font-semibold web-text-2xl",
-                children: "Search User"
+                children: "Create Note"
             }, void 0, false, {
-                fileName: "src/containers/user-search.tsx",
-                lineNumber: 28,
+                fileName: "src/containers/note-create.tsx",
+                lineNumber: 57,
                 columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
-                placeholder: "Type here...",
-                value: search,
-                onChange: (e)=>setSearch(e.target.value)
-            }, void 0, false, {
-                fileName: "src/containers/user-search.tsx",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Loading..."
-            }, void 0, false, {
-                fileName: "src/containers/user-search.tsx",
-                lineNumber: 35,
-                columnNumber: 21
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                    className: "web-w-full",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    className: "web-w-1/2 web-text-left web-bg-gray-200 web-px-4 web-py-1",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "ID"
-                                    }, void 0, false, {
-                                        fileName: "src/containers/user-search.tsx",
-                                        lineNumber: 41,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/containers/user-search.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    className: "web-w-1/2 web-text-left web-bg-gray-200 web-px-4 web-py-1",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Name"
-                                    }, void 0, false, {
-                                        fileName: "src/containers/user-search.tsx",
-                                        lineNumber: 44,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/containers/user-search.tsx",
-                                    lineNumber: 43,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/containers/user-search.tsx",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, undefined),
-                        (searchResults.length > 0 ? searchResults : results)?.map((el, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                        className: "web-w-1/2 web-px-4 web-py-3",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            children: el.id
-                                        }, void 0, false, {
-                                            fileName: "src/containers/user-search.tsx",
-                                            lineNumber: 51,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/containers/user-search.tsx",
-                                        lineNumber: 50,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                        className: "web-w-1/2 web-px-4 web-py-3",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            children: el.name
-                                        }, void 0, false, {
-                                            fileName: "src/containers/user-search.tsx",
-                                            lineNumber: 54,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/containers/user-search.tsx",
-                                        lineNumber: 53,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, index, true, {
-                                fileName: "src/containers/user-search.tsx",
-                                lineNumber: 49,
-                                columnNumber: 15
-                            }, undefined))
-                    ]
-                }, void 0, true, {
-                    fileName: "src/containers/user-search.tsx",
-                    lineNumber: 38,
+                className: "web-grid web-grid-cols-1 web-gap-12 web-flex-1",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "web-space-y-4",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FormField, {
+                        label: "Content",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
+                            placeholder: "Content",
+                            ...registerField("content")
+                        }, void 0, false, {
+                            fileName: "src/containers/note-create.tsx",
+                            lineNumber: 61,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/containers/note-create.tsx",
+                        lineNumber: 60,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/containers/note-create.tsx",
+                    lineNumber: 59,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/containers/user-search.tsx",
-                lineNumber: 37,
+                fileName: "src/containers/note-create.tsx",
+                lineNumber: 58,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                type: "submit",
+                children: "Save"
+            }, void 0, false, {
+                fileName: "src/containers/note-create.tsx",
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/containers/user-search.tsx",
-        lineNumber: 27,
+        fileName: "src/containers/note-create.tsx",
+        lineNumber: 53,
         columnNumber: 5
     }, undefined);
 };
-_s(UserSearch, "eQwMi2uVcg+2T0uld2vZgRx1qpE=", false, function() {
+_s(NoteCreate, "DHxGxL3YquXqhqVhI8v6I7jNEVM=", false, function() {
     return [
-        (0, _queries.useGetUsers)
+        (0, _formik.useFormik)
     ];
 });
-_c = UserSearch;
-var _c;
-$RefreshReg$(_c, "UserSearch");
+_c1 = NoteCreate;
+var _c, _c1;
+$RefreshReg$(_c, "FormField");
+$RefreshReg$(_c1, "NoteCreate");
 
-  $parcel$ReactRefreshHelpers$4bfc.postlude(module);
+  $parcel$ReactRefreshHelpers$cc11.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../ui":"gkHWQ","../hooks/queries":"agENq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"7DnZ4":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$03c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","formik":"6qx63","yup":"g702A","../ui":"gkHWQ","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"7wa9P":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$859e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$03c3.prelude(module);
+$parcel$ReactRefreshHelpers$859e.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NotesList", ()=>NotesList);
+parcelHelpers.export(exports, "Notes", ()=>Notes);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactjsPopup = require("reactjs-popup");
+var _reactjsPopupDefault = parcelHelpers.interopDefault(_reactjsPopup);
+var _notesList = require("./notes-list");
 var _ui = require("../ui");
 var _hooks = require("../hooks");
-var _s = $RefreshSig$(), _s1 = $RefreshSig$();
-const NoteRow = ({ note })=>{
-    _s();
-    const { isAdmin } = (0, _hooks.useMe)();
-    const { mutateAsync: deleteNote } = (0, _hooks.useDeleteNote)();
-    const { mutateAsync: editNote } = (0, _hooks.useEditNote)();
-    const handleDelete = async ()=>{
-        await deleteNote(note.id);
-    };
-    const handleEdit = async ()=>{
-        const description = window.prompt("Edit description", note.description);
-        if (description) await editNote({
-            ...note,
-            content: description
-        });
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: `web-grid web-gap-2 ${isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"}`,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "web-text-center web-items-center web-flex web-justify-center web-py-2",
-                children: note.id
-            }, void 0, false, {
-                fileName: "src/containers/notes-list.tsx",
-                lineNumber: 34,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "web-text-center web-items-center web-flex web-justify-center web-py-2",
-                children: note.description
-            }, void 0, false, {
-                fileName: "src/containers/notes-list.tsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
-            isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "web-text-center web-items-center web-flex web-justify-center web-py-2 web-space-x-2",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
-                        onClick: handleEdit,
-                        children: "Edit"
-                    }, void 0, false, {
-                        fileName: "src/containers/notes-list.tsx",
-                        lineNumber: 42,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
-                        onClick: handleDelete,
-                        children: "Remove"
-                    }, void 0, false, {
-                        fileName: "src/containers/notes-list.tsx",
-                        lineNumber: 43,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/containers/notes-list.tsx",
-                lineNumber: 41,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/containers/notes-list.tsx",
-        lineNumber: 29,
-        columnNumber: 5
-    }, undefined);
-};
-_s(NoteRow, "KbbblvaIDF8p5I94nE9V7oK7Ouk=", false, function() {
-    return [
-        (0, _hooks.useMe),
-        (0, _hooks.useDeleteNote),
-        (0, _hooks.useEditNote)
-    ];
-});
-_c = NoteRow;
-const NotesList = ({ notes = [] })=>{
-    _s1();
-    const { isAdmin } = (0, _hooks.useMe)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "web-bg-gray-200 web-p-4 web-rounded-md",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `web-grid web-gap-2 ${isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"}`,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "web-text-center web-font-bold web-py-2",
-                        children: "Id"
-                    }, void 0, false, {
-                        fileName: "src/containers/notes-list.tsx",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "web-text-center web-font-bold web-py-2",
-                        children: "Description"
-                    }, void 0, false, {
-                        fileName: "src/containers/notes-list.tsx",
-                        lineNumber: 68,
-                        columnNumber: 9
-                    }, undefined),
-                    isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "web-text-center web-font-bold web-py-2",
-                        children: "Actions"
-                    }, void 0, false, {
-                        fileName: "src/containers/notes-list.tsx",
-                        lineNumber: 70,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/containers/notes-list.tsx",
-                lineNumber: 62,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: notes.map((note)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NoteRow, {
-                        note: note
-                    }, note.id, false, {
-                        fileName: "src/containers/notes-list.tsx",
-                        lineNumber: 75,
-                        columnNumber: 11
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/containers/notes-list.tsx",
-                lineNumber: 73,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/containers/notes-list.tsx",
-        lineNumber: 61,
-        columnNumber: 5
-    }, undefined);
-};
-_s1(NotesList, "ENZUCnskS7v1+KqJOXzwuzxf32Q=", false, function() {
-    return [
-        (0, _hooks.useMe)
-    ];
-});
-_c1 = NotesList;
-var _c, _c1;
-$RefreshReg$(_c, "NoteRow");
-$RefreshReg$(_c1, "NotesList");
-
-  $parcel$ReactRefreshHelpers$03c3.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"227mq","../ui":"gkHWQ","../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","react":"8sXGL"}],"jpm3u":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$5a68 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5a68.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NotesPage", ()=>NotesPage);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _ui = require("../../ui");
-var _containers = require("../../containers");
-var _useMe = require("../../hooks/useMe");
-var _queries = require("../../hooks/queries");
-var _hooks = require("../../hooks");
+var _noteCreate = require("./note-create");
 var _s = $RefreshSig$();
-const NotesPage = ()=>{
+const Notes = /*#__PURE__*/ _s((0, _reactDefault.default).forwardRef(_c = _s(({ isAdmin }, ref)=>{
     _s();
-    const { isLoggedIn, isAdmin } = (0, _useMe.useMe)();
-    const { data, isLoading } = (0, _queries.useGetNotes)();
-    const { mutateAsync: createNote } = (0, _hooks.useCreateNote)();
-    const handleCreateNote = async ()=>{
-        const description = window.prompt("Enter description");
-        if (description) await createNote({
-            content: description
-        });
+    const { data = [], isLoading } = (0, _hooks.useGetNotes)();
+    const [search, setSearch] = (0, _react.useState)("");
+    const transactionsRef = (0, _react.useRef)([]);
+    const [isOpenNotePopup, setOpenNotePopup] = (0, _react.useState)(false);
+    const [results, setResults] = (0, _react.useState)(data);
+    (0, _react.useEffect)(()=>{
+        setResults(data);
+    }, [
+        data
+    ]);
+    (0, _react.useImperativeHandle)(ref, ()=>({
+            transactions: transactionsRef.current
+        }), [
+        results
+    ]);
+    const filteredResults = (0, _react.useMemo)(()=>{
+        if (!search) return results;
+        return results.filter((el)=>el.content.toLowerCase().includes(search?.toLowerCase()));
+    }, [
+        search,
+        results
+    ]);
+    const handleNoteRemove = (note, index)=>{
+        if (note.id) {
+            const matchedNoteIndex = transactionsRef.current.findIndex((el)=>el.id === note.id);
+            if (matchedNoteIndex !== -1) transactionsRef.current[matchedNoteIndex].isDeleted = true;
+            else transactionsRef.current.push({
+                ...note,
+                isDeleted: true
+            });
+        }
+        setResults((prev)=>prev.filter((_, elementIndex)=>elementIndex !== index));
     };
-    if (!isLoggedIn) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "web-px-12 web-py-8 web-flex-1 web-flex web-justify-center web-items-center",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            className: "web-text-2xl",
-            children: "Please login to access this page"
-        }, void 0, false, {
-            fileName: "src/pages/notes/index.tsx",
-            lineNumber: 23,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/pages/notes/index.tsx",
-        lineNumber: 22,
-        columnNumber: 7
-    }, undefined);
+    const handleNoteEdit = (note, index)=>{
+        const matchedNoteIndex = transactionsRef.current.findIndex((el)=>el.id === note.id);
+        if (matchedNoteIndex !== -1) transactionsRef.current[matchedNoteIndex] = note;
+        else transactionsRef.current.push(note);
+        setResults((prev)=>prev.map((el, elementIndex)=>index === elementIndex ? {
+                    ...el,
+                    ...note
+                } : el));
+    };
+    const onNoteCreate = (note)=>{
+        transactionsRef.current.push(note);
+        setResults((prev)=>[
+                {
+                    ...note,
+                    id: ""
+                },
+                ...prev
+            ]);
+        setOpenNotePopup(false);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "web-px-12 web-py-8 web-space-y-4 web-flex web-flex-col web-flex-1",
+        className: "web-flex web-flex-col web-flex-1 web-space-y-4",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "web-items-center web-flex web-justify-between",
@@ -28514,72 +31559,497 @@ const NotesPage = ()=>{
                         className: "web-text-xl web-font-bold",
                         children: "Notes"
                     }, void 0, false, {
-                        fileName: "src/pages/notes/index.tsx",
-                        lineNumber: 31,
-                        columnNumber: 9
+                        fileName: "src/containers/notes.tsx",
+                        lineNumber: 96,
+                        columnNumber: 11
                     }, undefined),
-                    isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
-                        onClick: handleCreateNote,
-                        children: "Add New"
-                    }, void 0, false, {
-                        fileName: "src/pages/notes/index.tsx",
-                        lineNumber: 32,
-                        columnNumber: 21
+                    isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactjsPopupDefault.default), {
+                                open: isOpenNotePopup,
+                                onClose: ()=>setOpenNotePopup(false),
+                                modal: true,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "web-px-6 web-py-4",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _noteCreate.NoteCreate), {
+                                        onSave: onNoteCreate
+                                    }, void 0, false, {
+                                        fileName: "src/containers/notes.tsx",
+                                        lineNumber: 106,
+                                        columnNumber: 19
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/containers/notes.tsx",
+                                    lineNumber: 105,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/containers/notes.tsx",
+                                lineNumber: 100,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                                onClick: ()=>setOpenNotePopup(true),
+                                children: "Add New"
+                            }, void 0, false, {
+                                fileName: "src/containers/notes.tsx",
+                                lineNumber: 109,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/containers/notes.tsx",
+                        lineNumber: 99,
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/pages/notes/index.tsx",
-                lineNumber: 30,
-                columnNumber: 7
+                fileName: "src/containers/notes.tsx",
+                lineNumber: 95,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
+                placeholder: "Type here...",
+                value: search,
+                onChange: (e)=>setSearch(e.target.value)
+            }, void 0, false, {
+                fileName: "src/containers/notes.tsx",
+                lineNumber: 114,
+                columnNumber: 9
             }, undefined),
             isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Loading..."
             }, void 0, false, {
-                fileName: "src/pages/notes/index.tsx",
-                lineNumber: 35,
-                columnNumber: 21
+                fileName: "src/containers/notes.tsx",
+                lineNumber: 120,
+                columnNumber: 23
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "web-flex-1",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containers.NotesList), {
-                    notes: data?.map((note)=>({
-                            ...note,
-                            description: note.content
-                        })) ?? []
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notesList.NotesList), {
+                    notes: filteredResults,
+                    onRemove: handleNoteRemove,
+                    onEdit: handleNoteEdit
                 }, void 0, false, {
-                    fileName: "src/pages/notes/index.tsx",
-                    lineNumber: 37,
-                    columnNumber: 9
+                    fileName: "src/containers/notes.tsx",
+                    lineNumber: 122,
+                    columnNumber: 11
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/pages/notes/index.tsx",
-                lineNumber: 36,
-                columnNumber: 7
+                fileName: "src/containers/notes.tsx",
+                lineNumber: 121,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/pages/notes/index.tsx",
-        lineNumber: 29,
-        columnNumber: 5
+        fileName: "src/containers/notes.tsx",
+        lineNumber: 94,
+        columnNumber: 7
     }, undefined);
-};
-_s(NotesPage, "wXCYYyWvuEj3C3C1traKDAcQwuo=", false, function() {
+}, "djA7jGB+ZnrUI+QiVrwERynIO1Q=", false, function() {
     return [
-        (0, _useMe.useMe),
-        (0, _queries.useGetNotes),
-        (0, _hooks.useCreateNote)
+        (0, _hooks.useGetNotes)
+    ];
+})), "djA7jGB+ZnrUI+QiVrwERynIO1Q=", false, function() {
+    return [
+        (0, _hooks.useGetNotes)
     ];
 });
-_c = NotesPage;
-var _c;
-$RefreshReg$(_c, "NotesPage");
+_c1 = Notes;
+var _c, _c1;
+$RefreshReg$(_c, "Notes$React.forwardRef");
+$RefreshReg$(_c1, "Notes");
 
-  $parcel$ReactRefreshHelpers$5a68.postlude(module);
+  $parcel$ReactRefreshHelpers$859e.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../../ui":"gkHWQ","../../containers":"cEPKa","../../hooks/useMe":"ewF7W","../../hooks/queries":"agENq","../../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"idoe5":[function() {},{}],"4WvB3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","./notes-list":"7DnZ4","../hooks":"hpGpu","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","reactjs-popup":"lcgIQ","../ui":"gkHWQ","./note-create":"5sxQz"}],"cAlhi":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3789 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3789.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "UserList", ()=>UserList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ui = require("../ui");
+var _queries = require("../hooks/queries");
+var _reactjsPopup = require("reactjs-popup");
+var _reactjsPopupDefault = parcelHelpers.interopDefault(_reactjsPopup);
+var _userCreate = require("./user-create");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const UserRow = ({ user, onEdit, onRemove, isAdmin })=>{
+    _s();
+    const [isOpenUserPopup, setOpenUserPopup] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "web-w-1/4 web-px-4 web-py-3 web-text-center",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: user.id
+                }, void 0, false, {
+                    fileName: "src/containers/user-list.tsx",
+                    lineNumber: 32,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "web-w-1/4 web-px-4 web-py-3 web-text-center",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: user.name
+                }, void 0, false, {
+                    fileName: "src/containers/user-list.tsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "web-w-1/4 web-px-4 web-py-3 web-text-center",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: user.email
+                }, void 0, false, {
+                    fileName: "src/containers/user-list.tsx",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined),
+            isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "web-w-1/4 web-px-4 web-py-3 web-text-center",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "web-text-center web-items-center web-flex web-justify-center web-py-2 web-space-x-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                                onClick: ()=>setOpenUserPopup(true),
+                                children: "Edit"
+                            }, void 0, false, {
+                                fileName: "src/containers/user-list.tsx",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                                onClick: ()=>onRemove(user),
+                                children: "Remove"
+                            }, void 0, false, {
+                                fileName: "src/containers/user-list.tsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/containers/user-list.tsx",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactjsPopupDefault.default), {
+                        open: isOpenUserPopup,
+                        onClose: ()=>setOpenUserPopup(false),
+                        modal: true,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "web-px-6 web-py-4",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userCreate.UserCreate), {
+                                onSave: (values)=>{
+                                    onEdit({
+                                        ...user,
+                                        ...values
+                                    });
+                                    setOpenUserPopup(false);
+                                },
+                                initialValues: user
+                            }, void 0, false, {
+                                fileName: "src/containers/user-list.tsx",
+                                lineNumber: 53,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/containers/user-list.tsx",
+                            lineNumber: 52,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/containers/user-list.tsx",
+                        lineNumber: 47,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 41,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/containers/user-list.tsx",
+        lineNumber: 30,
+        columnNumber: 5
+    }, undefined);
+};
+_s(UserRow, "vCKf/B3Bvi67hjY1xWfRhngWH6w=");
+_c = UserRow;
+const UserList = /*#__PURE__*/ _s1((0, _reactDefault.default).forwardRef(_c1 = _s1(({ isAdmin }, ref)=>{
+    _s1();
+    const [search, setSearch] = (0, _react.useState)("");
+    const { data = [], isLoading } = (0, _queries.useGetUsers)();
+    const transactionsRef = (0, _react.useRef)([]);
+    const [isOpenUserPopup, setOpenUserPopup] = (0, _react.useState)(false);
+    const [results, setResults] = (0, _react.useState)(data);
+    (0, _react.useImperativeHandle)(ref, ()=>({
+            transactions: transactionsRef.current
+        }), [
+        results
+    ]);
+    (0, _react.useEffect)(()=>{
+        setResults(data);
+    }, [
+        data
+    ]);
+    const filteredResults = (0, _react.useMemo)(()=>{
+        if (!search) return results;
+        return results.filter((el)=>el.name.toLowerCase().includes(search?.toLowerCase()));
+    }, [
+        search,
+        results
+    ]);
+    const handleUserRemove = (user, index)=>{
+        if (user.id) {
+            const matchedUserIndex = transactionsRef.current.findIndex((el)=>el.id === user.id);
+            if (matchedUserIndex !== -1) transactionsRef.current[matchedUserIndex].isDeleted = true;
+            else transactionsRef.current.push({
+                ...user,
+                isDeleted: true
+            });
+        }
+        setResults((prev)=>prev.filter((_, elementIndex)=>elementIndex !== index));
+    };
+    const handleUserEdit = (user, index)=>{
+        const matchedUserIndex = transactionsRef.current.findIndex((el)=>el.id === user.id);
+        if (matchedUserIndex !== -1) transactionsRef.current[matchedUserIndex] = user;
+        else transactionsRef.current.push(user);
+        setResults((prev)=>prev.map((el, elementIndex)=>index === elementIndex ? {
+                    ...el,
+                    ...user
+                } : el));
+    };
+    const onUserCreate = (user)=>{
+        transactionsRef.current.push(user);
+        setResults((prev)=>[
+                {
+                    ...user,
+                    id: ""
+                },
+                ...prev
+            ]);
+        setOpenUserPopup(false);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "web-flex-1 web-flex-col web-flex web-space-y-4",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "web-items-center web-flex web-justify-between",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "web-text-xl web-font-bold",
+                        children: "Users"
+                    }, void 0, false, {
+                        fileName: "src/containers/user-list.tsx",
+                        lineNumber: 155,
+                        columnNumber: 11
+                    }, undefined),
+                    isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactjsPopupDefault.default), {
+                                open: isOpenUserPopup,
+                                onClose: ()=>setOpenUserPopup(false),
+                                modal: true,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "web-px-6 web-py-4",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userCreate.UserCreate), {
+                                        onSave: onUserCreate
+                                    }, void 0, false, {
+                                        fileName: "src/containers/user-list.tsx",
+                                        lineNumber: 165,
+                                        columnNumber: 19
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-list.tsx",
+                                    lineNumber: 164,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/containers/user-list.tsx",
+                                lineNumber: 159,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
+                                onClick: ()=>setOpenUserPopup(true),
+                                children: "Add New"
+                            }, void 0, false, {
+                                fileName: "src/containers/user-list.tsx",
+                                lineNumber: 168,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/containers/user-list.tsx",
+                        lineNumber: 158,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 154,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Input), {
+                placeholder: "Type here...",
+                value: search,
+                onChange: (e)=>setSearch(e.target.value)
+            }, void 0, false, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 172,
+                columnNumber: 9
+            }, undefined),
+            isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Loading..."
+            }, void 0, false, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 178,
+                columnNumber: 23
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                    className: "web-w-full",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "web-w-1/4 web-bg-gray-200 web-px-4 web-py-2 web-text-center ",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "ID"
+                                    }, void 0, false, {
+                                        fileName: "src/containers/user-list.tsx",
+                                        lineNumber: 184,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-list.tsx",
+                                    lineNumber: 183,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "web-w-1/4 web-bg-gray-200 web-px-4 web-py-2 web-text-center",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Name"
+                                    }, void 0, false, {
+                                        fileName: "src/containers/user-list.tsx",
+                                        lineNumber: 187,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-list.tsx",
+                                    lineNumber: 186,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "web-w-1/4 web-bg-gray-200 web-px-4 web-py-2 web-text-center",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Email"
+                                    }, void 0, false, {
+                                        fileName: "src/containers/user-list.tsx",
+                                        lineNumber: 190,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-list.tsx",
+                                    lineNumber: 189,
+                                    columnNumber: 15
+                                }, undefined),
+                                isAdmin && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "web-w-1/4 web-bg-gray-200 web-px-4 web-py-2 web-text-center",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Actions"
+                                    }, void 0, false, {
+                                        fileName: "src/containers/user-list.tsx",
+                                        lineNumber: 194,
+                                        columnNumber: 19
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/containers/user-list.tsx",
+                                    lineNumber: 193,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/containers/user-list.tsx",
+                            lineNumber: 182,
+                            columnNumber: 13
+                        }, undefined),
+                        filteredResults.map((el, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserRow, {
+                                isAdmin: isAdmin,
+                                user: el,
+                                onEdit: (user)=>handleUserEdit(user, index),
+                                onRemove: (user)=>handleUserRemove(user, index)
+                            }, index, false, {
+                                fileName: "src/containers/user-list.tsx",
+                                lineNumber: 199,
+                                columnNumber: 15
+                            }, undefined))
+                    ]
+                }, void 0, true, {
+                    fileName: "src/containers/user-list.tsx",
+                    lineNumber: 181,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/containers/user-list.tsx",
+                lineNumber: 180,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/containers/user-list.tsx",
+        lineNumber: 153,
+        columnNumber: 7
+    }, undefined);
+}, "T8AVqMu9dakzqv/x6hExYUg+f48=", false, function() {
+    return [
+        (0, _queries.useGetUsers)
+    ];
+})), "T8AVqMu9dakzqv/x6hExYUg+f48=", false, function() {
+    return [
+        (0, _queries.useGetUsers)
+    ];
+});
+_c2 = UserList;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "UserRow");
+$RefreshReg$(_c1, "UserList$React.forwardRef");
+$RefreshReg$(_c2, "UserList");
+
+  $parcel$ReactRefreshHelpers$3789.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","../ui":"gkHWQ","../hooks/queries":"agENq","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ","reactjs-popup":"lcgIQ","./user-create":"cFNfi"}],"idoe5":[function() {},{}],"4WvB3":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _common = require("./common");
@@ -28619,5 +32089,5 @@ $RefreshReg$(_c, "BaseProvider");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@tanstack/react-query":"f0Z0I","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}]},["kFUzY","hfrIi","bdy5I"], "bdy5I", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"227mq","react":"8sXGL","@tanstack/react-query":"f0Z0I","@parcel/transformer-js/src/esmodule-helpers.js":"5dUnj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ip5jZ"}],"21kVA":[function() {},{}]},["kFUzY","hfrIi","bdy5I"], "bdy5I", "parcelRequire94c2")
 

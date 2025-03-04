@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bKZ8UOFQICcIpWk4EsLz+bOkoU39icv1IcVNWAqMLt0=",
+  "Hash": "quHBwgNFZWMkuz69O1Fuw+nPcFLvnWQQ9NhUjLGZrvA=",
   "Source": "AspNetReactPOC",
   "BasePath": "_content/AspNetReactPOC",
   "Mode": "Default",
@@ -245,12 +245,12 @@
       "OriginalItemSpec": "wwwroot/react-app/README.md"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/constants/index.js",
+      "RelativePath": "react-app/src/constants/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,15 +261,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/constants/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/constants/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/index.js",
+      "RelativePath": "react-app/src/containers/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,15 +280,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/note-create.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/notes-list.jsx",
+      "RelativePath": "react-app/src/containers/note-create.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -299,15 +299,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/notes-list.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/note-create.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/user-create.jsx",
+      "RelativePath": "react-app/src/containers/notes-list.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,15 +318,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-create.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/notes-list.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-search.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/user-search.jsx",
+      "RelativePath": "react-app/src/containers/notes.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,15 +337,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-search.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/notes.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/index.js",
+      "RelativePath": "react-app/src/containers/user-create.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -356,15 +356,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-create.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-list.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/index.js",
+      "RelativePath": "react-app/src/containers/user-list.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -375,15 +375,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-list.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useCreateNote.js",
+      "RelativePath": "react-app/src/hooks/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -394,15 +394,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateNote.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useCreateUser.js",
+      "RelativePath": "react-app/src/hooks/mutations/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,15 +413,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateUser.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useDeleteNote.js",
+      "RelativePath": "react-app/src/hooks/mutations/useCreateNote.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -432,15 +432,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useDeleteNote.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateNote.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useEditNote.js",
+      "RelativePath": "react-app/src/hooks/mutations/useCreateUser.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -451,15 +451,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useEditNote.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateUser.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/queries/index.js",
+      "RelativePath": "react-app/src/hooks/mutations/useDeleteNote.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -470,15 +470,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useDeleteNote.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/queries/useGetNotes.js",
+      "RelativePath": "react-app/src/hooks/mutations/useEditNote.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -489,15 +489,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetNotes.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useEditNote.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/queries/useGetUsers.js",
+      "RelativePath": "react-app/src/hooks/queries/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -508,15 +508,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetUsers.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/useMe.js",
+      "RelativePath": "react-app/src/hooks/queries/useGetNotes.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -527,7 +527,45 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/useMe.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetNotes.ts"
+    },
+    {
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.ts",
+      "SourceId": "AspNetReactPOC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
+      "BasePath": "_content/AspNetReactPOC",
+      "RelativePath": "react-app/src/hooks/queries/useGetUsers.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetUsers.ts"
+    },
+    {
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.ts",
+      "SourceId": "AspNetReactPOC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
+      "BasePath": "_content/AspNetReactPOC",
+      "RelativePath": "react-app/src/hooks/useMe.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/useMe.ts"
     },
     {
       "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.css",
@@ -549,12 +587,12 @@
       "OriginalItemSpec": "wwwroot/react-app/src/index.css"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/index.js",
+      "RelativePath": "react-app/src/index.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -565,15 +603,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/index.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/pages/home/index.jsx",
+      "RelativePath": "react-app/src/pages/home/index.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -584,15 +622,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/pages/home/index.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/pages/home/index.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/pages/index.js",
+      "RelativePath": "react-app/src/pages/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,15 +641,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/pages/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/pages/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/notes/index.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/pages/notes/index.jsx",
+      "RelativePath": "react-app/src/providers/common/index.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -622,15 +660,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/pages/notes/index.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/providers/common/index.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/providers/common/index.js",
+      "RelativePath": "react-app/src/providers/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -641,15 +679,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/providers/common/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/providers/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/providers/index.js",
+      "RelativePath": "react-app/src/services/api.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -660,15 +698,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/providers/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/api.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/api.js",
+      "RelativePath": "react-app/src/services/auth.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -679,15 +717,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/api.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/auth.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/auth.js",
+      "RelativePath": "react-app/src/services/cookie.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -698,15 +736,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/auth.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/cookie.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/cookie.js",
+      "RelativePath": "react-app/src/services/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -717,15 +755,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/cookie.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/index.js",
+      "RelativePath": "react-app/src/ui/button.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -736,15 +774,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/button.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/button.jsx",
+      "RelativePath": "react-app/src/ui/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -755,15 +793,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/button.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/index.js",
+      "RelativePath": "react-app/src/ui/input.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -774,15 +812,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/input.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/input.jsx",
+      "RelativePath": "react-app/src/ui/select.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -793,15 +831,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/input.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/select.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/tabs.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/select.jsx",
+      "RelativePath": "react-app/src/ui/tabs.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -812,7 +850,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/select.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/tabs.tsx"
     },
     {
       "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/tailwind.config.js",

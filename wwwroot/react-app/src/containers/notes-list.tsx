@@ -1,29 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../ui";
-import { useDeleteNote, useEditNote, useMe } from "../hooks";
+import { useMe } from "../hooks";
+import { Note, Schema } from "../types";
+import Popup from "reactjs-popup";
+import { NoteCreate } from "./note-create";
 
 interface NoteRowProps {
-  note: {
-    id: string;
-    description: string;
-  };
+  note: Schema<Note>;
+  onRemove: (note: NoteRowProps["note"]) => void;
+  onEdit: (note: NoteRowProps["note"]) => void;
 }
 
-const NoteRow: React.FC<NoteRowProps> = ({ note }) => {
+const NoteRow: React.FC<NoteRowProps> = ({ note, onRemove, onEdit }) => {
   const { isAdmin } = useMe();
-  const { mutateAsync: deleteNote } = useDeleteNote();
-  const { mutateAsync: editNote } = useEditNote();
-
-  const handleDelete = async () => {
-    await deleteNote(note.id);
-  };
-
-  const handleEdit = async () => {
-    const description = window.prompt("Edit description", note.description);
-    if (description) {
-      await editNote({ ...note, content: description });
-    }
-  };
+  const [isOpenNotePopup, setOpenNotePopup] = useState(false);
 
   return (
     <div
@@ -35,44 +25,68 @@ const NoteRow: React.FC<NoteRowProps> = ({ note }) => {
         {note.id}
       </p>
       <p className="web-text-center web-items-center web-flex web-justify-center web-py-2">
-        {note.description}
+        {note.content}
       </p>
       {isAdmin && (
         <p className="web-text-center web-items-center web-flex web-justify-center web-py-2 web-space-x-2">
-          <Button onClick={handleEdit}>Edit</Button>
-          <Button onClick={handleDelete}>Remove</Button>
+          <Button onClick={() => setOpenNotePopup(true)}>Edit</Button>
+          <Button onClick={() => onRemove(note)}>Remove</Button>
         </p>
       )}
+
+      <Popup
+        open={isOpenNotePopup}
+        onClose={() => setOpenNotePopup(false)}
+        modal
+      >
+        <div className="web-px-6 web-py-4">
+          <NoteCreate
+            onSave={(values) => {
+              onEdit({ ...note, ...values });
+              setOpenNotePopup(false);
+            }}
+            initialValues={note}
+          />
+        </div>
+      </Popup>
     </div>
   );
 };
 
 interface NotesListProps {
-  notes: {
-    id: string;
-    description: string;
-  }[];
+  notes: Schema<Note>[];
+  onRemove: (note: Schema<Note>, index: number) => void;
+  onEdit: (note: Schema<Note>, index: number) => void;
 }
 
-export const NotesList: React.FC<NotesListProps> = ({ notes = [] }) => {
+export const NotesList: React.FC<NotesListProps> = ({
+  notes = [],
+  onRemove,
+  onEdit,
+}) => {
   const { isAdmin } = useMe();
 
   return (
-    <div className="web-bg-gray-200 web-p-4 web-rounded-md">
+    <div className="web-rounded-md">
       <div
-        className={`web-grid web-gap-2 ${
+        className={`web-grid web-gap-2 web-bg-gray-200  ${
           isAdmin ? "web-grid-cols-3" : "web-grid-cols-2"
         }`}
       >
-        <p className="web-text-center web-font-bold web-py-2">Id</p>
+        <p className="web-text-center web-font-bold web-py-2">ID</p>
         <p className="web-text-center web-font-bold web-py-2">Description</p>
         {isAdmin && (
           <p className="web-text-center web-font-bold web-py-2">Actions</p>
         )}
       </div>
       <div>
-        {notes.map((note) => (
-          <NoteRow note={note} key={note.id} />
+        {notes.map((note, index) => (
+          <NoteRow
+            note={note}
+            key={note.id}
+            onRemove={(note) => onRemove(note, index)}
+            onEdit={(note) => onEdit(note, index)}
+          />
         ))}
       </div>
     </div>

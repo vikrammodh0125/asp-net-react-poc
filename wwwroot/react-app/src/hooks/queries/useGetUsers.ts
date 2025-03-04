@@ -6,7 +6,10 @@ export const useGetUsers = () => {
   return useQuery({
     queryKey: QUERY_GET_USERS,
     queryFn: async () => {
-      return await apiRequest<void, { id: string; name: string }[]>("/users");
+      return await apiRequest<
+        void,
+        { id: string; name: string; email: string }[]
+      >("/user-management/users");
     },
   });
 };
