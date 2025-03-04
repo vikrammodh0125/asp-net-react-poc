@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a1xaHbTz9kWKY0zqknQ+LE1sdpxsI/HH7069BAx9MLs=",
+  "Hash": "quHBwgNFZWMkuz69O1Fuw+nPcFLvnWQQ9NhUjLGZrvA=",
   "Source": "AspNetReactPOC",
   "BasePath": "_content/AspNetReactPOC",
   "Mode": "Default",
@@ -22,7 +22,7 @@
       "SourceType": "Computed",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "AspNetReactPOC#[.{fingerprint}]?.styles.css",
+      "RelativePath": "AspNetReactPOC.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -31,8 +31,6 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "mjsk6xfqxk",
-      "Integrity": "ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/bundle/AspNetReactPOC.styles.css"
@@ -43,7 +41,7 @@
       "SourceType": "Computed",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "AspNetReactPOC#[.{fingerprint}]!.bundle.scp.css",
+      "RelativePath": "AspNetReactPOC.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -52,8 +50,6 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "mjsk6xfqxk",
-      "Integrity": "ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/AspNetReactPOC.bundle.scp.css"
@@ -64,17 +60,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c4czj0rw8z",
-      "Integrity": "HMvS836ZT+QdMa5/vtslvtN89eRBfEX0eCe0YM40iU4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -85,17 +79,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
@@ -106,17 +98,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "RelativePath": "js/site.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
@@ -127,17 +117,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/#[.{fingerprint}]?.postcssrc",
+      "RelativePath": "react-app/.postcssrc",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xt0e55cu5i",
-      "Integrity": "tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/.postcssrc"
@@ -148,17 +136,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/craco.config#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/craco.config.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r3d1z0x8yi",
-      "Integrity": "afQw+1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/craco.config.js"
@@ -169,17 +155,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/dist/index#[.{fingerprint}]?.css",
+      "RelativePath": "react-app/dist/index.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9plpmiga0z",
-      "Integrity": "4+eeS0AHcPTOzHPW9tGooAX4hB+PI5SBDY5NKKvMyUc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/dist/index.css"
@@ -190,17 +174,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/dist/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/dist/index.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zwuuemro9a",
-      "Integrity": "A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/dist/index.js"
@@ -211,17 +193,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/package#[.{fingerprint}]?.json",
+      "RelativePath": "react-app/package.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8tyzkrtxc1",
-      "Integrity": "/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/package.json"
@@ -232,17 +212,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/postcss.config#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/postcss.config.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "naqaa7h44j",
-      "Integrity": "n3k73+j8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/postcss.config.js"
@@ -253,335 +231,341 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/README#[.{fingerprint}]?.md",
+      "RelativePath": "react-app/README.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "p6ltjm41s3",
-      "Integrity": "gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/README.md"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/constants/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/constants/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "whxpid3zy8",
-      "Integrity": "1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/constants/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/constants/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/containers/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j0zuienaxb",
-      "Integrity": "PbkBWGnTML+Ok7phHKUxP7Yx1OsdlVdqu/SryVgBGo0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/note-create.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/notes-list#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/containers/note-create.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nkz3yfwwe0",
-      "Integrity": "KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/notes-list.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/note-create.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/user-create#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/containers/notes-list.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kd3khnwony",
-      "Integrity": "6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b+POxuCw9A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-create.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/notes-list.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-search.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/containers/user-search#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/containers/notes.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "x5t2ow0enw",
-      "Integrity": "JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-search.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/notes.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/containers/user-create.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rthdvo0dzn",
-      "Integrity": "gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-create.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-list.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/containers/user-list.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wklwn44kha",
-      "Integrity": "wIMetjigqfimyhVjxorntX+hQp78w66Dr4PS6HRY2Xk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/containers/user-list.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useCreateNote#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gfotoholfx",
-      "Integrity": "7NwYILl/MEp4+yeotKWKRdFAzx63tfpB1NsBGKwSCVI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateNote.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useCreateUser#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/mutations/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fn6yhbczzq",
-      "Integrity": "1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateUser.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useDeleteNote#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/mutations/useCreateNote.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r822nrpwqn",
-      "Integrity": "28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useDeleteNote.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateNote.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/mutations/useEditNote#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/mutations/useCreateUser.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7fz2fii4xu",
-      "Integrity": "Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useEditNote.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useCreateUser.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/queries/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/mutations/useDeleteNote.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rbew6hpkg1",
-      "Integrity": "h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ+EjzkjY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useDeleteNote.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/queries/useGetNotes#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/mutations/useEditNote.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xgcthy0whg",
-      "Integrity": "YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetNotes.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/mutations/useEditNote.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/queries/useGetUsers#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/queries/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tre5inkm9p",
-      "Integrity": "CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetUsers.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/hooks/useMe#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/hooks/queries/useGetNotes.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5jx4m5rv26",
-      "Integrity": "wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/hooks/useMe.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetNotes.ts"
+    },
+    {
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.ts",
+      "SourceId": "AspNetReactPOC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
+      "BasePath": "_content/AspNetReactPOC",
+      "RelativePath": "react-app/src/hooks/queries/useGetUsers.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/queries/useGetUsers.ts"
+    },
+    {
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.ts",
+      "SourceId": "AspNetReactPOC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
+      "BasePath": "_content/AspNetReactPOC",
+      "RelativePath": "react-app/src/hooks/useMe.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/react-app/src/hooks/useMe.ts"
     },
     {
       "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.css",
@@ -589,314 +573,284 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/index#[.{fingerprint}]?.css",
+      "RelativePath": "react-app/src/index.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ofkv4yell3",
-      "Integrity": "zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/src/index.css"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/index.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tm64owktbs",
-      "Integrity": "a+37rifK1wypEmx0YnkZkyVWJDgVz1hO+zjyjGaz9rs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/index.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/pages/home/index#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/pages/home/index.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vnmsbf5twq",
-      "Integrity": "u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/pages/home/index.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/pages/home/index.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/pages/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/pages/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4frxq6t00o",
-      "Integrity": "EAsHmXLLeR0Zv/eH1CO8hwn8J+nJSk/lfBX+nCOVcQk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/pages/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/pages/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/notes/index.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/pages/notes/index#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/providers/common/index.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pi20fu7r9k",
-      "Integrity": "PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4+Fu0mwBk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/pages/notes/index.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/providers/common/index.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/providers/common/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/providers/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c5bgmvwgwd",
-      "Integrity": "cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/providers/common/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/providers/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/providers/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/services/api.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mpy1bouqvv",
-      "Integrity": "+hDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/providers/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/api.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/api#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/services/auth.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bf4ec2dvm8",
-      "Integrity": "GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/api.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/auth.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/auth#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/services/cookie.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ogg4yd4xfw",
-      "Integrity": "qJ35+YyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/auth.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/cookie.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/cookie#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/services/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "up47d5xzzo",
-      "Integrity": "okSu2pAZ17pT4u0tAfA+vgu3awuPZ+dOpeteZ6+jUGE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/cookie.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/services/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/services/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/ui/button.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mdal5s5nok",
-      "Integrity": "NrOrTEcTod+KkIK+/rj/xrKlzCazzZQh103MINhzeBU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/services/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/button.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.ts",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/button#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/ui/index.ts",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t288uykqrf",
-      "Integrity": "G7+ouyIQ3t+G15V+jUleQmF3Lk8etN41Qar6Jiq2/w0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/button.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/index.ts"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.js",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/index#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/src/ui/input.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "behoeyeqpn",
-      "Integrity": "E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/index.js"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/input.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/input#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/ui/select.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ai5pas1g1w",
-      "Integrity": "3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/input.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/select.tsx"
     },
     {
-      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.jsx",
+      "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/tabs.tsx",
       "SourceId": "AspNetReactPOC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/src/ui/select#[.{fingerprint}]?.jsx",
+      "RelativePath": "react-app/src/ui/tabs.tsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j2fqq8rk7d",
-      "Integrity": "NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/react-app/src/ui/select.jsx"
+      "OriginalItemSpec": "wwwroot/react-app/src/ui/tabs.tsx"
     },
     {
       "Identity": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/tailwind.config.js",
@@ -904,17 +858,15 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/tailwind.config#[.{fingerprint}]?.js",
+      "RelativePath": "react-app/tailwind.config.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "huh5wfa74h",
-      "Integrity": "mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/tailwind.config.js"
@@ -925,3630 +877,18 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/",
       "BasePath": "_content/AspNetReactPOC",
-      "RelativePath": "react-app/yarn#[.{fingerprint}]?.lock",
+      "RelativePath": "react-app/yarn.lock",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xoggddq3ba",
-      "Integrity": "f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/react-app/yarn.lock"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "AspNetReactPOC.bundle.scp.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/AspNetReactPOC.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "357"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI="
-        }
-      ]
-    },
-    {
-      "Route": "AspNetReactPOC.mjsk6xfqxk.bundle.scp.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/projectbundle/AspNetReactPOC.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "357"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mjsk6xfqxk"
-        },
-        {
-          "Name": "label",
-          "Value": "AspNetReactPOC.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI="
-        }
-      ]
-    },
-    {
-      "Route": "AspNetReactPOC.mjsk6xfqxk.styles.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/bundle/AspNetReactPOC.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "357"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mjsk6xfqxk"
-        },
-        {
-          "Name": "label",
-          "Value": "AspNetReactPOC.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI="
-        }
-      ]
-    },
-    {
-      "Route": "AspNetReactPOC.styles.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/obj/Debug/net8.0/scopedcss/bundle/AspNetReactPOC.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "357"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ftjiNJo8rzfKIRa3nrgpl20UUY1guNkyEKqhfTDMKoI="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.c4czj0rw8z.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1626"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HMvS836ZT+QdMa5/vtslvtN89eRBfEX0eCe0YM40iU4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c4czj0rw8z"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HMvS836ZT+QdMa5/vtslvtN89eRBfEX0eCe0YM40iU4="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1626"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HMvS836ZT+QdMa5/vtslvtN89eRBfEX0eCe0YM40iU4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HMvS836ZT+QdMa5/vtslvtN89eRBfEX0eCe0YM40iU4="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.ico",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/.postcssrc",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/.postcssrc",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "44"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/.xt0e55cu5i.postcssrc",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/.postcssrc",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "44"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xt0e55cu5i"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/.postcssrc"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tZT8srm4BnI51eO4BImgR0J57ygnHvSQdRTJ5QjHX/0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/craco.config.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/craco.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"afQw+1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-afQw+1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/craco.config.r3d1z0x8yi.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/craco.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"afQw+1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r3d1z0x8yi"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/craco.config.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-afQw+1Id/caWRNddeMFI/ZFfA14luy5WiMIPoZnAVWw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/dist/index.9plpmiga0z.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/dist/index.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6650"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4+eeS0AHcPTOzHPW9tGooAX4hB+PI5SBDY5NKKvMyUc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9plpmiga0z"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/dist/index.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4+eeS0AHcPTOzHPW9tGooAX4hB+PI5SBDY5NKKvMyUc="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/dist/index.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/dist/index.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6650"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4+eeS0AHcPTOzHPW9tGooAX4hB+PI5SBDY5NKKvMyUc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4+eeS0AHcPTOzHPW9tGooAX4hB+PI5SBDY5NKKvMyUc="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/dist/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/dist/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1883362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/dist/index.zwuuemro9a.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/dist/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1883362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zwuuemro9a"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/dist/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-A44kvztAFIdaeG7rL1bQl7eYSk8SRyHVUohIKO4Z2Kw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/package.8tyzkrtxc1.json",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/package.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1187"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8tyzkrtxc1"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/package.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/package.json",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/package.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1187"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/IpE1k5maeww/F3zgEyAkmz0Eb6I6125hML/4FHfkk8="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/postcss.config.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/postcss.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "203"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n3k73+j8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-n3k73+j8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/postcss.config.naqaa7h44j.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/postcss.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "203"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n3k73+j8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "naqaa7h44j"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/postcss.config.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-n3k73+j8xJJpLN8dl6CWTkRujfKh/Y29GswQ9pVtueU="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/README.md",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/README.md",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/markdown"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/README.p6ltjm41s3.md",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/README.md",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/markdown"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "p6ltjm41s3"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/README.md"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gZuopZusfQcgzLU4v2zKsitSMYr5lvczCnEmOSJiz2g="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/constants/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "402"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/constants/index.whxpid3zy8.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/constants/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "402"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "whxpid3zy8"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/constants/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1Asc1xWYV3k9kDmxrTgwqJ4G71Scr3cJGnIq3PWFw0A="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/index.j0zuienaxb.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "92"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PbkBWGnTML+Ok7phHKUxP7Yx1OsdlVdqu/SryVgBGo0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "j0zuienaxb"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/containers/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PbkBWGnTML+Ok7phHKUxP7Yx1OsdlVdqu/SryVgBGo0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "92"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PbkBWGnTML+Ok7phHKUxP7Yx1OsdlVdqu/SryVgBGo0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-PbkBWGnTML+Ok7phHKUxP7Yx1OsdlVdqu/SryVgBGo0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/notes-list.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1838"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/notes-list.nkz3yfwwe0.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/notes-list.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1838"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nkz3yfwwe0"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/containers/notes-list.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KSsOiW05dGrzrjptZ64U1ZaWWvKg746COqVird84/zc="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/user-create.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4826"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b+POxuCw9A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b+POxuCw9A="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/user-create.kd3khnwony.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-create.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4826"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b+POxuCw9A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kd3khnwony"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/containers/user-create.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6EQCF2lBjnqbffHnDIwbdfNELVZitnPw4b+POxuCw9A="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/user-search.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-search.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/containers/user-search.x5t2ow0enw.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/containers/user-search.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "x5t2ow0enw"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/containers/user-search.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JRgsrt2glclkgKb16NHwy3gz1z0rdKl9Rggc3NHB3W0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "80"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/index.rthdvo0dzn.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "80"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rthdvo0dzn"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gUWEc6Brrif5U3IwxWrlPv7bJKD1e2Ky/GX8QENxgSU="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wIMetjigqfimyhVjxorntX+hQp78w66Dr4PS6HRY2Xk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wIMetjigqfimyhVjxorntX+hQp78w66Dr4PS6HRY2Xk="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/index.wklwn44kha.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wIMetjigqfimyhVjxorntX+hQp78w66Dr4PS6HRY2Xk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wklwn44kha"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/mutations/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wIMetjigqfimyhVjxorntX+hQp78w66Dr4PS6HRY2Xk="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useCreateNote.gfotoholfx.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "520"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7NwYILl/MEp4+yeotKWKRdFAzx63tfpB1NsBGKwSCVI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gfotoholfx"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/mutations/useCreateNote.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7NwYILl/MEp4+yeotKWKRdFAzx63tfpB1NsBGKwSCVI="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useCreateNote.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "520"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7NwYILl/MEp4+yeotKWKRdFAzx63tfpB1NsBGKwSCVI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7NwYILl/MEp4+yeotKWKRdFAzx63tfpB1NsBGKwSCVI="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useCreateUser.fn6yhbczzq.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "520"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fn6yhbczzq"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/mutations/useCreateUser.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useCreateUser.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "520"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1WxcEtii3G2cBphjpoLHDTXZRfB3PitDvk7SIizvq3o="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useDeleteNote.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "514"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useDeleteNote.r822nrpwqn.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "514"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r822nrpwqn"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/mutations/useDeleteNote.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-28qUMxuHa8xKzz6CX6zO4YbnxT9dHj60ZbLx325YFzw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useEditNote.7fz2fii4xu.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "527"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7fz2fii4xu"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/mutations/useEditNote.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/mutations/useEditNote.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "527"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Lcm8vVBXzbO8nCyeQdA1lUcbuK1yefOkJADItXI0EPI="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/queries/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "61"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ+EjzkjY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ+EjzkjY="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/queries/index.rbew6hpkg1.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "61"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ+EjzkjY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rbew6hpkg1"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/queries/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-h0pvcX7sifdgJAKSDn9gRZu5twJLPwGIW5RZ+EjzkjY="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/queries/useGetNotes.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "315"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/queries/useGetNotes.xgcthy0whg.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetNotes.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "315"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xgcthy0whg"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/queries/useGetNotes.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YV2bvpXG9XwMzhYtjNOjDFFqWgamixcnAczRdnb4akg="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/queries/useGetUsers.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "315"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/queries/useGetUsers.tre5inkm9p.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/useGetUsers.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "315"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tre5inkm9p"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/queries/useGetUsers.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CajJzRDGqaNnt5g3N0N6rFekeZo8OJUC9BGIVu6TS9Q="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/useMe.5jx4m5rv26.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "304"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5jx4m5rv26"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/hooks/useMe.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/hooks/useMe.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/useMe.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "304"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wfy2phKYccsoPlgG5RiSD684YK5mtANnOYm2THbHgpM="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/index.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "622"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"a+37rifK1wypEmx0YnkZkyVWJDgVz1hO+zjyjGaz9rs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-a+37rifK1wypEmx0YnkZkyVWJDgVz1hO+zjyjGaz9rs="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/index.ofkv4yell3.css",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ofkv4yell3"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/index.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zBp60NAZ3bHTLQ7LWIugrCbOQdhiXdbDZjSLJfg6KOw="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/index.tm64owktbs.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "622"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"a+37rifK1wypEmx0YnkZkyVWJDgVz1hO+zjyjGaz9rs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tm64owktbs"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-a+37rifK1wypEmx0YnkZkyVWJDgVz1hO+zjyjGaz9rs="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/pages/home/index.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "706"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/pages/home/index.vnmsbf5twq.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/home/index.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "706"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vnmsbf5twq"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/pages/home/index.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u3huMMcbQOlCKnlg/x3OBFfPop0PCJNFwY2EAEm4A1s="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/pages/index.4frxq6t00o.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "49"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EAsHmXLLeR0Zv/eH1CO8hwn8J+nJSk/lfBX+nCOVcQk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4frxq6t00o"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/pages/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EAsHmXLLeR0Zv/eH1CO8hwn8J+nJSk/lfBX+nCOVcQk="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/pages/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "49"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EAsHmXLLeR0Zv/eH1CO8hwn8J+nJSk/lfBX+nCOVcQk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EAsHmXLLeR0Zv/eH1CO8hwn8J+nJSk/lfBX+nCOVcQk="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/pages/notes/index.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/notes/index.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1408"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4+Fu0mwBk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4+Fu0mwBk="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/pages/notes/index.pi20fu7r9k.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/pages/notes/index.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1408"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4+Fu0mwBk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pi20fu7r9k"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/pages/notes/index.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PxwtLfnpXLr3htpvCwa5OLlW3m5OFcMoyP4+Fu0mwBk="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/providers/common/index.c5bgmvwgwd.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "322"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c5bgmvwgwd"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/providers/common/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/providers/common/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/common/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "322"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cE5D8i9rCvwkPsOT7T4fprcOK2g68KCRPkUsyw68YOQ="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/providers/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+hDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+hDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/providers/index.mpy1bouqvv.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/providers/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+hDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mpy1bouqvv"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/providers/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+hDsSd7gA6g/ukdr26lqMY8MOI7DkememTJ2wLGIz/g="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/api.bf4ec2dvm8.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "800"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bf4ec2dvm8"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/services/api.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/api.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/api.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "800"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GY65LIhh/MWRq3mD304ru5RpfOvDHVhC17FaEUkzKT4="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/auth.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "257"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qJ35+YyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qJ35+YyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/auth.ogg4yd4xfw.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/auth.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "257"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qJ35+YyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ogg4yd4xfw"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/services/auth.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qJ35+YyNeoSSUanYuWbwfmrmgc4LfzQGbav4khD9h9E="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/cookie.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "354"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"okSu2pAZ17pT4u0tAfA+vgu3awuPZ+dOpeteZ6+jUGE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-okSu2pAZ17pT4u0tAfA+vgu3awuPZ+dOpeteZ6+jUGE="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/cookie.up47d5xzzo.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/cookie.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "354"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"okSu2pAZ17pT4u0tAfA+vgu3awuPZ+dOpeteZ6+jUGE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "up47d5xzzo"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/services/cookie.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-okSu2pAZ17pT4u0tAfA+vgu3awuPZ+dOpeteZ6+jUGE="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NrOrTEcTod+KkIK+/rj/xrKlzCazzZQh103MINhzeBU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NrOrTEcTod+KkIK+/rj/xrKlzCazzZQh103MINhzeBU="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/services/index.mdal5s5nok.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NrOrTEcTod+KkIK+/rj/xrKlzCazzZQh103MINhzeBU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mdal5s5nok"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/services/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NrOrTEcTod+KkIK+/rj/xrKlzCazzZQh103MINhzeBU="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/button.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "178"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G7+ouyIQ3t+G15V+jUleQmF3Lk8etN41Qar6Jiq2/w0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-G7+ouyIQ3t+G15V+jUleQmF3Lk8etN41Qar6Jiq2/w0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/button.t288uykqrf.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "178"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G7+ouyIQ3t+G15V+jUleQmF3Lk8etN41Qar6Jiq2/w0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "t288uykqrf"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/ui/button.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-G7+ouyIQ3t+G15V+jUleQmF3Lk8etN41Qar6Jiq2/w0="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/index.behoeyeqpn.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "77"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "behoeyeqpn"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/ui/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/index.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "77"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-E2RsiW61AvYsnOEEeN4Ad6PQoc6c0IFF/HisZSg1IEM="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/input.ai5pas1g1w.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "185"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ai5pas1g1w"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/ui/input.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/input.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/input.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "185"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3s0v063Vi3inxbRVtCuJiBWa4wvoK2ga1F20Cd2ZYtE="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/select.j2fqq8rk7d.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "322"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "j2fqq8rk7d"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/src/ui/select.jsx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/src/ui/select.jsx",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/select.jsx",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "322"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/jscript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NQcfrAP9s5PEG1VceyqUSmbykHqkJlhGJysNZgA71so="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/tailwind.config.huh5wfa74h.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/tailwind.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "186"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "huh5wfa74h"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/tailwind.config.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/tailwind.config.js",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/tailwind.config.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "186"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mQUqliuZ16ka2JwxCkz3Ca1OJgT0P3qtSlWyNYxwCkQ="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/yarn.lock",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/yarn.lock",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "627809"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII="
-        }
-      ]
-    },
-    {
-      "Route": "react-app/yarn.xoggddq3ba.lock",
-      "AssetFile": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/yarn.lock",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "627809"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xoggddq3ba"
-        },
-        {
-          "Name": "label",
-          "Value": "react-app/yarn.lock"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-f2Z33D2aj2GmEEsV3h4J/KE8BFCWd4KZ4hwnzMNVsII="
-        }
-      ]
     }
   ]
 }
