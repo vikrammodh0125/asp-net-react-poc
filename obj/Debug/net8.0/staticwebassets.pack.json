@@ -81,20 +81,8 @@
       "PackagePath": "staticwebassets/react-app/src/hooks/mutations/index.ts"
     },
     {
-      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateNote.ts",
-      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useCreateNote.ts"
-    },
-    {
-      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useCreateUser.ts",
-      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useCreateUser.ts"
-    },
-    {
-      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useDeleteNote.ts",
-      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useDeleteNote.ts"
-    },
-    {
-      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useEditNote.ts",
-      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useEditNote.ts"
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/mutations/useBulkUpsert.ts",
+      "PackagePath": "staticwebassets/react-app/src/hooks/mutations/useBulkUpsert.ts"
     },
     {
       "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/hooks/queries/index.ts",
@@ -151,6 +139,10 @@
     {
       "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/services/index.ts",
       "PackagePath": "staticwebassets/react-app/src/services/index.ts"
+    },
+    {
+      "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/types/index.ts",
+      "PackagePath": "staticwebassets/react-app/src/types/index.ts"
     },
     {
       "Id": "/Users/pantherofficial404/Downloads/asp-react-feat-api-integration/wwwroot/react-app/src/ui/button.tsx",
